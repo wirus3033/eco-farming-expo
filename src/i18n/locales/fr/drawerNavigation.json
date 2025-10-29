@@ -1,0 +1,13 @@
+{
+  "DRAWER_NAVIGATION": {
+    "RECOLTE_ITEM": "Récolte",
+    "LAVAGE_ITEM": "Lavage",
+    "EGRAINAGE_ITEM": "Égrainage",
+    "OTHERS_ITEM": "Autres",
+    "SETTINGS_ITEM": "Paramètres",
+    "LOGOUT_ITEM": "Se déconnecter",
+    "LOGOUT": "Déconnexion",
+    "LOGOUT_CONFIRM_TITLE": "Se déconnecter",
+    "LOGOUT_CONFIRM_MESSAGE": "Êtes-vous sûr de vouloir vous déconnecter ?"
+  }
+}

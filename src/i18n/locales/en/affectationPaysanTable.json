@@ -1,0 +1,18 @@
+{
+  "AFFECTATION_PAYSAN_TABLE": {
+    "SCAN_TABLE": {
+      "TEXT_SUB_TITLE": "Peasant / Table",
+      "TEXT_ERROR_1": "The Table ${code} does not exist.",
+      "TEXT_ERROR_2": "The Peasant ${badge} does not exist.",
+      "TEXT_ERROR_3": "The Peasant ${value} has already been scanned.",
+      "TEXT_ERROR_4": "The Peasant ${value_1} is already assigned to the parcel ${value_2}.",
+      "TEXT_ERROR_5": "The Peasant ${value_1} is already assigned to BIN ${value_2}.",
+      "TEXT_ERROR_6": "Badges have already been scanned to be assigned to the table ${value}.",
+      "TEXT_ERREUR_7": "This data will not be saved. Are you sure you want to abandon the current operation?",
+      "TEXT_ERROR_8": "The Peasant ${value_1} is already assigned to the table ${value_2}.",
+      "TEXT_EN_ATTENTE": "Waiting for Peasant to scan",
+      "TEXT_SUB_TITLE_2": "Please scan the Peasant",
+      "TABLE": "Table"
+    }
+  }
+}

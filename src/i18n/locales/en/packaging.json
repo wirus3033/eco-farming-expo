@@ -1,0 +1,52 @@
+{
+  "PACKAGING": {
+    "CONFIRM_ABORT_OPERATION": "Do you really want to abandon the operation?",
+    "LIST_OF": {
+      "RESUME": {
+        "OF_SELECTED": "Selected OF",
+        "OF_CODE": "OF Code: ",
+        "OF_LABEL": "Label: "
+      },
+      "WAIT_FOR_OF_COMPLETION": "Please wait for the completion of OF {{activeOfName}} before starting the new OF {{newOfName}}",
+      "FINAL_PROCESS_PACKAGING": "Final Process and Packaging",
+      "SELECT_AN_OF": "Please select an OF",
+      "OF_VERIFICATION": "OF Verification",
+      "NEXT": "Next",
+      "PLOT": "Plot : ",
+      "LOCATION": "Location : "
+    },
+    "SCAN_BAC": {
+      "SCAN_BAC_ASSOCIATED_WITH_OF": "Please scan a BAC associated with the OF",
+      "INFO": {
+        "BAC": "BAC",
+        "CODE_BAC": "BAC Code",
+        "EMP_INITIALE": "Initial Location",
+        "EMP_DEST": "Destination Location"
+      },
+      "RESUME": {
+        "CRATE_GRADED_SELECTED": "Graded crate selected",
+        "CODE_BAC": "BAC Code : ",
+        "LIBELLE": "Label : "
+      },
+      "CRATE_NOT_BELONG_TO_SELECTED_OF": "The crate {{data}} does not belong to the selected OF.",
+      "CRATE_NOT_EXIST": "The crate {{data}} does not exist!",
+      "CRATE_ALREADY_SCANNED": "The crate {{codeCrateGraded}} has already been scanned",
+      "CRATE_NOT_GRADED": "The crate {{codeCrateGraded}} is not graded",
+      "CHECK_INTERNET_CONNECTION": "Please check your internet connection.",
+      "SCAN_BAC_ASSOCIATED_TO_OF": "Please scan a BAC associated with the OF",
+      "CRATE_GRADED_NOT_FOUND": "Graded crate not found.",
+      "PREPROCESSING_AND_PACKAGING": "Preprocessing and packaging",
+  "WAITING_FOR_CRATE_TO_SCAN": "Waiting for crate to scan . . .",
+  "VERIFICATION_OF_CRATE": "Verification of crate . . .",
+  "PROCESS_PACKAGING_FOR_BAC": "Do you want to process packaging for the BAC ",
+  "REGISTRATION_IN_PROGRESS": "Registration ....",
+  "REGISTRATION_SUCCESSFUL": "Registration successful!",
+  "PACKAGING_ENTRY": "Packaging entry",
+  "NEW_PACKAGING": "New packaging",
+  "RETURN_TO_HOME_PAGE": "Return to the home page",
+  "EMPLACEMENT":"Location ",
+  "OF_FINISH":"OF {{OF}} finshed "
+
+    }
+  }
+}

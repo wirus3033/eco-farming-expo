@@ -1,0 +1,13 @@
+{
+  "DRAWER_NAVIGATION": {
+    "RECOLTE_ITEM": "Harvest",
+    "LAVAGE_ITEM": "Washing",
+    "EGRAINAGE_ITEM": "Decoring ",
+    "OTHERS_ITEM": "Others",
+    "SETTINGS_ITEM": "Settings",
+    "LOGOUT_ITEM": "Log out",
+    "LOGOUT": "Logout",
+    "LOGOUT_CONFIRM_TITLE": "Log out",
+    "LOGOUT_CONFIRM_MESSAGE": "Are you sure you want to log out?"
+  }
+}

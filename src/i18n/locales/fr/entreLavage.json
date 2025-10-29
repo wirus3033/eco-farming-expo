@@ -1,0 +1,60 @@
+{
+  "ENTRE_LAVAGE": {
+    "PRETREATMENT_AND_WASH": "Prétraitement et lavage",
+    "ITEM_BUTTON": {
+      "WASHING_IN_PROGRESS": "La mise en lavage est en cours",
+      "OF_NOT_PROCESSED": "Aucun BIN n'a encore été pické.",
+      "NO_OF_TO_PROCESS": "Aucun OF à traiter",
+      "ALL_BINS_IN_WASHING": "Tous les bins de l'OF en cours de traitement sont déjà mis en lavage",
+      "CONNECT_TO_INTERNET_TO_CONTINUE": "Veuillez vous connecter sur internet pour continuer",
+      "CONFIRM_ABORT_OPERATION": "Voulez-vous vraiment abandonner l'opération ?"
+    },
+    "LISTE_OF": {
+      "RESUME": {
+        "SELECTED_OF": "OF sélectionné",
+        "OF_CODE": "Code OF : ",
+        "OF_LABEL": "Libellé : "
+      },
+      "WAIT_FOR_OF_COMPLETION": "Veuillez attendre la fin du traitement de l'OF {{activeOf}} en cours avant de commencer le nouveau OF {{newOf}}.",
+      "PLEASE_SELECT_AN_OF": "Veuillez sélectionner un OF",
+      "OF_VERIFICATION": "Vérification de l'OF ",
+      "NEXT": "Suivant",
+      "PARCEL": "Parcelle :",
+      "LOCATION": "Emplacement :"
+    },
+    "SCAN_BIN": {
+      "SCAN_BIN_ASSOCIATED_WITH_OF": "Veuillez scanner un BIN associé à l'OF",
+      "INFO": {
+        "DETAIL_BIN": "BIN",
+        "DETAIL_CODE_BIN": "Code BIN",
+        "DETAIL_EMP_INIT": "EMP Initiale",
+        "DETAIL_EMP_DEST": "EMP Dest"
+      },
+      "RESUME": {
+        "MODAL_TITLE_BIN_SELECTED": "Bin sélectionné",
+        "DETAIL_CODE_BIN": "Code BIN : ",
+        "DETAIL_LIBELLE": "Libellé : "
+      },
+      "ERROR_BIN_NOT_PART_OF_OF": "Le bin {{data}} n'appartient pas à l'OF sélectionné.",
+      "ERROR_BIN_DOES_NOT_EXIST": "Le Bin {{data}} n'existe pas !",
+      "MESSAGE_BIN_ALREADY_PICKED": "Le BIN {{codeBin}} est déjà pické",
+      "MESSAGE_BIN_ALREADY_PROCESSED": "Le bin {{codeBin}} a été déjà traité",
+      "MESSAGE_BIN_NOT_READY_FOR_PROCESSING": "Le bin {{codeBin}} n'est pas encore prêt pour le prétraitement ou le lavage.",
+      "ERROR_OFFLINE": "Vous êtes hors ligne, Veuillez vous connecter à internet",
+      "DESCRIPTION_SCAN_BIN_OF": "Veuillez scanner un BIN associé à l'OF",
+      "ERROR_BIN_NOT_FOUND": "Bin introuvable.",
+      "TITLE_PICKING_PRETREATMENT": "Picking prétraitement",
+      "MESSAGE_WAIT_FOR_BIN_SCAN": "En attente du Bin à scanner . . .",
+      "MESSAGE_VERIFYING_BIN": "Verification du Bin . . .",
+      "CONFIRM_TREAT_PICKING_PRETREATMENT": "Voulez-vous traiter le picking prétraitement pour le BIN",
+      "MESSAGE_SAVING": "Enregistrement . . .",
+      "MESSAGE_SAVED_SUCCESS": "Enregistrement effectué avec succès !",
+      "TITLE_NEW_PICKING_PRETREATMENT": "Nouveau picking prétraitement",
+      "ACTION_RETURN_HOME": "Retour à la page d'accueil",
+      "TITLE_WASH_ENTRY": "Entrée lavage",
+      "PICKING_FINISHED":"Picking prétraitement de l'OF {{OF}} terminé ",
+      "LOCATION":"Emplacement "
+
+    }
+  }
+}

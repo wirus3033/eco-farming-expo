@@ -1,0 +1,18 @@
+{
+  "AFFECTATION_BAC_GRADE": {
+    "CHOOSE_GRADE": {
+      "TEXT_TITLE_BOLD": "BAC / Grade",
+      "TEXT_SUB_TITLE": "Veuillez sélectionner le Grade",
+      "PLACEHOLDER": "Rechercher une grade"
+    },
+    "SCAN_BAC": {
+      "TEXT_ERROR_1": "Des BACS sont déjà scannés pour être affecté au Grade ${value}",
+      "TEXT_ERROR_2": "Les données ne seront pas sauvegardées. Êtes vous sûr de vouloir abandonner le traitement en cours ?",
+      "TEXT_ERROR_3": "Le BAC ${value_1} est déjà affecté à la parcelle ${value_2}.",
+      "TEXT_ERROR_4": "Le BAC ${value_1} est déjà affecté au paysan ${value_2}.",
+      "TEXT_ERROR_5": "Le BAC ${value_1} est déjà associé au grade ${value_2}.",
+      "TEXT_ERROR_6": "Votre affectation n'a pas été effectuée, veuillez réessayer.",
+      "TEXT_GRADE": "Grade"
+    }
+  }
+}

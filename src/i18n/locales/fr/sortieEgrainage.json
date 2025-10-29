@@ -1,0 +1,29 @@
+{
+  "SORTIE_EGRAINAGE": {
+    "TEXT_ERROR_1": "L'ordre de fabrication est déjà choisi, et le BAC est déjà scanné.",
+    "TEXT_ERROR_2": "Le BAC ${code} est déjà sorti en égrainage.",
+    "TEXT_ERROR_3": "Le BAC ${code} est déjà affecté à une parcelle.",
+    "TEXT_ERROR_4": "Le BAC ${code} est déjà affecté à un grade.",
+    "TEXT_ERROR_5": "Le table ${code} n'existe pas.",
+    "TEXT_ERROR_6": "La table ${code} n'a aucun paysan affecté.",
+    "TEXT_ERROR_7": "Vuillez vérifier votre connexion internet.",
+    "TEXT_ERREUR_8": "Le BAC et le ticket sont déjà scannés mais ne sont pas sauvegardés.",
+    "TEXT_ERREUR_9": "Le BAC, le ticket et le BAC propre sont déjà scannés mais ne sont pas sauvegardés.",
+    "TEXT_ERREUR_10": "Le BAC, le ticket, le BAC propre et la table sont déjà scannés mais ne sont pas sauvegardés.",
+    "TEXT_ERROR_11": "Le BAC ${code} n'est pas entrée en égrainage.",
+    "TEXT_ERROR_12": "Le BAC ${code} est déjà sortie en égrainage.",
+    "TEXT_TITLE_SAVE": "Enregistrement sortie d'égrainage",
+    "TEXT_TITLE": "Sortie ",
+    "TEXT_SAVE": "Enregistré effectué avec succès vers l'emplacement",
+    "QUESTION": "Voulez-vous enregistrer la sortie pour le BAC",
+    "TEXT_FIN_EGRAINAGE": "Fin de sortie d'égrainage",
+    "TEXT_SUB_TITLE_1": "Veuillez scanner le ticket de pesage",
+    "TEXT_SUB_TITLE_2": "Veuillez scanner un BAC propre.",
+    "TEXT_SUB_TITLE_3": "Veuillez scanner la table",
+    "TEXT_EN_ATTENTE_1": "En attente d’un BAC propre à scanner",
+    "TEXT_EN_ATTENTE_2": "En attente de TABLE à scanner",
+    "NOMBRE_BAC": "Nombre BAC",
+    "POIDS": "Poids",
+    "TABLE": "Table"
+  }
+}

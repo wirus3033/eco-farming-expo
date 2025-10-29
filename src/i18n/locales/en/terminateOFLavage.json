@@ -1,0 +1,15 @@
+{
+  "TERMINATE_OF_LAVAGE": {
+    "CONNECT_TO_CONTINUE": "Please connect to the internet to continue",
+    "COMPLETE_PREPROCESSING_OF": "Complete preprocessing of the OF",
+    "NEXT": "Next",
+    "COMPLETE_OF_PREPROCESSING_EXIT": "Do you want to complete the exit of the preprocessing OF ...",
+    "VALIDATE_AND_SAVE": "Validate and save",
+    "REGISTRATION_IN_PROGRESS": "Registration . . .",
+    "REGISTRATION_SUCCESSFUL": "Registration successful",
+    "RETURN_TO_HOME_PAGE": "Return to the home page",
+    "SELECT_OF": "Please select an OF",
+    "PLOT": "Plot :"
+
+  }
+}

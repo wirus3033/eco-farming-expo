@@ -1,0 +1,29 @@
+{
+  "SORTIE_EGRAINAGE": {
+    "TEXT_ERROR_1": "The production order is already selected, and the BAC has already been scanned.",
+    "TEXT_ERROR_2": "The BAC ${code} has already been dispatched for shelling.",
+    "TEXT_ERROR_3": "The BAC ${code} has already been assigned to a parcel.",
+    "TEXT_ERROR_4": "The BAC ${code} has already been assigned to a grade.",
+    "TEXT_ERROR_5": "The table ${code} does not exist.",
+    "TEXT_ERROR_6": "The table ${code} has no assigned farmer.",
+    "TEXT_ERROR_7": "Please check your internet connection.",
+    "TEXT_ERREUR_8": "The BAC and the ticket have already been scanned but have not been saved.",
+    "TEXT_ERREUR_9": "The BAC, the ticket, and the clean BAC have already been scanned but have not been saved.",
+    "TEXT_ERREUR_10": "The BAC, the ticket, the clean BAC, and the table have already been scanned but have not been saved.",
+    "TEXT_ERROR_11": "The BIN ${code} has not entered the decoring process.",
+    "TEXT_ERROR_12": "The BIN ${code} has already exited the decoring process.",
+    "TEXT_TITLE_SAVE": "Shelling Dispatch Recording",
+    "TEXT_TITLE": "Exit ",
+    "TEXT_SAVE": "Successfully Registered to Location",
+    "QUESTION": "Do you want to record the output for the BAC",
+    "TEXT_FIN_EGRAINAGE": "End of decoring exit",
+    "TEXT_SUB_TITLE_1": "Please scan the weighing ticket",
+    "TEXT_SUB_TITLE_2": "Please scan a clean BAC.",
+    "TEXT_SUB_TITLE_3": "Please scan the table",
+    "TEXT_EN_ATTENTE_1": "Waiting for a clean BAC to scan",
+    "TEXT_EN_ATTENTE_2": "Waiting for a TABLE to scan",
+    "NOMBRE_BAC": "Number of BACs",
+    "POIDS": "Weight",
+    "TABLE": "Table"
+  }
+}

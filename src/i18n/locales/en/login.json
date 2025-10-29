@@ -1,0 +1,23 @@
+{
+  "LOGING": {
+    "EMAIL_REQUIRED": "Please enter your email address",
+    "PASSWORD_REQUIRED": "Please enter your password",
+    "CONNECTION_ERROR": "An error occurred during login. Please try again",
+    "FIRST_USE_EMAIL": "Is this your first use? \n\nPlease enable your internet connection before launching the application.",
+    "CONNECTION_IN_PROGRESS": "Connecting",
+    "LOGIN": "Log in",
+    "PASSWORD": "Password",
+    "REMEMBER_ME": "Remember me",
+    "CONNECT": "Login",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "AUTHENTICATION": "Authentication",
+    "PLEASE_WAIT": "Wait, please!"
+  },
+  "FORGOT_PASSWORD": {
+    "TEXT_CONFIRM": "Please enter your email address associated with your account.",
+    "TEXT_SEND": "Send"
+  },
+  "SCREEN_ERROR": {
+    "TEXT_BTN": "Try again"
+  }
+}

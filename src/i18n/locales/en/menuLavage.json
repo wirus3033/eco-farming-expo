@@ -1,0 +1,9 @@
+{
+  "MENU_LAVAGE": {
+    "TITLE": "Washing",
+    "SUBTITLE": "Preprocessing, Washing, and Sorting",
+    "PICKING_PRE_TRAITEMENT": "Pre-treatment picking",
+    "ENREGISTRER_GRADE": "Register Grade",
+    "TERMINER_OF_PRE_TRAITEMENT": "Complete the pre-treatment OF"
+  }
+}

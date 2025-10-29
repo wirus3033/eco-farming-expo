@@ -1,0 +1,17 @@
+{
+  "MENU_EGRAINAGE": {
+    "TITLE_UP":"Decoring and packaging",
+    "TITLE": "Decoring",
+    "SUBTITLE": "Picking and sorting",
+    "PICKING_EGRAINAGE": "Decoring \npicking",
+    "SORTIE_EGRAINAGE": "Decoring exit",
+    "PICKING_PACKAGING": "Packaging picking",
+    "FIN_EGRAINAGE": "End \nof decoring",
+    "ITEM_BUTTTON": {
+      "TEXT_ERROR_1": "To use Decoring  Picking, \n\nplease activate your internet connection.",
+      "TEXT_ERROR_2": "No manufacturing order is available for the Decoring  entry.",
+      "TEXT_ERROR_3": "No completed manufacturing order for the Decoring  exit.",
+      "TEXT_ERROR_4": "No OF to process."
+    }
+  }
+}

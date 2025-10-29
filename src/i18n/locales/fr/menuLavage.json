@@ -1,0 +1,9 @@
+{
+    "MENU_LAVAGE": {
+        "TITLE": "Lavage",
+        "SUBTITLE": "Pretraitement, lavage et tri",
+        "PICKING_PRE_TRAITEMENT": "Picking prétraitement",
+        "ENREGISTRER_GRADE": "Enregistrer un grade",
+        "TERMINER_OF_PRE_TRAITEMENT": "Terminer l'OF prétraitement"
+    }
+}

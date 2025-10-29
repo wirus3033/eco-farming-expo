@@ -1,0 +1,23 @@
+{
+  "LOGING": {
+    "EMAIL_REQUIRED": "Veuillez saisir votre adresse e-mail",
+    "PASSWORD_REQUIRED": "Veuillez saisir votre mot de passe",
+    "CONNECTION_ERROR": "Une erreur s’est produite lors de la connexion. Veuillez réessayer",
+    "FIRST_USE_EMAIL": "C’est votre première utilisation ? \n\nVeuillez activer votre connexion internet avant le lancement de l’application.",
+    "CONNECTION_IN_PROGRESS": "Connexion en cours",
+    "LOGIN": "Se connecter",
+    "PASSWORD": "Mot de passe",
+    "REMEMBER_ME": "Se souvenir de moi",
+    "CONNECT": "Connexion",
+    "FORGOT_PASSWORD": "Mot de passe oublié ?",
+    "AUTHENTICATION": "Authentification",
+    "PLEASE_WAIT": "Veuillez patienter s'il vous plaît !"
+  },
+  "FORGOT_PASSWORD": {
+    "TEXT_CONFIRM": "Veuillez saisir votre adresse mail associé à votre compte.",
+    "TEXT_SEND": "Envoyer"
+  },
+  "SCREEN_ERROR": {
+    "TEXT_BTN": "Réessayer"
+  }
+}

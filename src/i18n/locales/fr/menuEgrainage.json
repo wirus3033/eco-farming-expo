@@ -1,0 +1,17 @@
+{
+  "MENU_EGRAINAGE": {
+    "TITLE_UP":"Decoring et packaging",
+    "TITLE": "Egrainage",
+    "SUBTITLE": "Cueillete et tri",
+    "PICKING_EGRAINAGE": "Picking \nEgrainage",
+    "SORTIE_EGRAINAGE": "Sortie égrainage",
+    "PICKING_PACKAGING": "Picking packaging",
+    "FIN_EGRAINAGE": "Fin \nd'égrainage",
+    "ITEM_BUTTTON": {
+      "TEXT_ERROR_1": "Pour utiliser le Picking d'égrainage \n\nVeuillez activer votre connexion internet",
+      "TEXT_ERROR_2": "Aucun ordre de fabrication n'est pas disponible pour l'entrée d'égrainage.",
+      "TEXT_ERROR_3": "Aucun ordre de fabrication terminé pour la sortie d'égrainage.",
+      "TEXT_ERROR_4": "Aucun OF à traiter"
+    }
+  }
+}

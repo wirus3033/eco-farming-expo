@@ -1,0 +1,18 @@
+{
+  "AFFECTATION_BAC_GRADE": {
+    "CHOOSE_GRADE": {
+      "TEXT_TITLE_BOLD": "BAC / Grade",
+      "TEXT_SUB_TITLE": "Please select the Grade",
+      "PLACEHOLDER": "Search for a grade"
+    },
+    "SCAN_BAC": {
+      "TEXT_ERROR_1": "Some BACS are already scanned to be assigned to the Grade ${value}.",
+      "TEXT_ERROR_2": "The data will not be saved. Are you sure you want to abandon the current process?",
+      "TEXT_ERROR_3": "The BAC ${value_1} is already assigned to the parcel ${value_2}.",
+      "TEXT_ERROR_4": "The BAC ${value_1} is already assigned to the farmer ${value_2}.",
+      "TEXT_ERROR_5": "The BAC ${value_1} is already associated with the grade ${value_2}.",
+      "TEXT_ERROR_6": "Your assignment was not completed, please try again.",
+      "TEXT_GRADE": "Grade"
+    }
+  }
+}

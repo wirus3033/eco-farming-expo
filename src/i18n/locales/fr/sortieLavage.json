@@ -1,0 +1,66 @@
+{
+  "SORTIE_LAVAGE": {
+    "CONFIRM_ABORT_OPERATION": "Voulez-vous vraiment abandonner l'opération ?",
+    "SCAN_BAC": {
+      "SCAN_A_BAC": "Veuillez scanner un BAC",
+      "INFO": {
+        "BAC": "BAC",
+        "GRADE": "Grade",
+        "OF": "OF",
+        "LOCATION": "Emplacement"
+      },
+      "BAC_RECORDING": "Enregistrement BAC",
+      "BAC_ALREADY_SCANNED": "Le BAC {{code}} a été déjà scanné.",
+      "BAC_ALREADY_HAS_LOCATION": "Le BAC {{code}} a déjà une location !",
+      "BAC_ALREADY_ASSIGNED_TO_PARCEL": "Le BAC {{code}} est déjà affecté à une parcelle !",
+      "BAC_NOT_GRADED_YET": "Le BAC {{code}} n'a pas encore été gradé.",
+      "BAC_ALREADY_SCANNED_SIMPLE": "Le BAC {{code}} est déjà scanné !",
+      "BAC_DOES_NOT_EXIST": "Le BAC {{code}} n'existe pas !",
+      "OFFLINE_MESSAGE": "Vous êtes hors ligne, Veuillez vous connecter à internet.",
+      "SAVE_GRADE": "Enregistrer Grade",
+      "WAITING_FOR_BAC_SCAN": "En attente du Bac à scanner",
+      "VERIFYING_BAC": "Vérification du BAC . . .",
+      "CONFIRM_EXIT": "Voulez-vous effectuer la sortie de ",
+      "EXIT_FINISHED": "Fin de calibrage",
+      "RECORDING": "Enregistrement . . .",
+      "BAC_SAVE_PART1": "Enregistrement effectué avec succès du BAC",
+      "BAC_SAVE_PART2": "vers l'emplacement",
+      "FIN_SORTIE": "Fin de calibrage ",
+      "SORTIE_LAVAGE": "Sortie Lavage",
+      "SCANNER_AUTRES_BAC": "Scanner d'autres BAC",
+      "RETOUR_PAGE_ACCUEIL": "Retour à la page d'acceuil",
+      "LOCATION":"Emplacement"
+
+    },
+    "SCAN_TICKET": {
+      "RESUME": {
+        "TICKET_SCANNED": "Ticket scanné",
+        "SN_BALANCE": "SN balance : ",
+        "DATE_HOUR": "Date et heure : ",
+        "WEIGHT": "Poids : ",
+        "DATE_AT": "à"
+      },
+      "INFO": {
+        "BAC": "BAC",
+        "GRADE": "Grade",
+        "OF": "OF",
+        "WEIGHT": "Poids"
+      },
+      "TICKET_FORMAT_INVALID": "Le format du ticket est incorrect!",
+      "OFFLINE_ERROR": "Vous êtes hors ligne, Veuillez vous connecter à internet",
+      "REGISTER_GRADE": "Enregistrer Grade",
+      "SCAN_WEIGHT_TICKET": "Veuillez scanner le ticket de pesée",
+      "GRADE_OUT_OF_CALIBER": "Grade Hors Calibre",
+      "WAITING_FOR_TICKET": "En attente du ticket à scanner",
+      "TICKET_VERIFICATION": "Vérification du ticket . . .",
+      "REGISTER_BAC": "Voulez-vous enregistrer le BAC ",
+      "END_CALIBRATION_EXIT": "Fin de calibrage",
+      "RECORDING": "Enregistrement ....",
+      "SUCCESSFUL_RECORDING": "Enregistrement effectué avec succès du BAC ",
+      "TO_LOCATION": "vers l'emplacement ",
+      "WASH_EXIT": "Sortie Lavage",
+      "SCAN_OTHER_BACS": "Scanner d'autres BAC",
+      "RETURN_TO_HOME_PAGE": "Retour à la page d'accueil"
+    }
+  }
+}

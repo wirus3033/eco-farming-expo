@@ -1,0 +1,18 @@
+{
+  "AFFECTATION_PAYSAN_TABLE": {
+    "SCAN_TABLE": {
+      "TEXT_SUB_TITLE": "Paysan / Table",
+      "TEXT_ERROR_1": "La Table ${code} n'existe pas.",
+      "TEXT_ERROR_2": "Le Paysan ${badge} n'existe pas.",
+      "TEXT_ERROR_3": "Le Paysan ${value} a déjà été scanné.",
+      "TEXT_ERROR_4": "Le Paysan ${value_1} est déjà affecté à la parcelle ${value_2}.",
+      "TEXT_ERROR_5": "Le Paysan ${value_1} est déjà affecté au BAC ${value_2}.",
+      "TEXT_ERROR_6": "Des badges sont déjà été scannés pour être affectés à la table ${value}",
+      "TEXT_ERREUR_7": "Ces données ne seront pas sauvegardées. Êtes-vous sûr de vouloir abandonner l’opération en cours ?",
+      "TEXT_ERROR_8": "Le Paysan ${value_1} est déjà affecté à la table ${value_2}.",
+      "TEXT_EN_ATTENTE": "En attente de Paysan à scanner",
+      "TEXT_SUB_TITLE_2": "Veuillez scanner le Paysan",
+      "TABLE": "Table"
+    }
+  }
+}

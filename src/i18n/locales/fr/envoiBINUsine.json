@@ -1,0 +1,15 @@
+{
+  "ENVOI_BIN_USINE": {
+    "TEXT_ERREUR_1": "Le BIN ${code} scanné est déjà plein et en route vers l’usine.",
+    "TEXT_ERREUR_2": "Le BIN ${code} scanné est déjà à l’usine.",
+    "TEXT_ERREUR_3": "Le BIN  ${code} scanné est introuvable.",
+    "TEXT_ERREUR_4": "Pour mettre en mouvement le BIN. \nveuillez activer votre connexion internet.",
+    "TEXT_ERREUR_5": "Le BIN est déjà scanné. Ces données ne seront pas sauvegardées.",
+    "TEXT_ERREUR_6": "Êtes vous sûr de vouloir abandonner l’opération en cours ?",
+    "TEXT_ERREUR_7": "Le BIN ${code} scanné n'est pas affecté à une parcelle.",
+    "TEXT_TITLE": "Envoyer BIN à l'usine",
+    "TEXT_SUB_TITLE": "Veuillez scanner un BIN",
+    "QUESTION": "Voulez-vous mettre en mouvement le BIN",
+    "TEXT_SAVE": "Valider et Enregistrer"
+  }
+}

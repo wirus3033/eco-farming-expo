@@ -1,0 +1,21 @@
+{
+    "SYNCHRONIZATION": {
+        "TITLE": "Synchronization of stored data",
+        "NO_DATA_TO_SYNC": "No data to synchronize",
+        "SYNC_IN_PROGRESS": "Synchronization in progress...",
+        "SYNC_SUCCESS": "Recording successful!",
+        "SYNC_ERROR": "Synchronization errors",
+        "SEE_ERRORS": "View errors",
+        "QUIT": "Quit",
+        "SYNC": "Synchronize",
+        "ERROR_DURING_SYNC": "Error during the synchronization phase, please try again!",
+        "OFFLINE": "You are offline, please connect to the internet",
+        "SYNC_ERROR_DETAILS": {
+            "TITLE": "Error summary",
+            "EMPTY_LIST": "Empty list",
+            "DELETE_CONFIRMATION": "Do you really want to delete the weighing {weighing_code}?",
+            "DELETE_TITLE": "Data deletion",
+            "DELETE_BUTTON": "Delete"
+          }
+      }
+}

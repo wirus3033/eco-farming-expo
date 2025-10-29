@@ -1,0 +1,17 @@
+{
+  "SETTING": {
+    "SOUND_TITLE": "Sound",
+    "SOUND_SUBTITLE": "You can turn sound notifications on or off",
+    "VIBRATION_TITLE": "Vibration",
+    "VIBRATION_SUBTITLE": "You can turn vibration on or off",
+    "SCAN_MODE_TITLE": "Scan mode",
+    "SCAN_MODE_CAMERA": "Camera",
+    "SCAN_MODE_SCANNER": "Scanner",
+    "LANGUAGE_TITLE": "Languages",
+    "LANGUAGE_FRENCH": "French",
+    "LANGUAGE_ENGLISH": "English",
+    "USE_MODE_TITLE": "Usage mode",
+    "USE_MODE_ONLINE": "Online",
+    "USE_MODE_OFFLINE": "Offline"
+  }
+}

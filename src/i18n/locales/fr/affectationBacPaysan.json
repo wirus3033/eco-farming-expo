@@ -1,0 +1,62 @@
+{
+  "AFFECTAION_BAC_PAYSAN": {
+    "BAC_ALREADY_SCANNED": "Le BAC {{libelle}} a déjà été scanné.",
+    "BAC_ALREADY_ASSIGNED_TO_PEASANT": "Le BAC {{libelle}} est déjà affecté au paysan {{nom}} {{prenom}}.",
+    "PROCESS_ABORT_CONFIRMATION": "Êtes-vous sûr de vouloir abandonner le process en cours ?",
+    "RETURN_TO_MAIN": "Retour à l'écran principal",
+    "PROCESS_STOPPED": "Le process a été arrêté.",
+    "NAVIGATION_ERROR": "Une erreur est survenue lors de la navigation.",
+
+    "SCAN_BAC": {
+      "TITLE": "Affectation",
+      "SUBTITLE": "Veuillez scanner le BAC",
+      "SUBTITLE_PAYSAN": "Veuillez scanner le badge du paysan",
+      "SCAN_BAC_WAITING_TEXT": "En attente du BAC à scanner",
+      "RESUME": {
+        "CODE_BAC": "Code BAC : ",
+        "LIBELLE": "Libellé : ",
+        "BAC_SCANNED": "BAC scanné"
+      },
+      "ERROR": {
+        "BAC_NOT_EXIST": "Le BAC {crate} n'existe pas !",
+        "CRATE_ALREADY_ASSIGNED": "Le bac {crate} a été déjà affecté au paysan {peasantName}",
+        "SET_ERROR_MAIN_MESSAGE_1": "Le BAC {{libelle}} a déjà été scanné.",
+        "SET_ERROR_MAIN_MESSAGE_2": "Êtes-vous sûr de vouloir abandonner le process en cours ?",
+        "BAC_ALREADY_SCANNED": "Le BAC {{libelle}} a déjà été scanné.",
+        "PROCESS_ABORT_CONFIRMATION": "Êtes-vous sûr de vouloir abandonner le process en cours ?"
+      },
+      "VERIFICATION_DU_BAC": "Vérification du BAC {stepVerificationData} . . .",
+      "VEUILLEZ_PATIENTER": "Veuillez patienter . . .",
+      "TOAST_TITLE": "Erreur"
+    },
+    "SCAN_PAYSAN": {
+      "DESCRIPTION_SCAN_FARMER_BADGE": "Veuillez scanner le badge du paysan",
+      "DESCRIPTION_WAITING_FOR_BADGE_SCAN": "En attente du Badge à scanner",
+      "DESCRIPTION_VERIFICATION": "Vérification ...",
+      "DESCRIPTION_RECORDING": "Enregistrement ...",
+      "DESCRIPTION_RECORDING_SUCCESS": "Enregistrement effectué avec succès",
+      "DESCRIPTION_OFFLINE_MODE": "Vous êtes en Mode Offline.\nVeuillez vous connecter à internet et synchroniser.",
+      "DESCRIPTION_BAC_ASSIGNMENT_CONFIRMATION": "Voulez-vous attribuer le BAC {bacLabel} au paysan {farmerName} ?",
+      "DESCRIPTION_BAC_ASSIGNMENT_PREFIX": "Voulez-vous attribuer le BAC",
+      "DESCRIPTION_FARMER_PREFIX": "au paysan",
+      "DESCRIPTION_ASSIGN": "Attribuer",
+      "DESCRIPTION_NEW_ASSIGNMENT": "Nouveau attribution",
+      "DESCRIPTION_BACK_TO_HOME": "Retour à la page d'accueil",
+
+      "ERROR": {
+        "PEASANT_NOT_ASSIGNED": "Le paysan {{nom}} {{prenom}} n’est affecté à aucune parcelle.",
+        "ERROR_FARMER_ASSOCIATED_WITH_BAC": "Le paysan {{farmerName}} {{farmerSurname}} est déjà associé au BAC {{bacLabel}}.",
+        "ERROR_PARCEL_NOT_FOUND": "La parcelle associée à ce paysan n’existe pas.",
+        "ERROR_FARMER_NOT_FOUND_BY_BADGE": "Le paysan associé au badge {{badge}} est introuvable.",
+        "ERROR_OFFLINE": "Vous êtes hors ligne, veuillez vous connecter à internet."
+      },
+      "RESUME": {
+        "NAME": "Nom : ",
+        "SURNAME": "Prénom : ",
+        "BADGE": "Badge paysan : ",
+        "MODAL_TITLE": "Paysan scanné",
+        "TYPE": "paysan"
+      }
+    }
+  }
+}

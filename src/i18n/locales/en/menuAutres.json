@@ -1,0 +1,8 @@
+{
+  "MENU_AUTRES": {
+    "BAC_PAYSAN": "BAC / Peasant Assignment",
+    "BAC_GRADE": "BAC / Grade Assignment",
+    "PAYSAN_TABLE": "Peasant / Table Assignment",
+    "ERROR_1": "Data retrieval in progress ..."
+  }
+}

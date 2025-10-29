@@ -1,0 +1,14 @@
+{
+  "MENU_RECOLTE": {
+    "TITLE": "Récolte",
+    "SUBTITLE": "Pesées des fruits",
+    "AFFECTATION_BIN_PARCELLE": "Affectation \nBIN / Parcelle",
+    "PESEE_RECOLTE": "Pesées récolte",
+    "RECEPTION_USINE": "Réception usine",
+    "ENVOI_BIN_USINE": "Envoyer \nBIN à l’usine",
+    "TEXT_ERROR_1": "Récupération des données pour l'enregistrement des pesées en cours... ",
+    "TEXT_ERROR_2": "Récupération des données pour l'affectation BIN/Parcelle en cours...",
+    "TEXT_ERROR_3": "Récupération des données pour la réception en stock en cours...",
+    "TEXT_ERROR_4": "Récupération des données pour l'envoi du BIN à l'usine en cours..."
+  }
+}

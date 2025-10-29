@@ -1,0 +1,29 @@
+{
+  "PICKING_EGRAINAGE": {
+    "TEXT_TITLE_BOLD": "Decoring",
+    "TEXT_SUB_TITLE": "Please select an OF",
+    "PLACEHOLDER_SEARCH": "Search for an OF",
+    "TEXT_BTN_NEXT": "Next",
+    "TEXT_ERREUR_1": "The production order is already chosen, and the BAC is already scanned.",
+    "TEXT_ERREUR_2": "The production order has already been chosen.",
+    "TEXT_ERREUR_3": "Do you really want to abandon the decoring entry?",
+    "TEXT_ERREUR_4": "The BAC ${code} does not exist.",
+    "TEXT_ERREUR_5": "The BAC ${code} does not exist in OF ${of}.",
+    "TEXT_ERREUR_6": "Please check your internet connection.",
+    "TEXT_ERREUR_7": "The BAC ${code} is already picked.",
+    "TEXT_TITLE_SAVE": "Picking for decoring",
+    "TEXT_SUB_TITLE_SCAN_BAC": "Please scan a BAC associated with the OF",
+    "QUESTION": "Do you want to save the BAC ${value_1} ?",
+    "TEXT_BTN_SAVE": "Save",
+    "TEXT_BTN_SCANNE_BAC": "Scanning other BACs",
+    "FIN_EGRAINAGE": {
+      "TEXT_ERROR_1": "The manufacturing order has already been selected. This data will not be saved.",
+      "TEXT_ERROR_2": "Are you sure you want to abandon the current operation?",
+      "TEXT_ERROR_3": "To complete the Decoring  OF exit, activate your internet connection.",
+      "TEXT_TITLE": "Complete an exit",
+      "TEXT_SUB_TITLE": "for Decoring ",
+      "TEXT_TITLE_SAVE": "Saving the completion of the Decoring  exit",
+      "QUESTION": "Do you want to complete the Decoring  exit for OF"
+    }
+  }
+}

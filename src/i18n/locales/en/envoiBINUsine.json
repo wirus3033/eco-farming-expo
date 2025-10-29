@@ -1,0 +1,15 @@
+{
+  "ENVOI_BIN_USINE": {
+    "TEXT_ERREUR_1": "The scanned BIN ${code} is already full and on its way to the factory.",
+    "TEXT_ERREUR_2": "The scanned BIN ${code} is already at the factory.",
+    "TEXT_ERREUR_3": "The scanned BIN ${code} cannot be found.",
+    "TEXT_ERREUR_4": "To move the BIN, please activate your internet connection.",
+    "TEXT_ERREUR_5": "The BIN is already scanned. This data will not be saved.",
+    "TEXT_ERREUR_6": "Are you sure you want to abandon the current operation?",
+    "TEXT_ERREUR_7": "The scanned BIN ${code} is not assigned to a parcel.",
+    "TEXT_TITLE": "Send BIN to Factory",
+    "TEXT_SUB_TITLE": "Please scan a BIN",
+    "QUESTION": "Do you want to move the BIN?",
+    "TEXT_SAVE": "Validate and Save"
+  }
+}

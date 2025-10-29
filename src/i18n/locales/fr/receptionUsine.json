@@ -1,0 +1,82 @@
+{
+  "RECEPTION_USINE": {
+    "MAIN": {
+      "BIN_SCANNED": "Le BIN {{BN_Libelle}} a déjà été scanné.",
+      "CONFIRM_ABORT": "Êtes-vous sûr de vouloir abandonner l’opération ?",
+      "SELECTED_BIN": "Vous avez déjà sélectionné le BIN {{BN_Libelle}}.",
+      "SCANNED_TICKET": "Vous avez déjà scanné le ticket {{codeTicket}} associé au BIN {{BN_Libelle}}.",
+      "PROCESS_LAUNCHED": "Processus lancé : {{isInProgress}}"
+    },
+    "SCAN_BIN": {
+      "BIN_NOT_ASSIGNED": "Le Bin {{BN_Libelle}} n'est affecté à aucune parcelle.",
+      "BIN_NOT_EXIST": "Le Bin {{BN_Libelle}} n'existe pas.",
+      "NO_BIN_FOR_PARCEL": "Aucun BIN lié à la parcelle {{PL_Nom}} à traiter.",
+      "NO_BIN_AVAILABLE": "Aucun BIN n'est disponible.",
+      "FIRST_TITLE": "Réception",
+      "SECOND_TITLE": "usine",
+      "SCAN_BIN_SUBTITLE": "Veuillez scanner le BIN",
+      "WAITING_FOR_BIN": "En attente du BIN à scanner",
+      "BIN_VERIFICATION": "Vérification du BIN {{stepVerificationData}}"
+    },
+    "BIN_LISTE": {
+      "RESUME": {
+        "SELECTED_BIN": "Bin sélectionné",
+        "BIN_CODE": "Code BIN : ",
+        "LABEL": "Libellé : "
+      },
+      "BIN_EMPTY_NO_MORE_TO_SELECT": "Le BIN {{BN_Libelle}} est encore vide et il n'y a plus de BIN à sélectionner pour la parcelle {{parcelName}}.",
+      "BIN_EMPTY": "Le BIN {{BN_Libelle}} est encore vide.",
+      "BIN_ALREADY_STORED_NO_MORE_TO_SELECT": "Le BIN {{BN_Libelle}} a déjà été stocké et il n'y a plus de BIN à sélectionner pour la parcelle {{parcelName}}.",
+      "BIN_ALREADY_STORED": "Le {{BN_Libelle}} a déjà été stocké.",
+      "BIN_IN_PARCEL_NO_MORE_TO_SELECT": "Le BIN {{BN_Libelle}} est toujours dans la parcelle et il n'y a plus de BIN à sélectionner pour {{parcelName}}.",
+      "BIN_IN_PARCEL": "Le BIN {{BN_Libelle}} est toujours dans la parcelle.",
+      "PLEASE_CHOOSE_BIN_FOR_PARCEL_A": "Liste des BINs liés à la parcelle  ",
+      "VERIFICATION_OF_BIN_001": "Vérification du BIN ",
+      "PLEASE_WAIT": "Veuillez patienter . . .",
+      "SELECT": "Suivant"
+    },
+    "SCAN_TICKET": {
+      "PLEASE_SCAN_TICKET": "Veuillez scanner le ticket",
+      "INFO": {
+        "DATE": "Date",
+        "TIME": "Heure",
+        "SN_BALANCE": "SN Balance",
+        "TICKET_NUMBER": "N° Ticket",
+        "WEIGHT": "Poids"
+      },
+
+      "RESUME": {
+        "TICKET": "Ticket",
+        "TICKET_SCANNED": "Ticket scanné",
+        "SN_BALANCE": "SN balance",
+        "DATE_AND_TIME": "Date et heure",
+        "AT": "à",
+        "WEIGHT": "Poids"
+      },
+      "INVALID_TICKET": "Ticket invalide.",
+      "BIN_HARVEST_RECORD": "Enregistrement de la récolte du Bin {{BN_Libelle}} est effectué avec ",
+      "SUCCESS": "succès !",
+      "OFFLINE_ERROR": "Vous êtes hors ligne, Veuillez vous connecter à internet",
+      "AWAITING_TICKET_SCAN": "En attente du ticket à scanner",
+      "VERIFICATION_IN_PROGRESS": "Vérification . . .",
+      "RECORDING_IN_PROGRESS": "Enregistrement . . .",
+      "SAVE_BIN_STOCK_RECEIPT_NO_PARAM": "Voulez-vous enregistrer la réception en stock pour le BIN ",
+      "SUCCESSFUL_RECORD_TO_PLACE": "Enregistrement effectué avec succès vers l'emplacement ",
+      "OFFLINE_MODE_SYNC_REQUIRED": "Vous êtes en Mode Offline.\nVeuillez vous connecter à internet et synchroniser.",
+      "START_NEW_RECEPTION": "Faire une nouvelle réception",
+      "RESTART": "Recommencer",
+      "BACK_TO_HOME_PAGE": "Retour à la page d'accueil",
+      "VALIDATE_AND_SAVE": "Valider et Enregistrer",
+      "CROP_REGISTRATION": "Enregistrement de la récolte du Bin {{BN_Libelle}} est effectué avec",
+      "TICKET_ALREADY_ENTERED": "Le ticket {{codeTicket}} a déjà été saisi"
+    },
+    "SCAN_BIN_ITEM": {
+      "BIN_DOES_NOT_BELONG_TO_PARCEL": "Ce BIN {{BIN}} n'appartient pas à la parcelle {{PAC}}",
+      "BIN_NOT_ASSIGNED_TO_PARCEL": "Ce BIN n'est pas encore affecté à une parcelle",
+      "BIN_ALREADY_SCANNED": "Ce BIN a été déjà scanné",
+      "BIN_IN_PARCEL": "Ce BIN est encore au parcelle",
+      "BIN_STATUS_OK": "",
+      "SCAN_BIN_PARCEL": "Veuillez scanner un bin de la parcelle {{A}}"
+    }
+  }
+}

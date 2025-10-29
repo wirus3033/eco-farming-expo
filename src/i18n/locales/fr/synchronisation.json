@@ -1,0 +1,21 @@
+{
+    "SYNCHRONIZATION": {
+        "TITLE": "Synchronisation des données stockées",
+        "NO_DATA_TO_SYNC": "Aucunes données à synchroniser",
+        "SYNC_IN_PROGRESS": "Synchronisation en cours...",
+        "SYNC_SUCCESS": "Enregistrement réussi !",
+        "SYNC_ERROR": "Erreurs de synchronisation",
+        "SEE_ERRORS": "Voir les erreurs",
+        "QUIT": "Quitter",
+        "SYNC": "Synchroniser",
+        "ERROR_DURING_SYNC": "Erreur pendant la phase de synchronisation, veuillez réessayer !",
+        "OFFLINE": "Vous êtes hors connexion, veuillez vous connecter sur internet",
+        "SYNC_ERROR_DETAILS": {
+            "TITLE": "Récapitulation des erreurs",
+            "EMPTY_LIST": "Liste vide",
+            "DELETE_CONFIRMATION": "Voulez-vous vraiment supprimer la pesée {weighing_code} ?",
+            "DELETE_TITLE": "Suppression des données",
+            "DELETE_BUTTON": "Supprimer"
+          }
+      }
+}

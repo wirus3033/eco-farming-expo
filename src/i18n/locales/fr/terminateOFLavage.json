@@ -1,0 +1,15 @@
+{
+  "TERMINATE_OF_LAVAGE": {
+    "CONNECT_TO_CONTINUE": "Veuillez vous connecter sur internet pour continuer",
+    "COMPLETE_PREPROCESSING_OF": "Terminer l'OF prétraitement",
+    "NEXT": "Suivant",
+    "COMPLETE_OF_PREPROCESSING_EXIT": "Voulez-vous terminer la sortie de l'OF prétraitement ...",
+    "VALIDATE_AND_SAVE": "Valider et enregistrer",
+    "REGISTRATION_IN_PROGRESS": "Enregistrement . . .",
+    "REGISTRATION_SUCCESSFUL": "Enregistrement effectué avec succès",
+    "RETURN_TO_HOME_PAGE": "Retour à la page d'accueil",
+    "SELECT_OF": "Veuillez sélectionner un OF",
+    "PLOT": "Parcelle :"
+
+  }
+}

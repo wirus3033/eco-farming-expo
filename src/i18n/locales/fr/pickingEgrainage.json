@@ -1,0 +1,29 @@
+{
+  "PICKING_EGRAINAGE": {
+    "TEXT_TITLE_BOLD": "Égrainage",
+    "TEXT_SUB_TITLE": "Veuillez sélectionner un OF",
+    "PLACEHOLDER_SEARCH": "Rechercher un OF",
+    "TEXT_BTN_NEXT": "Suivant",
+    "TEXT_ERREUR_1": "L'ordre de fabrication est déjà choisi, et le BAC est déjà scanné.",
+    "TEXT_ERREUR_2": "L'ordre de fabrication est déjà choisi.",
+    "TEXT_ERREUR_3": "Voulez-vous vraiment abandonner l'entrée d'égrainage ?",
+    "TEXT_ERREUR_4": "Le BAC ${code} n'existe pas.",
+    "TEXT_ERREUR_5": "Le BAC ${code} n'existe pas dans l'OF ${of}.",
+    "TEXT_ERREUR_6": "Veuillez vérifier votre connexion internet.",
+    "TEXT_ERREUR_7": "Le BAC ${code} est déjà entré en égrainage.",
+    "TEXT_TITLE_SAVE": "Picking pour l'égrainage",
+    "TEXT_SUB_TITLE_SCAN_BAC": "Veuillez scanner un BAC associé à l'OF",
+    "QUESTION": "Voulez-vous enregistrer le  BAC ${value_1} ?",
+    "TEXT_BTN_SAVE": "Enregistrer",
+    "TEXT_BTN_SCANNE_BAC": "Scanner d'autres BAC",
+    "FIN_EGRAINAGE": {
+      "TEXT_ERROR_1": "L'ordre de fabrication est déjà choisi. Ces données ne seront pas sauvegardées.",
+      "TEXT_ERROR_2": "Êtes-vous sûr de vouloir abandonner l’opération en cours ?",
+      "TEXT_ERROR_3": "Pour terminer la sortie OF d’égrainage, activez votre connexion internet.",
+      "TEXT_TITLE": "Terminer une sortie ",
+      "TEXT_SUB_TITLE": "d'Égrainage",
+      "TEXT_TITLE_SAVE": "Enregistrement de la fin de la sortie d'égrainage",
+      "QUESTION": "Voulez-vous terminer la sortie d'égrainage de l'OF"
+    }
+  }
+}

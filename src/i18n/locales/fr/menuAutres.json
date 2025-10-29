@@ -1,0 +1,8 @@
+{
+  "MENU_AUTRES": {
+    "BAC_PAYSAN": "Affectation BAC / Paysan",
+    "BAC_GRADE": "Affectation BAC / Grade",
+    "PAYSAN_TABLE": "Affectation paysan / Table",
+    "ERROR_1": "Recuperation des données en cours ..."
+  }
+}

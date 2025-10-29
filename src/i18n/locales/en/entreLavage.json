@@ -1,0 +1,60 @@
+{
+  "ENTRE_LAVAGE": {
+    "PRETREATMENT_AND_WASH": "Pretreatment and Wash",
+    "ITEM_BUTTON": {
+      "WASHING_IN_PROGRESS": "Washing is in progress",
+      "OF_NOT_PROCESSED": "No BIN has been picked yet.",
+      "NO_OF_TO_PROCESS": "No OF to process",
+      "ALL_BINS_IN_WASHING": "All bins for the current OF are already in washing",
+      "CONNECT_TO_INTERNET_TO_CONTINUE": "Please connect to the internet to continue",
+      "CONFIRM_ABORT_OPERATION": "Do you really want to abort the operation?"
+    },
+    "LISTE_OF": {
+      "RESUME": {
+        "SELECTED_OF": "Selected OF",
+        "OF_CODE": "OF Code : ",
+        "OF_LABEL": "Label : "
+      },
+      "WAIT_FOR_OF_COMPLETION": "Please wait for the current OF {{activeOf}} to complete before starting the new OF {{newOf}}.",
+      "PLEASE_SELECT_AN_OF": "Please select an OF",
+      "OF_VERIFICATION": "Verification of OF ",
+      "NEXT": "Next",
+      "PARCEL": "Parcel : ",
+      "LOCATION": "Location : "
+    },
+    "SCAN_BIN": {
+      "SCAN_BIN_ASSOCIATED_WITH_OF": "Please scan a BIN associated with the OF",
+      "INFO": {
+        "DETAIL_BIN": "BIN",
+        "DETAIL_CODE_BIN": "BIN Code",
+        "DETAIL_EMP_INIT": "Initial EMP",
+        "DETAIL_EMP_DEST": "Dest EMP"
+      },
+      "RESUME": {
+        "MODAL_TITLE_BIN_SELECTED": "Bin selected",
+        "DETAIL_CODE_BIN": "BIN Code: ",
+        "DETAIL_LIBELLE": "Label: "
+      },
+      "ERROR_BIN_NOT_PART_OF_OF": "The bin {{data}} does not belong to the selected OF.",
+      "ERROR_BIN_DOES_NOT_EXIST": "The Bin {{data}} does not exist!",
+      "MESSAGE_BIN_ALREADY_PICKED": "The BIN {{codeBin}} is already picked",
+      "MESSAGE_BIN_ALREADY_PROCESSED": "The bin {{codeBin}} has already been processed",
+      "MESSAGE_BIN_NOT_READY_FOR_PROCESSING": "The bin {{codeBin}} is not yet ready for pretreatment or washing.",
+      "ERROR_OFFLINE": "You are offline, please connect to the internet",
+      "DESCRIPTION_SCAN_BIN_OF": "Please scan a BIN associated with the OF",
+      "ERROR_BIN_NOT_FOUND": "Bin not found.",
+      "TITLE_PICKING_PRETREATMENT": "Picking Pretreatment",
+      "MESSAGE_WAIT_FOR_BIN_SCAN": "Waiting for the Bin to scan . . .",
+      "MESSAGE_VERIFYING_BIN": "Verifying the Bin . . .",
+      "CONFIRM_TREAT_PICKING_PRETREATMENT": "Do you want to process the picking pretreatment for the BIN",
+      "MESSAGE_SAVING": "Saving . . .",
+      "MESSAGE_SAVED_SUCCESS": "Saved successfully!",
+      "TITLE_NEW_PICKING_PRETREATMENT": "New Picking Pretreatment",
+      "ACTION_RETURN_HOME": "Return to the homepage",
+      "TITLE_WASH_ENTRY": "Wash Entry",
+      "PICKING_FINISHED":"Pre-treatment picking of OF {{OF}} completed",
+      "LOCATION":"Location  "
+
+    }
+  }
+}

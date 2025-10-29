@@ -1,0 +1,17 @@
+{
+    "SETTING": {
+        "SOUND_TITLE": "Son",
+        "SOUND_SUBTITLE": "Vous pouvez activer ou désactiver les notifications sonores",
+        "VIBRATION_TITLE": "Vibration",
+        "VIBRATION_SUBTITLE": "Vous pouvez activer ou désactiver les vibrations",
+        "SCAN_MODE_TITLE": "Mode de scan",
+        "SCAN_MODE_CAMERA": "Caméra",
+        "SCAN_MODE_SCANNER": "Scanner",
+        "LANGUAGE_TITLE": "Langues",
+        "LANGUAGE_FRENCH": "Français",
+        "LANGUAGE_ENGLISH": "Anglais",
+        "USE_MODE_TITLE": "Mode d'utilisation",
+        "USE_MODE_ONLINE": "En ligne",
+        "USE_MODE_OFFLINE": "Hors ligne"
+    }
+}

@@ -1,0 +1,66 @@
+{
+  "SORTIE_LAVAGE": {
+    "CONFIRM_ABORT_OPERATION": "Do you really want to abort the operation?",
+    "SCAN_BAC": {
+      "SCAN_A_BAC": "Please scan a BAC",
+      "INFO": {
+        "BAC": "Crate",
+        "GRADE": "Grade",
+        "OF": "Work Order",
+        "LOCATION": "Location"
+      },
+
+      "BAC_RECORDING": "BAC Recording",
+      "BAC_ALREADY_SCANNED": "The BAC {{code}} has already been scanned.",
+      "BAC_ALREADY_HAS_LOCATION": "The BAC {{code}} already has a location!",
+      "BAC_ALREADY_ASSIGNED_TO_PARCEL": "The BAC {{code}} is already assigned to a parcel!",
+      "BAC_NOT_GRADED_YET": "The BAC {{code}} has not been graded yet.",
+      "BAC_ALREADY_SCANNED_SIMPLE": "The BAC {{code}} is already scanned!",
+      "BAC_DOES_NOT_EXIST": "The BAC {{code}} does not exist!",
+      "OFFLINE_MESSAGE": "You are offline, please connect to the internet.",
+      "SAVE_GRADE": "Save Grade",
+      "WAITING_FOR_BAC_SCAN": "Waiting for BAC scan",
+      "VERIFYING_BAC": "Verifying BAC . . .",
+      "CONFIRM_EXIT": "Do you want to proceed with the exit of ",
+      "EXIT_FINISHED": "End of calibration",
+      "RECORDING": "Recording . . .",
+      "BAC_SAVE_PART1": "Successfully saved BAC",
+      "BAC_SAVE_PART2": "to location",
+      "FIN_SORTIE": "End of calibration ",
+      "SORTIE_LAVAGE": "Washing exit",
+      "SCANNER_AUTRES_BAC": "Scan other BACs",
+      "RETOUR_PAGE_ACCUEIL": "Return to homepage",
+      "LOCATION":"Location"
+    },
+    "SCAN_TICKET": {
+      "RESUME": {
+        "TICKET_SCANNED": "Scanned Ticket",
+        "SN_BALANCE": "SN balance: ",
+        "DATE_HOUR": "Date and time: ",
+        "WEIGHT": "Weight: ",
+        "DATE_AT": "at "
+      },
+      "INFO": {
+        "BAC": "BAC",
+        "GRADE": "Grade",
+        "OF": "OF",
+        "WEIGHT": "Weight"
+      },
+      "TICKET_FORMAT_INVALID": "The ticket format is incorrect!",
+      "OFFLINE_ERROR": "You are offline, Please connect to the internet",
+      "REGISTER_GRADE": "Register Grade",
+      "SCAN_WEIGHT_TICKET": "Please scan the weighing ticket",
+      "GRADE_OUT_OF_CALIBER": "Grade Out of Caliber",
+      "WAITING_FOR_TICKET": "Waiting for the ticket to scan",
+      "TICKET_VERIFICATION": "Ticket verification . . .",
+      "REGISTER_BAC": "Do you want to register the BAC",
+      "END_CALIBRATION_EXIT": "End of calibration",
+      "RECORDING": "Recording ....",
+      "SUCCESSFUL_RECORDING": "Successful recording of the BAC ",
+      "TO_LOCATION": "to the location ",
+      "WASH_EXIT": "Wash exit",
+      "SCAN_OTHER_BACS": "Scan other BACs",
+      "RETURN_TO_HOME_PAGE": "Return to the homepage"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "AFFECTAION_BAC_PAYSAN": {
+    "BAC_ALREADY_SCANNED": "The BAC {{libelle}} has already been scanned.",
+    "BAC_ALREADY_ASSIGNED_TO_PEASANT": "The BAC {{libelle}} is already assigned to the peasant {{nom}} {{prenom}}.",
+    "PROCESS_ABORT_CONFIRMATION": "Are you sure you want to abandon the current process?",
+    "RETURN_TO_MAIN": "Back to the main screen",
+    "PROCESS_STOPPED": "The process has been stopped.",
+    "NAVIGATION_ERROR": "An error occurred while navigating.",
+
+    "SCAN_BAC": {
+      "TITLE": "Assignment",
+      "SUBTITLE": "Please scan the BAC",
+      "SUBTITLE_PAYSAN": "Please scan the farmer's badge.",
+      "SCAN_BAC_WAITING_TEXT": "Waiting for the BAC to be scanned",
+      "RESUME": {
+        "CODE_BAC": "BAC Code :",
+        "LIBELLE": "Label :",
+        "BAC_SCANNED": "Scanned BAC"
+      },
+      "ERROR": {
+        "BAC_NOT_EXIST": "The BAC {crate} does not exist!",
+        "CRATE_ALREADY_ASSIGNED": "The BAC {crate} has already been assigned to peasant {peasantName}",
+        "SET_ERROR_MAIN_MESSAGE_1": "The BAC {{libelle}} has already been scanned.",
+        "SET_ERROR_MAIN_MESSAGE_2": "Are you sure you want to abandon the current process?",
+        "BAC_ALREADY_SCANNED": "The BAC {{libelle}} has already been scanned.",
+        "PROCESS_ABORT_CONFIRMATION": "Are you sure you want to abandon the current process?"
+      },
+      "VERIFICATION_DU_BAC": "Verifying crate {stepVerificationData} . . .",
+      "VEUILLEZ_PATIENTER": "Please wait . . .",
+      "TOAST_TITLE": "Error"
+    },
+    "SCAN_PAYSAN": {
+      "DESCRIPTION_SCAN_FARMER_BADGE": "Please scan the farmer's badge",
+      "DESCRIPTION_WAITING_FOR_BADGE_SCAN": "Waiting for the badge to scan",
+      "DESCRIPTION_VERIFICATION": "Verification ...",
+      "DESCRIPTION_RECORDING": "Check in...",
+      "DESCRIPTION_RECORDING_SUCCESS": "Successfully registered",
+      "DESCRIPTION_OFFLINE_MODE": "You are in Offline Mode.\nPlease connect to the internet and synchronize.",
+      "DESCRIPTION_BAC_ASSIGNMENT_CONFIRMATION": "Do you want to assign the BAC {bacLabel} to the farmer {farmerName}?",
+      "DESCRIPTION_BAC_ASSIGNMENT_PREFIX": "Do you want to assign the BAC",
+      "DESCRIPTION_FARMER_PREFIX": "to the peasant",
+      "DESCRIPTION_ASSIGN": "Assign",
+      "DESCRIPTION_NEW_ASSIGNMENT": "New assignment",
+      "DESCRIPTION_BACK_TO_HOME": "Back to the home page",
+
+      "ERROR": {
+        "PEASANT_NOT_ASSIGNED": "The peasant {{nom}} {{prenom}} is not assigned to any plot.",
+        "ERROR_FARMER_ASSOCIATED_WITH_BAC": "The peasant  {{farmerName}} {{farmerSurname}} is already associated with BAC {{bacLabel}}.",
+        "ERROR_PARCEL_NOT_FOUND": "The plot associated with this farmer does not exist.",
+        "ERROR_FARMER_NOT_FOUND_BY_BADGE": "The peasant associated with the {{badge}} badge cannot be found. ",
+        "ERROR_OFFLINE": "If you are offline, please connect to the internet."
+      },
+      "RESUME": {
+        "NAME": "Name : ",
+        "SURNAME": "Surname : ",
+        "BADGE": "Farmer badge : ",
+        "MODAL_TITLE": "Farmer scanned",
+        "TYPE": "farmer"
+      }
+    }
+  }
+}

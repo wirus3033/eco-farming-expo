@@ -1,0 +1,14 @@
+{
+  "MENU_RECOLTE": {
+    "TITLE": "Harvest",
+    "SUBTITLE": "Fruit weighing",
+    "AFFECTATION_BIN_PARCELLE": "BIN / Parcel \nassignment",
+    "PESEE_RECOLTE": "Harvest weighing",
+    "RECEPTION_USINE": "Factory reception",
+    "ENVOI_BIN_USINE": "Send \nBIN to factory",
+    "TEXT_ERROR_1": "Retrieving data for weighing recording in progress... ",
+    "TEXT_ERROR_2": "Retrieving data for BIN/Parcel assignment in progress...",
+    "TEXT_ERROR_3": "Retrieving data for stock receipt in progress...",
+    "TEXT_ERROR_4": "Retrieving data for sending BIN to factory..."
+  }
+}
