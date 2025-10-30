@@ -1,12 +1,17 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
-import React, { FC } from 'react'
-import TopHeaderNav from '@/src/components/ui/TopHeaderNav'
-import { t } from 'i18next';
-import Card from '@/src/components/ui/Card';
-import { Icons } from '@/src/constants/Images';
-import { Colors_Menu, FOND_BIN, GREEN, GREEN_1, ROSE } from '@/src/constants/Colors';
-import { useRouter } from 'expo-router';
-
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import React, { FC } from "react";
+import TopHeaderNav from "@/src/components/ui/TopHeaderNav";
+import { t } from "i18next";
+import Card from "@/src/components/ui/Card";
+import { Icons } from "@/src/constants/Images";
+import {
+  Colors_Menu,
+  FOND_BIN,
+  GREEN,
+  GREEN_1,
+  ROSE,
+} from "@/src/constants/Colors";
+import { useRouter } from "expo-router";
 
 interface RecoltProps {
   navigation: any;
@@ -18,7 +23,15 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
       {/* <TopHeaderNav title={t('MENU_EGRAINAGE:TITLE_UP')} subtitle={t('MENU_EGRAINAGE:SUBTITLE')} /> */}
       <TopHeaderNav title={"dddddd"} subtitle={"eeee"} />
       <View style={styles.body}>
-        <View style={{ flexDirection: "row", justifyContent: "space-between", gap: 12, height: "32.5%", marginBottom: 12 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            gap: 12,
+            flex: 1,
+            // marginBottom: 12,
+          }}
+        >
           <Card
             title={`Affectation\nBIN / Parcelle`}
             icon={Icons.attribution}
@@ -26,8 +39,8 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
             backgroundColor={Colors_Menu.menuAffectations}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
-              
-              router.push("/(screens)/recolte/affection/afectionBin")
+
+              router.push("/Recolte")
             }
           />
           <Card
@@ -35,6 +48,11 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
             icon={Icons.sortie}
             texColor="white"
             backgroundColor={ROSE}
+            onPressItem={() =>
+              // console.log("eeeeeeeeeeeeee")
+
+              router.push("/Recolte/sendUsine")
+            }
           />
         </View>
         <View style={{ flex: 1, gap: 12 }}>
@@ -43,21 +61,33 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
             icon={Icons.enregistrement}
             texColor="white"
             backgroundColor={Colors_Menu.menuPackaging}
-            iconColor='white'
+            iconColor="white"
+            onPressItem={() =>
+              // console.log("eeeeeeeeeeeeee")
+
+              router.push("/Recolte/weigh")
+            }
           />
+        </View>
+        <View style={{ flex: 1, gap: 12 }}>
           <Card
             title={`Réception usine`}
             icon={Icons.stock}
             texColor="black"
             backgroundColor={Colors_Menu.menuPicking}
+            onPressItem={() =>
+              // console.log("eeeeeeeeeeeeee")
+
+              router.push("/Recolte/reception")
+            }
           />
         </View>
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
 
 const styles = StyleSheet.create({
   container: {
@@ -66,7 +96,8 @@ const styles = StyleSheet.create({
   },
   body: {
     padding: 12,
-    flex: 1
+    flex: 1,
+    gap: 12,
     // backgroundColor:"red"
-  }
-})
+  },
+});

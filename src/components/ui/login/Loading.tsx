@@ -1,73 +1,54 @@
-import LottieView from 'lottie-react-native';
-import React, {useEffect, useState} from 'react';
-import {View, Image, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet, ActivityIndicator, Text} from 'react-native';
+import React, {FC} from 'react';
+import Modal from 'react-native-modal';
+import { wp } from '@/src/utils/responsive';
+import { GREEN, TEXT_COLOR } from '@/src/constants/Colors';
 
-import { useTranslation } from 'react-i18next';
-import { hp, wp } from '../../../utils/responsive';
-import { TEXT_COLOR } from '../../../constants/Colors';
-import CustomToaster from './CustomToaster';
 
-interface PropsLoading {
-  toastVisible: boolean;
-  isConnectedInternet: boolean;
-  title: string;
+interface Props {
+  visible: boolean;
+  title?: string;
+  subTitle?: string;
 }
 
-const Loading: React.FC<PropsLoading> = ({toastVisible, isConnectedInternet, title}) => {
-  const {t}=useTranslation('LOGING')
+const Loading: FC<Props> = ({visible, title, subTitle}) => {
   return (
-    <View style={styles.container}>
-      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-        <View
-          style={{
-            position: 'relative',
-            justifyContent: 'center',
-            alignItems: 'center',
-            marginTop: hp(10),
-          }}>
-          {/* <LottieView source={Lottie.loader_scan} style={styles.lottieBackground} autoPlay loop speed={2} /> */}
-          {/* <Image source={Images.logo_2} resizeMode="contain" style={styles.logo} /> */}
-        </View>
+    <Modal isVisible={visible}>
+      <View style={styles.modalContainer}>
+        <ActivityIndicator size={wp(12)} color={GREEN} style={styles.spinner} />
         <View style={styles.textContainer}>
-          <Text style={styles.textTitle}>{title}</Text>
-          <Text style={styles.textSubtitle}>{t("LOGING:PLEASE_WAIT")}</Text>
+          {title && <Text style={styles.title}>{title}</Text>}
+          {subTitle && <Text style={styles.text}>{subTitle}</Text>}
         </View>
-        {!isConnectedInternet && <CustomToaster visible={toastVisible} isConnexion={isConnectedInternet} />}
       </View>
-    </View>
+    </Modal>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // backgroundColor: 'red', 
+  modalContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: wp(6),
+    backgroundColor: '#fff',
+    borderRadius: 5,
   },
-  lottieBackground: {
-    position: 'absolute',
-    width: wp(50),
-    height: wp(50),
-    zIndex: -1,
-  },
-  logo: {
-    width: wp(35),
-    height: wp(35),
-    zIndex: 1,
+  spinner: {
+    marginRight: wp(3),
   },
   textContainer: {
-    alignItems: 'center',
-    paddingTop: hp(5),
-    zIndex: 1,
+    flex: 1,
+    justifyContent: 'flex-start',
   },
-  textTitle: {
-    fontSize: 24,
-    color: TEXT_COLOR,
+  title: {
+    fontSize: wp(4.5),
     fontWeight: 'bold',
-  },
-  textSubtitle: {
-    fontSize: 20,
     color: TEXT_COLOR,
-    textAlign: 'center',
+  },
+  text: {
+    fontSize: wp(4),
+    color: '#000',
+    marginTop: wp(2),
   },
 });
 

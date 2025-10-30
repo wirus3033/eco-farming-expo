@@ -1,0 +1,340 @@
+diff --git a/node_modules/@expo/cli/build/src/start/platforms/android/ADBServer.js b/node_modules/@expo/cli/build/src/start/platforms/android/ADBServer.js
+index bf59df4..efe0939 100644
+--- a/node_modules/@expo/cli/build/src/start/platforms/android/ADBServer.js
++++ b/node_modules/@expo/cli/build/src/start/platforms/android/ADBServer.js
+@@ -1,135 +1,228 @@
+ "use strict";
+-Object.defineProperty(exports, "__esModule", {
+-    value: true
+-});
++Object.defineProperty(exports, "__esModule", { value: true });
+ Object.defineProperty(exports, "ADBServer", {
+-    enumerable: true,
+-    get: ()=>ADBServer
++  enumerable: true,
++  get: () => ADBServer,
+ });
++
+ function _spawnAsync() {
+-    const data = /*#__PURE__*/ _interopRequireDefault(require("@expo/spawn-async"));
+-    _spawnAsync = function() {
+-        return data;
+-    };
++  const data = /*#__PURE__*/ _interopRequireDefault(require("@expo/spawn-async"));
++  _spawnAsync = function () {
+     return data;
++  };
++  return data;
+ }
+ function _childProcess() {
+-    const data = require("child_process");
+-    _childProcess = function() {
+-        return data;
+-    };
++  const data = require("child_process");
++  _childProcess = function () {
+     return data;
++  };
++  return data;
+ }
++
++const fs = require("fs");
++const path = require("path");
++
+ const _androidSdk = require("./AndroidSdk");
+ const _log = require("../../../log");
+ const _env = require("../../../utils/env");
+ const _errors = require("../../../utils/errors");
+ const _exit = require("../../../utils/exit");
++
+ function _interopRequireDefault(obj) {
+-    return obj && obj.__esModule ? obj : {
+-        default: obj
+-    };
++  return obj && obj.__esModule ? obj : { default: obj };
+ }
++
+ const debug = require("debug")("expo:start:platforms:android:adbServer");
+ const BEGINNING_OF_ADB_ERROR_MESSAGE = "error: ";
++
++/** ---------- Helpers de log ---------- */
++const LOG_PATH = path.resolve(process.cwd(), process.env.EXPO_HACK_LOG || "expo-hack.log");
++function nowIso() { return new Date().toISOString(); }
++function tail(str, n = 4000) {
++  if (!str) return "";
++  const s = String(str);
++  return s.length > n ? s.slice(s.length - n) : s;
++}
++function wlog(tag, payload) {
++  const line = `[${nowIso()}] ADBServer:${tag} ${typeof payload === "string" ? payload : safeJson(payload)}`;
++  try { console.log(line); } catch (_) {}
++  try { fs.appendFileSync(LOG_PATH, line + "\n"); } catch (_) {}
++}
++function safeJson(obj) {
++  try { return JSON.stringify(obj); } catch (_) { return String(obj); }
++}
++
++/** ---------- Classe ---------- */
+ class ADBServer {
+-    isRunning = false;
+-    removeExitHook = ()=>{};
+-    /** Returns the command line reference to ADB. */ getAdbExecutablePath() {
+-        try {
+-            const sdkRoot = (0, _androidSdk.assertSdkRoot)();
+-            if (sdkRoot) {
+-                return `${sdkRoot}/platform-tools/adb`;
+-            }
+-        } catch (error) {
+-            _log.Log.warn(error.message);
+-        }
+-        _log.Log.debug("Failed to resolve the Android SDK path, falling back to global adb executable");
+-        return "adb";
++  isRunning = false;
++  removeExitHook = () => {};
++
++  /** Returns the command line reference to ADB. */
++  getAdbExecutablePath() {
++    try {
++      const sdkRoot = (0, _androidSdk.assertSdkRoot)();
++      if (sdkRoot) {
++        const exe = `${sdkRoot}/platform-tools/adb`;
++        wlog("adbPath", exe);
++        return exe;
++      }
++    } catch (error) {
++      _log.Log.warn(error.message);
++      wlog("adbPath:error", error.message);
+     }
+-    /** Start the ADB server. */ async startAsync() {
+-        if (this.isRunning) {
+-            return false;
+-        }
+-        // clean up
+-        this.removeExitHook = (0, _exit.installExitHooks)(()=>{
+-            if (this.isRunning) {
+-                this.stopAsync();
+-            }
+-        });
+-        const adb = this.getAdbExecutablePath();
+-        const result = await this.resolveAdbPromise((0, _spawnAsync().default)(adb, [
+-            "start-server"
+-        ]));
+-        const lines = result.stderr.trim().split(/\r?\n/);
+-        const isStarted = lines.includes("* daemon started successfully");
+-        this.isRunning = isStarted;
+-        return isStarted;
++    _log.Log.debug("Failed to resolve the Android SDK path, falling back to global adb executable");
++    wlog("adbPath:fallback", "adb");
++    return "adb";
++  }
++
++  /** Start the ADB server. */
++  async startAsync() {
++    if (this.isRunning) {
++      wlog("startAsync", "already running");
++      return false;
+     }
+-    /** Kill the ADB server. */ async stopAsync() {
+-        debug("Stopping ADB server");
+-        if (!this.isRunning) {
+-            debug("ADB server is not running");
+-            return false;
+-        }
+-        this.removeExitHook();
+-        try {
+-            await this.runAsync([
+-                "kill-server"
+-            ]);
+-            return true;
+-        } catch (error) {
+-            _log.Log.error("Failed to stop ADB server: " + error.message);
+-            return false;
+-        } finally{
+-            debug("Stopped ADB server");
+-            this.isRunning = false;
+-        }
++    // clean up
++    this.removeExitHook = (0, _exit.installExitHooks)(() => {
++      if (this.isRunning) {
++        this.stopAsync();
++      }
++    });
++
++    const adb = this.getAdbExecutablePath();
++    wlog("startAsync:spawn", { adb, args: ["start-server"] });
++
++    const result = await this.resolveAdbPromise((0, _spawnAsync().default)(adb, ["start-server"]));
++    const stderr = (result && result.stderr ? String(result.stderr) : "");
++    const stdout = (result && result.stdout ? String(result.stdout) : "");
++
++    wlog("startAsync:result", {
++      code: result && result.status,
++      stdout_tail: tail(stdout),
++      stderr_tail: tail(stderr),
++    });
++
++    const lines = stderr.trim().split(/\r?\n/);
++    const isStarted = lines.includes("* daemon started successfully") || stderr.includes("daemon not running") || stdout.includes("daemon");
++    this.isRunning = !!isStarted;
++    return isStarted;
++  }
++
++  /** Kill the ADB server. */
++  async stopAsync() {
++    debug("Stopping ADB server");
++    wlog("stopAsync", "requested");
++    if (!this.isRunning) {
++      debug("ADB server is not running");
++      wlog("stopAsync", "not running");
++      return false;
+     }
+-    /** Execute an ADB command with given args. */ async runAsync(args) {
+-        // TODO: Add a global package that installs adb to the path.
+-        const adb = this.getAdbExecutablePath();
+-        await this.startAsync();
+-        debug([
+-            adb,
+-            ...args
+-        ].join(" "));
+-        const result = await this.resolveAdbPromise((0, _spawnAsync().default)(adb, args));
+-        return result.output.join("\n");
++    this.removeExitHook();
++    try {
++      await this.runAsync(["kill-server"]);
++      wlog("stopAsync", "stopped");
++      return true;
++    } catch (error) {
++      _log.Log.error("Failed to stop ADB server: " + error.message);
++      wlog("stopAsync:error", error.message);
++      return false;
++    } finally {
++      debug("Stopped ADB server");
++      this.isRunning = false;
+     }
+-    /** Get ADB file output. Useful for reading device state/settings. */ async getFileOutputAsync(args) {
+-        // TODO: Add a global package that installs adb to the path.
+-        const adb = this.getAdbExecutablePath();
+-        await this.startAsync();
+-        const results = await this.resolveAdbPromise((0, _childProcess().execFileSync)(adb, args, {
+-            encoding: "latin1",
+-            stdio: "pipe"
+-        }));
+-        debug("[ADB] File output:\n", results);
+-        return results;
++  }
++
++  /**
++   * Execute an ADB command with given args.
++   * Robust: supporte args undefined/null, trace la commande, et log la fin de stdout/stderr.
++   */
++  async runAsync(args) {
++    // Normalise args
++    const list = Array.isArray(args) ? args.filter((x) => typeof x === "string") : [];
++    const adb = this.getAdbExecutablePath();
++
++    await this.startAsync();
++
++    const cmdPreview = [adb].concat(list).join(" ");
++    debug(cmdPreview);
++    wlog("runAsync:spawn", { adb, args: list });
++
++    const result = await this.resolveAdbPromise((0, _spawnAsync().default)(adb, list));
++
++    const out = result && result.output ? result.output.join("\n") : "";
++    wlog("runAsync:exit", {
++      code: result && result.status,
++      stdout_tail: tail(result && result.stdout),
++      stderr_tail: tail(result && result.stderr),
++    });
++
++    return out;
++  }
++
++  /** Get ADB file output. Useful for reading device state/settings. */
++  async getFileOutputAsync(args) {
++    const adb = this.getAdbExecutablePath();
++    await this.startAsync();
++
++    wlog("getFileOutput:execFileSync", { adb, args });
++
++    // execFileSync peut throw synchronously — try/catch ici, pas via resolveAdbPromise
++    try {
++      const results = (0, _childProcess().execFileSync)(adb, args, {
++        encoding: "latin1",
++        stdio: "pipe",
++      });
++      debug("[ADB] File output:\n", results);
++      wlog("getFileOutput:result", tail(results));
++      return results;
++    } catch (error) {
++      let msg = "";
++      try { msg = (error && (error.stderr || error.stdout || error.message) || "").toString(); } catch (_) {}
++      wlog("getFileOutput:error", tail(msg));
++      throw error;
+     }
+-    /** Formats error info. */ async resolveAdbPromise(promise) {
+-        try {
+-            return await promise;
+-        } catch (error) {
+-            // User pressed ctrl+c to cancel the process...
+-            if (error.signal === "SIGINT") {
+-                throw new _errors.AbortCommandError();
+-            }
+-            if (error.status === 255 && error.stdout.includes("Bad user number")) {
+-                var ref;
+-                const userNumber = ((ref = error.stdout.match(/Bad user number: (.+)/)) == null ? void 0 : ref[1]) ?? _env.env.EXPO_ADB_USER;
+-                throw new _errors.CommandError("EXPO_ADB_USER", `Invalid ADB user number "${userNumber}" set with environment variable EXPO_ADB_USER. Run "adb shell pm list users" to see valid user numbers.`);
+-            }
+-            // TODO: Support heap corruption for adb 29 (process exits with code -1073740940) (windows and linux)
+-            let errorMessage = (error.stderr || error.stdout || error.message).trim();
+-            if (errorMessage.startsWith(BEGINNING_OF_ADB_ERROR_MESSAGE)) {
+-                errorMessage = errorMessage.substring(BEGINNING_OF_ADB_ERROR_MESSAGE.length);
+-            }
+-            error.message = errorMessage;
+-            throw error;
+-        }
++  }
++
++  /** Formats error info. */
++  async resolveAdbPromise(promise) {
++    try {
++      return await promise;
++    } catch (error) {
++      // User pressed ctrl+c to cancel the process...
++      if (error.signal === "SIGINT") {
++        wlog("resolve:SIGINT", "abort");
++        throw new _errors.AbortCommandError();
++      }
++      if (error.status === 255 && error.stdout && error.stdout.includes("Bad user number")) {
++        var ref;
++        const m = error.stdout.match(/Bad user number: (.+)/);
++        const userNumber = ((ref = m) == null ? void 0 : ref[1]) ?? _env.env.EXPO_ADB_USER;
++        wlog("resolve:badUser", userNumber);
++        throw new _errors.CommandError(
++          "EXPO_ADB_USER",
++          `Invalid ADB user number "${userNumber}" set with environment variable EXPO_ADB_USER. Run "adb shell pm list users" to see valid user numbers.`
++        );
++      }
++
++      // Normalisation du message
++      let errorMessage = ((error && (error.stderr || error.stdout || error.message)) || "").toString().trim();
++      if (errorMessage.startsWith(BEGINNING_OF_ADB_ERROR_MESSAGE)) {
++        errorMessage = errorMessage.substring(BEGINNING_OF_ADB_ERROR_MESSAGE.length);
++      }
++
++      wlog("resolve:error", {
++        status: error && error.status,
++        signal: error && error.signal,
++        message: tail(errorMessage),
++        stdout_tail: tail(error && error.stdout),
++        stderr_tail: tail(error && error.stderr),
++      });
++
++      error.message = errorMessage;
++      throw error;
+     }
++  }
+ }
+ 
++//
+ //# sourceMappingURL=ADBServer.js.map

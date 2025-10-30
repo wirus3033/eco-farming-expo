@@ -2,7 +2,7 @@
 import { Stack } from "expo-router";
 import { useEffect } from "react";
 
-export default function AuthLayout() {
+export default function Layout() {
 
   return (
     <Stack
@@ -13,7 +13,7 @@ export default function AuthLayout() {
       <Stack.Screen
         name="index"
         options={{
-          headerShown: false,
+        //   headerShown: false,
         }}
       />
     </Stack>
