@@ -5,8 +5,10 @@ import { t } from 'i18next'
 import Card from '@/src/components/ui/Card'
 import { Icons } from '@/src/constants/Images'
 import { FOND_BIN, GREEN_1, ROSE } from '@/src/constants/Colors'
+import { useRouter } from 'expo-router'
 
 const Lavage = () => {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <TopHeaderNav title={t('MENU_LAVAGE:TITLE')} subtitle={t('MENU_LAVAGE:SUBTITLE')} />
@@ -17,6 +19,11 @@ const Lavage = () => {
             icon={Icons.lavage32}
             texColor="black"
             backgroundColor={GREEN_1}
+            onPressItem={() =>
+              // console.log("eeeeeeeeeeeeee")
+
+              router.push("/Lavage")
+            }
           />
           <Card
             title={`Enregistrer un grade`}

@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
         fontFamily:Fonts.thin
     },
     icon: {
-        height: 45,
-        width: 45,
+        height: "25%",
+        width: "25%",
         resizeMode: "contain"
     }
 })
