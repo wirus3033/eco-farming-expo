@@ -1,8 +1,10 @@
 import React from 'react';
-import {Text, StyleSheet, Pressable} from 'react-native';
+import { StyleSheet, Pressable} from 'react-native';
 
 import LottieView from 'lottie-react-native';
 import { GREEN, LIGHT_GRAY_COLOR, TEXT_COLOR } from '@/src/constants/Colors';
+import Text from './Text';
+import { wp } from '@/src/utils/responsive';
 
 
 interface CustomButtonProps {
@@ -53,8 +55,8 @@ const stylesBoutton = StyleSheet.create({
     marginBottom: 10,
     paddingBottom: 5,
     alignItems: 'center',
-    maxHeight: 54,
-    minHeight: 54,
+    maxHeight:wp(15),
+    minHeight: wp(15),
   },
   container_SECONDARY: {
     flexDirection: 'row',
@@ -63,8 +65,9 @@ const stylesBoutton = StyleSheet.create({
     marginBottom: 10,
     paddingBottom: 5,
     alignItems: 'center',
-    maxHeight: 54,
-    minHeight: 54,
+    maxHeight:wp(15),
+    minHeight: wp(15),
+    
   },
   container_TERTIARY: {
     backgroundColor: '#ccc',
@@ -92,7 +95,9 @@ const stylesBoutton = StyleSheet.create({
   text: {
     fontWeight: 'bold',
     color: 'white',
-    fontSize: 16,
+    fontSize: wp(4),
+    textAlign: 'center',
+    flex: 1
   },
   text_WHITE: {
     color: 'black',

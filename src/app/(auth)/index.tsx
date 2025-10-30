@@ -1,4 +1,4 @@
-import { ScrollView, StatusBar, StyleSheet, Text, View, Image } from 'react-native'
+import { ScrollView, StatusBar, StyleSheet,  View, Image } from 'react-native'
 import React, { FC, useRef, useState } from 'react'
 import Loading from '@/src/components/ui/login/Loading'
 import { useTranslation } from 'react-i18next';
@@ -14,6 +14,7 @@ import ErrorLogin from '@/src/components/ui/modal/ErrorLogin';
 import { useRouter } from 'expo-router';
 import CustomCheckbox from '@/src/components/ui/CustomCheckBox';
 import { Fonts } from '@/src/constants/Font';
+import Text from '@/src/components/ui/Text';
 
 type Errors = {
     email?: string;
@@ -94,8 +95,8 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                         source={Images.logo_2}
                                         resizeMode="contain"
                                         style={{
-                                            width: wp(24),
-                                            marginTop: heightScreen > 3.5 ? -hp(8) : -hp(13),
+                                            width: wp(18),
+                                            marginTop: heightScreen > 3.5 ? -hp(8) : -hp(15),
                                         }}
                                     />
                                     <View
@@ -124,7 +125,8 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                 </View>
 
                                 <View style={{ paddingHorizontal: wp(4) }}>
-                                    <Text style={styles.titleText}>{t('LOGING:LOGIN')}</Text>
+                                    {/* <Text style={styles.titleText}>{t('LOGING:LOGIN')}</Text> */}
+                                    <Text style={styles.titleText}>LOGIN</Text>
                                 </View>
 
                                 <View style={{ gap: wp(5), paddingHorizontal: wp(4) }}>
@@ -166,12 +168,13 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                                         label={t('LOGING:REMEMBER_ME')}
                                                         value={rememberMe}
                                                         onValueChange={async () => {
-                                                            if (await testConnexion()) {
-                                                                setRememberMe(!rememberMe)
-                                                            } else {
-                                                                console.log('checkbox sans connection-----------------------------------');
-                                                                setRememberMe(true)
-                                                            }
+                                                            setRememberMe(!rememberMe)
+                                                            // if (await testConnexion()) {
+                                                            //     setRememberMe(!rememberMe)
+                                                            // } else {
+                                                            //     console.log('checkbox sans connection-----------------------------------');
+                                                            //     setRememberMe(true)
+                                                            // }
                                                         }}
                                                     />
                                                     {/* <CheckBox
@@ -249,7 +252,7 @@ const styles = StyleSheet.create({
         marginTop: hp(7),
     },
     titleText: {
-        fontSize: wp(8),
+        fontSize: wp(6),
         color: TEXT_COLOR,
         textAlign: 'center',
         marginBottom: -hp(1),

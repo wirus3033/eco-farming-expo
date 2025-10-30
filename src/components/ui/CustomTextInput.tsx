@@ -41,7 +41,7 @@ const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
   ) => {
     return (
       <View style={styles.inputContainer}>
-        <Image source={icon} style={{height: 18, width: 18}} />
+        <Image source={icon} style={{height: 18, width: 18 , marginLeft: wp(1)}} />
         <TextInput
           ref={ref}
           value={value}
@@ -51,9 +51,9 @@ const CustomTextInput = forwardRef<TextInput, CustomTextInputProps>(
           placeholder={placeholder}
           keyboardType={keyboardType}
           style={{
-            marginLeft: 3.2,
+            marginLeft:wp(3),
             width: '82%',
-            fontSize: 16,
+            fontSize: wp(4),
             color: TEXT_COLOR,
           }}
           onSubmitEditing={onSubmitEditing}
@@ -82,10 +82,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 0.5,
     borderColor: GRAY,
-    height: wp(13),
+    height: wp(15),
     borderRadius: 23,
     color: GRAY,
     paddingHorizontal: 10,
+    
   },
 });
 

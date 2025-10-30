@@ -7,8 +7,10 @@ import { Icons } from "@/src/constants/Images";
 import {
   Colors_Menu,
   FOND_BIN,
+  FOND_BlUE,
   GREEN,
   GREEN_1,
+  GREENN,
   ROSE,
 } from "@/src/constants/Colors";
 import { useRouter } from "expo-router";
@@ -60,7 +62,7 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
             title={`Pesées récolte`}
             icon={Icons.enregistrement}
             texColor="white"
-            backgroundColor={Colors_Menu.menuPackaging}
+            backgroundColor={FOND_BlUE}
             iconColor="white"
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
@@ -74,7 +76,7 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
             title={`Réception usine`}
             icon={Icons.stock}
             texColor="black"
-            backgroundColor={Colors_Menu.menuPicking}
+            backgroundColor={GREENN}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 

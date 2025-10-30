@@ -8,6 +8,7 @@ import {
   Colors_Menu,
   FOND_BIN,
   GREEN_DARK,
+  GREENN,
   ROSE,
 } from "@/src/constants/Colors";
 import { useRouter } from "expo-router";
@@ -33,7 +34,7 @@ const Egrainage = () => {
             title={`Picking\nEgrainage`}
             icon={Icons.picking}
             texColor="black"
-            backgroundColor={FOND_BIN}
+            backgroundColor={GREENN}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 
@@ -52,7 +53,7 @@ const Egrainage = () => {
             title={`Sotie égrainage`}
             icon={Icons.sortie}
             texColor="white"
-            backgroundColor={GREEN_DARK}
+            backgroundColor={Colors_Menu.menuSorties}
           />
         </View>
         <View style={{ flex: 1, gap: 12 }}>

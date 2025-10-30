@@ -1,7 +1,9 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, View } from 'react-native'
 import React, { FC } from 'react'
 import { Image } from 'react-native'
 import { Fonts } from '@/src/constants/Font'
+import Text from './Text'
+import { wp } from '@/src/utils/responsive'
 
 interface PropsCard {
     title: string,
@@ -42,18 +44,19 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         padding: 12,
         backgroundColor: "blue",
+        gap: 12
 
     },
     text: {
-        fontSize: 20,
+        fontSize:wp(4.5),
         textAlign: 'center',
-        marginTop: 12,
+        // marginTop: 12,
         // fontWeight: '600',
         fontFamily:Fonts.thin
     },
     icon: {
-        height: "25%",
-        width: "25%",
+        height: "23%",
+        width: "23%",
         resizeMode: "contain"
     }
 })
