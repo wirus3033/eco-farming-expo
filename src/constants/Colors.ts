@@ -18,6 +18,7 @@ export const FOND_BAC = '#0396A6';
 export const FOND_TICKET = '#9CD3D8';
 export const FOND_PARCEL = '#F2F2F2';
 export const FOND_PEASANT = '#F2F2F2';
+export const FOND_BlUE = '#0495A6';
 
 export const GREEN_1 = '#7ac14278';
 export const HEIGHT = 50;

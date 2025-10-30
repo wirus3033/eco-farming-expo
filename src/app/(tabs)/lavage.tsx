@@ -4,7 +4,7 @@ import TopHeaderNav from '@/src/components/ui/TopHeaderNav'
 import { t } from 'i18next'
 import Card from '@/src/components/ui/Card'
 import { Icons } from '@/src/constants/Images'
-import { FOND_BIN, GREEN_1, ROSE } from '@/src/constants/Colors'
+import { Colors_Menu, FOND_BIN, GREEN_1, ROSE } from '@/src/constants/Colors'
 import { useRouter } from 'expo-router'
 
 const Lavage = () => {
@@ -29,7 +29,7 @@ const Lavage = () => {
             title={`Enregistrer un grade`}
             icon={Icons.mesure}
             texColor="white"
-            backgroundColor={FOND_BIN}
+            backgroundColor={Colors_Menu.menuSorties}
           />
           <Card
             title={`Terminer l'OF prétraitement`}

@@ -3,8 +3,9 @@ import { GREEN, TEXT_COLOR } from '@/src/constants/Colors';
 import { Fonts } from "@/src/constants/Font";
 import Checkbox from "expo-checkbox";
 import React, { FC } from "react";
-import { Text } from "react-native";
 import { Pressable, StyleSheet, View, ViewStyle } from "react-native";
+import Text from "./Text";
+import { hp, wp } from "@/src/utils/responsive";
 
 
 type Props = {
@@ -42,13 +43,13 @@ const styles = StyleSheet.create({
     checkbox: {
         borderRadius: 2,
         borderWidth: 1,
-        width: 20,
-        height: 20,
+        width: wp(6),
+        height: hp(3.5),
     },
     checkboxLabel: {
         marginLeft: 8,
         color: TEXT_COLOR,
-        fontSize: 16,
+        fontSize: wp(4),
         fontFamily:Fonts.thin,
     },
 });

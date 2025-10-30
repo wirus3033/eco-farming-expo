@@ -1,3 +1,4 @@
+import { wp } from '@/src/utils/responsive';
 import { Tabs } from 'expo-router';
 import React from 'react';
 import { Image, Platform, Pressable, View } from 'react-native';
@@ -29,7 +30,7 @@ export default function TabLayout() {
         headerShown: false,
         tabBarActiveTintColor: '#7DDA58',
         tabBarInactiveTintColor: '#000',
-        tabBarLabelStyle: { fontSize: 15 },
+        tabBarLabelStyle: { fontSize:wp(4) },
         tabBarButton: (props) => <CustomTabButton {...props} tabBarPressColor="#FF9999" />,
         tabBarStyle: {
           height: 70,

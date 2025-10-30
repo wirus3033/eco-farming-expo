@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, View } from 'react-native'
 import React, { FC, useState } from 'react'
 import { hp, wp } from '@/src/utils/responsive';
 import { useTranslation } from 'react-i18next';
@@ -13,6 +13,7 @@ import { testConnexion } from '@/src/utils/testConnexion';
 import { useRouter } from 'expo-router';
 import Loading from '@/src/components/ui/login/Loading';
 import { Fonts } from '@/src/constants/Font';
+import Text from '@/src/components/ui/Text';
 
 
 interface NavagationProps {
@@ -94,8 +95,8 @@ const ForgotPassword: FC<NavagationProps> = ({ navigation }) => {
                                         source={Images.logo_2}
                                         resizeMode="contain"
                                         style={{
-                                            width: wp(24),
-                                            marginTop: heightScreen > 3.5 ? -hp(10) : -hp(13),
+                                            width: wp(18),
+                                            marginTop: heightScreen > 3.5 ? -hp(8) : -hp(15),
                                         }}
                                     />
                                     <View
@@ -123,14 +124,15 @@ const ForgotPassword: FC<NavagationProps> = ({ navigation }) => {
                                 </View>
 
                                 <View style={{ paddingHorizontal: wp(4) }}>
-                                    <Text style={styles.titleText}>{t('LOGING:FORGOT_PASSWORD')}</Text>
+                                    {/* <Text style={styles.titleText}>{t('LOGING:FORGOT_PASSWORD')}</Text> */}
+                                    <Text style={styles.titleText}>mot de passe oublié</Text>
                                 </View>
 
                                 <View style={{ gap: wp(5), paddingHorizontal: wp(4) }}>
                                     <Text
                                         style={{
                                             textAlign: 'center',
-                                            fontSize: 16,
+                                            fontSize: wp(4),
                                             color: 'gray',
                                             marginTop: 10,
                                         }}>
@@ -201,7 +203,7 @@ const styles = StyleSheet.create({
         marginTop: hp(7),
     },
     titleText: {
-        fontSize: wp(8),
+        fontSize: wp(6),
         color: TEXT_COLOR,
         textAlign: 'center',
         marginBottom: -hp(1),

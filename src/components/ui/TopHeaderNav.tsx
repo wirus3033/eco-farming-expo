@@ -1,7 +1,8 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {View,  Image, TouchableOpacity} from 'react-native';
 import React, {FC, useState} from 'react';
 import { hp, wp } from '@/src/utils/responsive';
 import { Images } from '@/src/constants/Images';
+import Text from './Text';
 
 
 interface Props {
@@ -48,14 +49,14 @@ const TopHeaderNav: FC<Props> = ({title, subtitle}) => {
             <Text
               style={{
                 fontWeight: 'bold',
-                fontSize: wp(5),
+                fontSize: wp(4),
               }}>
               {title}
             </Text>
             <Text
               style={{
                 color: '#9a9a9a',
-                fontSize: wp(3.5),
+                fontSize: wp(3),
               }}>
               {subtitle}
             </Text>
