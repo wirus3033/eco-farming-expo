@@ -1,15 +1,15 @@
-import {View, Text, StyleSheet, Image, Pressable} from 'react-native';
-import React, {FC} from 'react';
-import Modal from 'react-native-modal';
+import { View, StyleSheet, Image, Pressable } from "react-native";
+import React, { FC } from "react";
+import Modal from "react-native-modal";
 
+import CustomButton from "../CustomButton";
 
-import CustomButton from '../CustomButton';
-
-import {useTranslation} from 'react-i18next';
-import { DARK, GREEN, TEXT_COLOR, tintColorDark } from '@/src/constants/Colors';
-import { Fonts } from '@/src/constants/Font';
-import { Images } from '@/src/constants/Images';
-import { hp } from '@/src/utils/responsive';
+import { useTranslation } from "react-i18next";
+import { DARK, GREEN, TEXT_COLOR, tintColorDark } from "@/src/constants/Colors";
+import { Fonts } from "@/src/constants/Font";
+import { Images } from "@/src/constants/Images";
+import { hp, wp } from "@/src/utils/responsive";
+import Text from "../Text";
 
 interface Props {
   isModalVisible: boolean;
@@ -36,7 +36,7 @@ const MessageErrorMain: FC<Props> = ({
   handleConfirm,
   cancelText,
 }) => {
-  const {t, i18n} = useTranslation('PESEE_RECOLTE');
+  const { t, i18n } = useTranslation("PESEE_RECOLTE");
   return (
     <Modal
       animationIn="slideInRight"
@@ -46,48 +46,56 @@ const MessageErrorMain: FC<Props> = ({
       avoidKeyboard={true}
       coverScreen={true}
       isVisible={isModalVisible}
-      onBackdropPress={closeModal}>
+      onBackdropPress={closeModal}
+    >
       <View style={styles.modalContainer}>
         <View style={styles.modalHeader}>
           <View
             style={{
-              flexDirection: 'row',
+              flexDirection: "row",
               marginBottom: 5,
-              justifyContent: 'center',
-              alignItems: 'center',
-            //   alignContent:"center"
-            }}>
+              justifyContent: "center",
+              alignItems: "center",
+              //   alignContent:"center"
+            }}
+          >
             <Text
               style={{
                 color: GREEN,
-                fontSize: 30,
+                fontSize: wp(8),
                 // marginLeft: 10,
                 fontFamily: Fonts.thin,
-              }}>
+              }}
+            >
               ec
             </Text>
             <Image
               source={Images.logo_black}
               resizeMode="contain"
               style={{
-                width: 30,
-                height: 30,
+                width: wp(8),
+                height: wp(8),
                 marginHorizontal: 2,
               }}
             />
             <Text
               style={{
                 color: tintColorDark,
-                fontSize: 30,
+                fontSize: wp(8),
                 fontFamily: Fonts.thin,
-              }}>
+              }}
+            >
               farming
             </Text>
           </View>
         </View>
-        <View style={{paddingHorizontal: 16, paddingTop: hp(2)}}>
+        <View style={{ paddingHorizontal: 16, paddingTop: hp(1) }}>
           <View style={styles.modalContent}>
-            {errorMessage2 && <Text style={styles.title}>{title ? title : t('PESEE_RECOLTE:TITLE_MODALE')}</Text>}
+            {errorMessage2 && (
+              <Text style={styles.title}>
+                {title ? title : t("PESEE_RECOLTE:TITLE_MODALE")}
+              </Text>
+            )}
             <Text style={styles.modalText}>{errorMessage}</Text>
             <Text style={styles.modalText}>{errorMessage2}</Text>
           </View>
@@ -99,16 +107,19 @@ const MessageErrorMain: FC<Props> = ({
                   borderTopWidth: 3,
                   marginBottom: hp(2),
                 }}
-                onPress={closeModal}>
+                onPress={closeModal}
+              >
                 <Text
                   style={{
                     color: GREEN,
-                    fontSize: 16,
+                    fontSize: wp(4),
                     paddingVertical: hp(2),
-                    textAlign: 'center',
-                  }}>
-                    
-                  {cancelText?cancelText:t('PESEE_RECOLTE:TEXT_BTN_ANNULER')}
+                    textAlign: "center",
+                  }}
+                >
+                  {cancelText
+                    ? cancelText
+                    : t("PESEE_RECOLTE:TEXT_BTN_ANNULER")}
                 </Text>
               </Pressable>
             )}
@@ -121,19 +132,27 @@ const MessageErrorMain: FC<Props> = ({
                   marginVertical: hp(1),
                   paddingVertical: hp(1.5),
                 }}
-                onPress={handleConfirm}>
+                onPress={handleConfirm}
+              >
                 <Text
                   style={{
                     color: DARK,
-                    fontSize: 16,
-                    textAlign: 'center',
-                  }}>
-                  {t('PESEE_RECOLTE:TEXT_BTN_CONFIRM')}
+                    fontSize: wp(4),
+                    textAlign: "center",
+                  }}
+                >
+                  {t("PESEE_RECOLTE:TEXT_BTN_CONFIRM")}
                 </Text>
               </Pressable>
             )}
             <CustomButton
-              text={errorMessage2 && !isTextButton ? t('PESEE_RECOLTE:TITLE_MODALE') : isTextButton ? textButton : 'OK'}
+              text={
+                errorMessage2 && !isTextButton
+                  ? t("PESEE_RECOLTE:TITLE_MODALE")
+                  : isTextButton
+                  ? textButton
+                  : "OK"
+              }
               onPress={errorMessage2 ? handleReturn : closeModal}
               isBtnMain={true}
             />
@@ -146,33 +165,34 @@ const MessageErrorMain: FC<Props> = ({
 
 const styles = StyleSheet.create({
   modalContainer: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     borderRadius: 10,
     marginTop: 21,
   },
   modalHeader: {
-    flexDirection: 'row',
+    flexDirection: "row",
     backgroundColor: DARK,
-    padding: 7.5,
-    alignItems: 'center',
-    justifyContent:"center"
+    padding: 7,
+    alignItems: "center",
+    justifyContent: "center",
   },
   modalContent: {
-    alignContent: 'center',
-    paddingVertical: 25,
+    alignContent: "center",
+    paddingVertical:wp(5),
+    marginBottom:wp(2)
   },
   modalFooter: {},
   modalText: {
-    fontSize: 15,
+    fontSize: wp(4),
     color: TEXT_COLOR,
-    textAlign: 'center',
+    textAlign: "center",
   },
   title: {
     paddingBottom: 25,
-    color: '#000',
-    fontSize: 18,
-    textAlign: 'center',
-    fontWeight: '600',
+    color: "#000",
+    fontSize: wp(6),
+    textAlign: "center",
+    fontWeight: "600",
   },
 });
 

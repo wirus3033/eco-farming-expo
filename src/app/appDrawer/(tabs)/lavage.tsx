@@ -15,24 +15,24 @@ const Lavage = () => {
       <View style={styles.body}>
         <View style={{ flex: 1, gap: 12 }}>
           <Card
-            title={`Picking prétraitement`}
+            title={t('MENU_LAVAGE:PICKING_PRE_TRAITEMENT')}
             icon={Icons.lavage32}
             texColor="black"
             backgroundColor={GREEN_1}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 
-              router.push("/Lavage")
+              router.push("/appDrawer/Lavage")
             }
           />
           <Card
-            title={`Enregistrer un grade`}
+            title={t('MENU_LAVAGE:ENREGISTRER_GRADE')}
             icon={Icons.mesure}
             texColor="white"
             backgroundColor={Colors_Menu.menuSorties}
           />
           <Card
-            title={`Terminer l'OF prétraitement`}
+            title={t('MENU_LAVAGE:TERMINER_OF_PRE_TRAITEMENT')}
             icon={Icons.bac_grade}
             texColor="white"
             backgroundColor={ROSE}

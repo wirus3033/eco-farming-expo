@@ -228,3 +228,1169 @@
 [2025-10-30T15:07:05.654Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
 [2025-10-30T15:07:05.656Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8083"]}
 [2025-10-30T15:07:05.946Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8083 }\r\n","stderr_tail":""}
+[2025-10-30T15:38:23.577Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:38:23.581Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:38:23.582Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T15:38:29.233Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-10-30T15:38:29.236Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T15:38:29.303Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T15:38:29.556Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:38:29.557Z] ADBServer:startAsync already running
+[2025-10-30T15:38:29.557Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T15:38:29.588Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T15:38:29.663Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:38:29.665Z] ADBServer:startAsync already running
+[2025-10-30T15:38:29.666Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-30T15:38:29.749Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-30T15:43:40.409Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:43:40.470Z] ADBServer:startAsync already running
+[2025-10-30T15:43:40.471Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-30T15:43:41.187Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-30T15:43:41.200Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:43:41.203Z] ADBServer:startAsync already running
+[2025-10-30T15:43:41.205Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-30T15:43:48.673Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-30T15:43:48.876Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:43:48.876Z] ADBServer:startAsync already running
+[2025-10-30T15:43:48.877Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T15:43:49.311Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T15:43:49.313Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:43:49.314Z] ADBServer:startAsync already running
+[2025-10-30T15:43:49.315Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-10-30T15:43:49.379Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-30T15:43:50.285Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:43:50.286Z] ADBServer:startAsync already running
+[2025-10-30T15:43:50.287Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T15:43:50.507Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T15:43:50.509Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:43:50.511Z] ADBServer:startAsync already running
+[2025-10-30T15:43:50.512Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-30T15:43:50.821Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-30T15:43:50.837Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T15:43:50.843Z] ADBServer:startAsync already running
+[2025-10-30T15:43:50.862Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-10-30T15:43:51.106Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-10-30T16:22:10.683Z] ADBServer:stopAsync requested
+[2025-10-30T16:22:10.686Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:22:10.687Z] ADBServer:startAsync already running
+[2025-10-30T16:22:10.690Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["kill-server"]}
+[2025-10-30T16:22:12.967Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:22:12.968Z] ADBServer:stopAsync stopped
+[2025-10-30T16:22:52.261Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:22:52.264Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:22:52.265Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:22:57.691Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-10-30T16:22:57.694Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:22:57.763Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:22:57.921Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:22:57.922Z] ADBServer:startAsync already running
+[2025-10-30T16:22:57.923Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:22:57.958Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:22:57.971Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:22:57.972Z] ADBServer:startAsync already running
+[2025-10-30T16:22:57.973Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-30T16:22:58.030Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-30T16:26:45.797Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:26:45.834Z] ADBServer:startAsync already running
+[2025-10-30T16:26:45.835Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-30T16:26:45.908Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-30T16:26:45.911Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:26:45.912Z] ADBServer:startAsync already running
+[2025-10-30T16:26:45.912Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-30T16:26:50.606Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-30T16:26:50.680Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:26:50.681Z] ADBServer:startAsync already running
+[2025-10-30T16:26:50.682Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:26:50.809Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:26:50.810Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:26:50.811Z] ADBServer:startAsync already running
+[2025-10-30T16:26:50.812Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","reverse","tcp:8081","tcp:8081"]}
+[2025-10-30T16:26:50.850Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-30T16:26:51.634Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:26:51.634Z] ADBServer:startAsync already running
+[2025-10-30T16:26:51.635Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:26:51.761Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:26:51.762Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:26:51.763Z] ADBServer:startAsync already running
+[2025-10-30T16:26:51.764Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-30T16:26:51.915Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-30T16:26:51.928Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:26:51.933Z] ADBServer:startAsync already running
+[2025-10-30T16:26:51.943Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A8081"]}
+[2025-10-30T16:26:52.904Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://127.0.0.1:8081 }\r\n","stderr_tail":""}
+[2025-10-30T16:45:26.616Z] ADBServer:stopAsync requested
+[2025-10-30T16:45:26.655Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:45:26.675Z] ADBServer:startAsync already running
+[2025-10-30T16:45:26.679Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["kill-server"]}
+[2025-10-30T16:45:27.732Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:45:27.733Z] ADBServer:stopAsync stopped
+[2025-10-30T16:45:52.071Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:45:52.075Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:45:52.077Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:45:52.514Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:45:52.515Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:45:52.550Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:45:52.727Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:45:52.728Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:45:52.729Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:45:52.761Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:45:52.762Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:45:52.800Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:45:52.900Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:45:52.901Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:45:52.903Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:45:52.980Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:45:52.981Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-30T16:45:53.064Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-30T16:50:21.729Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:21.740Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:21.742Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:50:21.923Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:50:21.925Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-30T16:50:22.057Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-30T16:50:22.064Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:22.067Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:22.070Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:50:22.138Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:50:22.139Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-30T16:50:28.077Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-30T16:50:28.275Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:28.276Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:28.278Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:50:28.971Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:50:28.971Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:50:29.002Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:50:29.003Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:29.004Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:29.004Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:50:29.036Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:50:29.037Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-10-30T16:50:29.071Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-30T16:50:30.845Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:30.846Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:30.847Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:50:30.973Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:50:31.010Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-30T16:50:31.049Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-10-30T16:50:31.051Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:31.052Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:31.052Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:50:31.079Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:50:31.080Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-30T16:50:31.254Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-30T16:50:31.268Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:31.271Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-30T16:50:31.273Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-30T16:50:31.355Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-30T16:50:31.356Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A8081"]}
+[2025-10-30T16:50:31.704Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://127.0.0.1:8081 }\r\n","stderr_tail":""}
+[2025-10-31T10:24:05.029Z] ADBServer:stopAsync requested
+[2025-10-31T10:24:05.073Z] ADBServer:stopAsync not running
+[2025-10-31T10:25:19.070Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:25:19.073Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:25:19.075Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:25:19.439Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:25:19.440Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:25:19.474Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:2\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:25:19.629Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:25:19.630Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:25:19.631Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:25:19.684Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:25:19.685Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:25:19.714Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:2\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:25:19.759Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:25:19.760Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:25:19.760Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:25:19.815Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:25:19.816Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T10:25:19.885Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T10:30:39.225Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:39.265Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:39.267Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:30:39.640Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:30:39.642Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T10:30:39.829Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T10:30:39.842Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:39.846Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:39.848Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:30:40.522Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:30:40.568Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T10:30:45.689Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T10:30:45.758Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:45.761Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:45.763Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:30:46.999Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:30:47.002Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:30:47.114Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:2\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:30:47.115Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:47.116Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:47.117Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:30:47.155Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:30:47.155Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T10:30:47.204Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T10:30:47.990Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:47.991Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:47.991Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:30:48.174Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:30:48.175Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:30:48.209Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:2\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:30:48.210Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:48.210Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:48.211Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:30:48.237Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:30:48.238Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T10:30:48.349Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T10:30:48.362Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:48.365Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:30:48.366Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:30:48.424Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:30:48.425Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-10-31T10:30:48.762Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-10-31T10:34:18.051Z] ADBServer:stopAsync requested
+[2025-10-31T10:34:18.061Z] ADBServer:stopAsync not running
+[2025-10-31T10:37:26.091Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:37:26.096Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:37:26.098Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:37:27.183Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:37:27.184Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:37:27.234Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:37:27.459Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:37:27.461Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:37:27.462Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:37:27.504Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:37:27.505Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:37:27.550Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:37:27.674Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:37:27.675Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:37:27.676Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:37:27.766Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:37:27.768Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T10:37:27.887Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T10:39:42.638Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:39:42.652Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:39:42.654Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:39:42.813Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:39:42.814Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T10:39:43.077Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T10:39:43.088Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:39:43.091Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:39:43.093Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:39:43.189Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:39:43.190Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T10:40:43.063Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T10:40:43.156Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.158Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.160Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:40:43.285Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:40:43.286Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:40:43.324Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:40:43.326Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.327Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.328Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:40:43.362Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:40:43.363Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T10:40:43.403Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T10:40:43.818Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.819Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.820Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:40:43.881Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:40:43.882Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:40:43.915Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:40:43.916Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.918Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:43.919Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:40:43.953Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:40:43.954Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T10:40:44.068Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T10:40:44.074Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:44.075Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:40:44.076Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:40:44.111Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:40:44.111Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-10-31T10:40:44.304Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-10-31T10:42:18.400Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:42:18.404Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:42:18.406Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:42:18.854Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:42:18.855Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:42:18.892Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:6\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:42:19.061Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:42:19.062Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:42:19.063Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:42:19.096Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:42:19.097Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:42:19.140Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:6\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:42:21.184Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:42:21.187Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:42:21.191Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:42:21.282Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:42:21.283Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T10:42:21.371Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T10:50:30.286Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:30.298Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:30.299Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:31.560Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:31.561Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T10:50:31.721Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T10:50:31.738Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:31.739Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:31.740Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:31.800Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:31.800Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T10:50:41.035Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T10:50:41.562Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:41.563Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:41.564Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:42.416Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:42.423Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:50:42.933Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:6\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:50:42.944Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:42.952Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:42.955Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:43.032Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:43.034Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T10:50:43.186Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T10:50:43.191Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:43.201Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:43.212Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:43.291Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:43.294Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T10:50:43.534Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T10:50:44.112Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:44.113Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:44.114Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:44.254Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:44.255Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T10:50:44.312Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:6\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:5\r\n\r\n","stderr_tail":""}
+[2025-10-31T10:50:44.314Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:44.315Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:44.316Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:44.369Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:44.370Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T10:50:44.540Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T10:50:44.546Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:44.547Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T10:50:44.548Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T10:50:45.176Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T10:50:45.179Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8082"]}
+[2025-10-31T10:50:46.041Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8082 }\r\n","stderr_tail":""}
+[2025-10-31T11:39:19.301Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:39:19.313Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:39:19.318Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:39:20.065Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:39:20.067Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:39:20.105Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:39:20.251Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:39:20.253Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:39:20.255Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:39:20.286Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:39:20.288Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:39:20.327Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:39:20.377Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:39:20.377Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:39:20.378Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:39:20.424Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:39:20.426Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T11:39:20.633Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T11:44:35.453Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:44:35.464Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:44:35.466Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:44:35.759Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:44:35.761Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T11:44:35.938Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T11:44:35.949Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:44:35.952Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:44:35.954Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:44:36.066Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:44:36.089Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T11:45:48.655Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T11:45:48.716Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:48.717Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:48.718Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:45:48.957Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:45:48.958Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:45:49.037Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:45:49.039Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.041Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.041Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:45:49.097Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:45:49.098Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T11:45:49.165Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T11:45:49.600Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.601Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.602Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:45:49.704Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:45:49.705Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:45:49.743Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:45:49.745Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.746Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.747Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:45:49.782Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:45:49.783Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T11:45:49.913Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T11:45:49.927Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.931Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:45:49.933Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:45:50.001Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:45:50.002Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-10-31T11:45:50.153Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-10-31T11:56:16.928Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:56:16.933Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:56:16.935Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:56:17.413Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:56:17.414Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:56:17.446Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:56:17.586Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:56:17.588Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:56:17.588Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:56:17.614Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:56:17.615Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:56:17.648Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:56:23.865Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:56:23.870Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:56:23.888Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:56:23.949Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:56:23.950Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T11:56:24.037Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T11:58:48.690Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:58:48.703Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:58:48.704Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:58:48.844Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:58:48.845Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T11:58:48.936Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T11:58:48.941Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:58:48.943Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:58:48.945Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:58:49.190Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:58:49.192Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T11:59:02.930Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T11:59:02.984Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:02.985Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:02.987Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:59:07.480Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:59:07.482Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:59:11.264Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:59:11.266Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:11.268Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:11.268Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:59:13.152Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:59:13.154Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T11:59:15.256Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T11:59:15.257Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:15.258Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:15.259Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:59:18.000Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:59:18.001Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T11:59:21.398Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T11:59:22.033Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:22.034Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:22.035Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:59:25.050Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:59:25.051Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T11:59:27.857Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T11:59:27.859Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:27.860Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:27.861Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:59:30.441Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:59:30.442Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T11:59:30.648Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T11:59:30.651Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:30.652Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T11:59:30.653Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T11:59:30.744Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T11:59:30.745Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8082"]}
+[2025-10-31T11:59:30.996Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8082 }\r\n","stderr_tail":""}
+[2025-10-31T12:24:38.742Z] ADBServer:stopAsync requested
+[2025-10-31T12:24:39.103Z] ADBServer:stopAsync not running
+[2025-10-31T12:24:48.022Z] ADBServer:stopAsync requested
+[2025-10-31T12:24:48.029Z] ADBServer:stopAsync not running
+[2025-10-31T12:25:02.659Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:25:02.663Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:25:02.664Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:25:03.511Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:25:03.512Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T12:25:03.544Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      offline product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T12:25:03.658Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:25:03.659Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:25:03.660Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:25:03.688Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:25:03.689Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T12:25:03.722Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      offline product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T12:25:03.810Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:25:03.812Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:25:03.813Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:25:03.872Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:25:03.873Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T12:25:03.943Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T12:26:50.959Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:26:50.961Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:26:50.962Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:26:51.132Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:26:51.134Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T12:26:51.262Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T12:26:51.268Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:26:51.269Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:26:51.271Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:26:51.343Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:26:51.344Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T12:27:02.669Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T12:27:03.058Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:03.061Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:03.063Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:27:04.252Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:27:04.253Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T12:27:04.292Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T12:27:04.294Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:04.296Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:04.297Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:27:04.342Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:27:04.346Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T12:27:04.432Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T12:27:04.433Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:04.434Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:04.435Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:27:04.470Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:27:04.470Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","192.168.88.6:5555","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T12:27:04.534Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T12:27:04.954Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:04.955Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:04.956Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:27:05.040Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:27:05.041Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T12:27:05.069Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:7\r\n192.168.88.6:5555      device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:4\r\n\r\n","stderr_tail":""}
+[2025-10-31T12:27:05.070Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:05.071Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:05.072Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:27:05.104Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:27:05.105Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T12:27:05.274Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T12:27:05.278Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:05.278Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T12:27:05.279Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T12:27:05.314Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T12:27:05.315Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-10-31T12:27:05.522Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-10-31T13:05:14.302Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:05:14.308Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:05:14.310Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:05:14.746Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:05:14.747Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T13:05:14.777Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:8\r\n\r\n","stderr_tail":""}
+[2025-10-31T13:05:14.893Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:05:14.894Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:05:14.895Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:05:14.922Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:05:14.923Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T13:05:14.949Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:8\r\n\r\n","stderr_tail":""}
+[2025-10-31T13:05:14.997Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:05:14.998Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:05:14.999Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:05:15.043Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:05:15.044Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T13:05:15.113Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T13:07:38.747Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:38.789Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:38.792Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:07:39.033Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:07:39.035Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T13:07:39.164Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T13:07:39.176Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:39.179Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:39.182Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:07:39.282Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:07:39.283Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T13:07:52.336Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T13:07:52.378Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:52.379Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:52.381Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:07:52.769Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:07:52.770Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T13:07:52.800Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:8\r\n\r\n","stderr_tail":""}
+[2025-10-31T13:07:52.802Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:52.803Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:52.804Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:07:52.849Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:07:52.850Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T13:07:52.887Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T13:07:53.270Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:53.271Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:53.272Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:07:53.340Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:07:53.341Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T13:07:53.380Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:8\r\n\r\n","stderr_tail":""}
+[2025-10-31T13:07:53.382Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:53.383Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:53.383Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:07:53.413Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:07:53.414Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T13:07:53.778Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T13:07:53.791Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:53.793Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T13:07:53.796Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T13:07:53.929Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T13:07:53.930Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-10-31T13:07:54.249Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-10-31T15:24:13.170Z] ADBServer:stopAsync requested
+[2025-10-31T15:24:13.221Z] ADBServer:stopAsync not running
+[2025-10-31T15:25:30.840Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:25:30.847Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:25:30.849Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:25:34.718Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:25:34.722Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T15:25:38.815Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:8\r\n\r\n","stderr_tail":""}
+[2025-10-31T15:25:39.167Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:25:39.168Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:25:39.169Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:25:42.839Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:25:42.841Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T15:25:46.902Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:8\r\n\r\n","stderr_tail":""}
+[2025-10-31T15:25:46.977Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:25:46.979Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:25:46.980Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:25:50.964Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:25:50.967Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T15:25:57.110Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T15:30:05.816Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:05.817Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:05.819Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:30:05.932Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:30:05.956Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T15:30:05.984Z] ADBServer:getFileOutput:error adb.exe: device offline
+
+[2025-10-31T15:30:46.059Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:46.066Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:46.068Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:30:47.138Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:30:47.140Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T15:30:47.176Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:10\r\n\r\n","stderr_tail":""}
+[2025-10-31T15:30:47.515Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:47.647Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:47.647Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:30:47.679Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:30:47.680Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T15:30:47.711Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:10\r\n\r\n","stderr_tail":""}
+[2025-10-31T15:30:47.855Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:47.856Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:30:47.857Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:30:47.915Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:30:47.915Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T15:30:47.995Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T15:35:48.952Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:48.957Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:48.959Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:35:49.211Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:35:49.213Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T15:35:49.311Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T15:35:49.317Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:49.318Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:49.320Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:35:49.413Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:35:49.414Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T15:35:53.541Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T15:35:53.682Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:53.683Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:53.683Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:35:54.728Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:35:54.729Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T15:35:54.766Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:10\r\n\r\n","stderr_tail":""}
+[2025-10-31T15:35:54.768Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:54.769Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:54.769Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:35:54.805Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:35:54.806Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T15:35:54.847Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T15:35:55.236Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:55.237Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:55.237Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:35:55.330Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:35:55.330Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T15:35:55.361Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n8xjbbat8ceoftg7l       device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:10\r\n\r\n","stderr_tail":""}
+[2025-10-31T15:35:55.362Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:55.363Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:55.364Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:35:55.399Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:35:55.400Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T15:35:55.588Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T15:35:55.593Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:55.595Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T15:35:55.596Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T15:35:55.644Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T15:35:55.645Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","8xjbbat8ceoftg7l","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-10-31T15:35:56.383Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-10-31T17:46:13.350Z] ADBServer:stopAsync requested
+[2025-10-31T17:46:13.361Z] ADBServer:stopAsync not running
+[2025-10-31T17:49:22.281Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:49:22.285Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:49:22.287Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:49:22.796Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:49:22.798Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:49:22.844Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:49:22.965Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:49:22.967Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:49:22.967Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:49:22.995Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:49:22.996Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:49:23.028Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:49:23.062Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:49:23.063Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:49:23.064Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:49:23.114Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:49:23.115Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T17:49:23.185Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T17:51:27.976Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:51:28.000Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:51:28.001Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:51:28.164Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:51:28.166Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T17:51:28.283Z] ADBServer:getFileOutput:result arm64-v8a,armeabi-v7a,armeabi
+
+[2025-10-31T17:51:28.291Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:51:28.294Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:51:28.295Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:51:28.385Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:51:28.386Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T17:52:04.333Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T17:52:04.360Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:04.362Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:04.364Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:52:06.000Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:52:06.001Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:52:07.358Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:52:07.359Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:07.360Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:07.361Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:52:08.595Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:52:08.596Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","reverse","tcp:8081","tcp:8081"]}
+[2025-10-31T17:52:09.835Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-10-31T17:52:10.198Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:10.199Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:10.200Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:52:11.928Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:52:11.929Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:52:12.847Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:52:12.848Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:12.849Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:12.850Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:52:14.123Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:52:14.124Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T17:52:14.887Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T17:52:14.893Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:14.894Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:52:14.895Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:52:15.004Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:52:15.004Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F10.207.253.2%3A8081"]}
+[2025-10-31T17:52:15.375Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://10.207.253.2:8081 }\r\n","stderr_tail":""}
+[2025-10-31T17:53:33.598Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:53:33.605Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:53:33.607Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:53:34.448Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:53:34.449Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:53:34.482Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:15\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:53:34.614Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:53:34.615Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:53:34.615Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:53:34.648Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:53:34.649Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:53:34.683Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:15\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:53:37.104Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:53:37.107Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:53:37.116Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:53:37.200Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:53:37.201Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T17:53:37.297Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T17:55:47.541Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:47.564Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:47.566Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:47.758Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:47.759Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T17:55:47.849Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T17:55:47.853Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:47.854Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:47.856Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:47.964Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:47.965Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T17:55:54.253Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T17:55:54.513Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:54.515Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:54.515Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:55.912Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:55.934Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:55:56.016Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:15\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:55:56.026Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:56.027Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:56.039Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:56.126Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:56.126Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T17:55:56.183Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T17:55:56.184Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:56.186Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:56.186Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:56.228Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:56.229Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T17:55:56.376Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T17:55:56.967Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:56.968Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:56.969Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:57.110Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:57.111Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T17:55:57.153Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:15\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T17:55:57.155Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:57.156Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:57.157Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:57.202Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:57.204Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T17:55:57.373Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T17:55:57.378Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:57.379Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T17:55:57.381Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T17:55:57.430Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T17:55:57.431Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F10.207.253.2%3A8082"]}
+[2025-10-31T17:55:57.736Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://10.207.253.2:8082 }\r\n","stderr_tail":""}
+[2025-10-31T18:25:17.860Z] ADBServer:stopAsync requested
+[2025-10-31T18:25:17.877Z] ADBServer:stopAsync not running
+[2025-10-31T18:25:38.810Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:25:38.814Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:25:38.816Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:25:39.344Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:25:39.345Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:25:39.403Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           offline transport_id:16\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:25:39.654Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:25:39.656Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:25:39.657Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:25:39.696Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:25:39.699Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:25:39.740Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           offline transport_id:16\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:26:42.552Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:26:42.553Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:26:42.554Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:26:42.654Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:26:42.655Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T18:26:42.698Z] ADBServer:getFileOutput:error adb.exe: device offline
+
+[2025-10-31T18:26:59.528Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:26:59.531Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:26:59.533Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:26:59.639Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:26:59.640Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:26:59.723Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:17\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:26:59.815Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:26:59.816Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:26:59.817Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:26:59.852Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:26:59.854Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:26:59.893Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:17\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:27:02.031Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:27:02.034Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:27:02.038Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:27:02.212Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:27:02.214Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T18:27:02.398Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T18:30:40.464Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:30:40.476Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:30:40.478Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:30:40.720Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:30:40.723Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T18:30:40.922Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T18:30:40.933Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:30:40.937Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:30:40.940Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:30:41.310Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:30:41.313Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T18:31:00.182Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T18:31:00.301Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:00.302Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:00.304Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:31:00.775Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:31:00.776Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:31:00.918Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:17\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:31:00.920Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:00.921Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:00.922Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:31:01.241Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:31:01.242Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T18:31:01.288Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T18:31:01.290Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:01.291Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:01.292Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:31:01.324Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:31:01.326Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T18:31:01.815Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:31:03.097Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:03.100Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:03.106Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:31:03.266Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:31:03.267Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:31:03.302Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:17\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:31:03.305Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:03.308Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:03.309Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:31:03.353Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:31:03.354Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T18:31:03.869Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T18:31:03.873Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:03.874Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:31:03.874Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:31:04.007Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:31:04.011Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F10.207.253.2%3A8082"]}
+[2025-10-31T18:31:05.789Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://10.207.253.2:8082 }\r\n","stderr_tail":""}
+[2025-10-31T18:51:14.616Z] ADBServer:stopAsync requested
+[2025-10-31T18:51:14.653Z] ADBServer:stopAsync not running
+[2025-10-31T18:51:48.892Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:51:48.897Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:51:48.898Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:51:49.913Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:51:49.914Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:51:49.982Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           offline transport_id:20\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:51:50.387Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:51:50.388Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:51:50.389Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:51:50.432Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:51:50.437Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:51:50.488Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           offline transport_id:20\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:51:53.181Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:51:53.182Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:51:53.183Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:51:53.278Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:51:53.280Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T18:51:53.323Z] ADBServer:getFileOutput:error adb.exe: device offline
+
+[2025-10-31T18:52:10.470Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:52:10.473Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:52:10.476Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:52:10.702Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:52:10.706Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:52:10.783Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:21\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:52:10.915Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:52:10.916Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:52:10.917Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:52:10.958Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:52:10.960Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T18:52:11.002Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:21\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T18:52:13.499Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:52:13.500Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T18:52:13.501Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T18:52:13.543Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T18:52:13.544Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T18:52:13.652Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T19:00:27.511Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:27.526Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:27.529Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:28.454Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:28.459Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-10-31T19:00:28.571Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-10-31T19:00:28.586Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:28.587Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:28.588Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:28.734Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:28.736Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-10-31T19:00:38.472Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-10-31T19:00:38.954Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:38.954Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:38.955Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:40.645Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:40.646Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T19:00:40.785Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:21\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T19:00:40.794Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:40.801Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:40.811Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:40.866Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:40.867Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T19:00:40.956Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-10-31T19:00:40.958Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:40.964Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:40.965Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:41.220Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:41.228Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","10.207.253.121:5555","reverse","tcp:8082","tcp:8082"]}
+[2025-10-31T19:00:42.090Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:43.582Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:43.583Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:43.584Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:44.679Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:44.680Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-10-31T19:00:44.933Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:21\r\n10.207.253.121:5555    device product:begonia model:Redmi_Note_8_Pro device:begonia transport_id:14\r\n\r\n","stderr_tail":""}
+[2025-10-31T19:00:44.935Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:44.936Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:44.937Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:45.065Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:45.066Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-10-31T19:00:45.365Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-10-31T19:00:45.371Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:45.372Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-10-31T19:00:45.373Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-10-31T19:00:46.640Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-10-31T19:00:46.652Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F10.207.253.2%3A8082"]}
+[2025-10-31T19:00:47.573Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://10.207.253.2:8082 }\r\n","stderr_tail":""}
+[2025-11-01T08:26:34.744Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:26:34.852Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:26:34.854Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-01T08:26:41.802Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-11-01T08:26:43.465Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T08:26:43.563Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T08:26:43.811Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:26:43.812Z] ADBServer:startAsync already running
+[2025-11-01T08:26:43.813Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T08:26:43.876Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T08:26:43.971Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:26:43.973Z] ADBServer:startAsync already running
+[2025-11-01T08:26:43.974Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T08:26:44.107Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T08:31:10.553Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:31:10.574Z] ADBServer:startAsync already running
+[2025-11-01T08:31:10.575Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T08:31:10.667Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T08:31:10.671Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:31:10.691Z] ADBServer:startAsync already running
+[2025-11-01T08:31:10.694Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-01T08:31:20.795Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-01T08:31:20.894Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:31:20.895Z] ADBServer:startAsync already running
+[2025-11-01T08:31:20.896Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T08:31:21.198Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T08:31:21.200Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:31:21.201Z] ADBServer:startAsync already running
+[2025-11-01T08:31:21.201Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-11-01T08:31:21.238Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-11-01T08:31:21.585Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:31:21.585Z] ADBServer:startAsync already running
+[2025-11-01T08:31:21.586Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T08:31:21.652Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T08:31:21.653Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:31:21.654Z] ADBServer:startAsync already running
+[2025-11-01T08:31:21.654Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-01T08:31:22.195Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-01T08:31:22.207Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T08:31:22.209Z] ADBServer:startAsync already running
+[2025-11-01T08:31:22.211Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-11-01T08:31:23.045Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-11-01T09:18:40.318Z] ADBServer:stopAsync requested
+[2025-11-01T09:18:40.352Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:18:40.357Z] ADBServer:startAsync already running
+[2025-11-01T09:18:40.361Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["kill-server"]}
+[2025-11-01T09:18:41.241Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-01T09:18:41.243Z] ADBServer:stopAsync stopped
+[2025-11-01T09:19:59.447Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:19:59.451Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:19:59.452Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-01T09:20:04.855Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-11-01T09:20:04.858Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T09:20:04.925Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T09:20:05.091Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:20:05.092Z] ADBServer:startAsync already running
+[2025-11-01T09:20:05.093Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T09:20:05.124Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T09:20:05.254Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:20:05.262Z] ADBServer:startAsync already running
+[2025-11-01T09:20:05.264Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T09:20:05.439Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T09:27:53.783Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:27:53.787Z] ADBServer:startAsync already running
+[2025-11-01T09:27:53.788Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T09:27:53.945Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T09:27:53.956Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:27:53.958Z] ADBServer:startAsync already running
+[2025-11-01T09:27:53.960Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-01T09:28:06.716Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-01T09:28:07.115Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:28:07.117Z] ADBServer:startAsync already running
+[2025-11-01T09:28:07.119Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T09:28:08.239Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T09:28:08.242Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:28:08.244Z] ADBServer:startAsync already running
+[2025-11-01T09:28:08.247Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-11-01T09:28:08.300Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-11-01T09:28:08.767Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:28:08.768Z] ADBServer:startAsync already running
+[2025-11-01T09:28:08.768Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T09:28:08.944Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T09:28:08.945Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:28:08.946Z] ADBServer:startAsync already running
+[2025-11-01T09:28:08.947Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-01T09:28:09.275Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-01T09:28:09.288Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T09:28:09.290Z] ADBServer:startAsync already running
+[2025-11-01T09:28:09.292Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-11-01T09:28:09.736Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-11-01T11:47:04.159Z] ADBServer:stopAsync requested
+[2025-11-01T11:47:04.163Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:47:04.166Z] ADBServer:startAsync already running
+[2025-11-01T11:47:04.169Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["kill-server"]}
+[2025-11-01T11:47:04.527Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-01T11:47:04.529Z] ADBServer:stopAsync stopped
+[2025-11-01T11:47:17.574Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:47:17.579Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:47:17.581Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-01T11:47:23.142Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-11-01T11:47:23.145Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T11:47:23.221Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T11:47:23.364Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:47:23.365Z] ADBServer:startAsync already running
+[2025-11-01T11:47:23.365Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T11:47:23.400Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T11:47:23.432Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:47:23.432Z] ADBServer:startAsync already running
+[2025-11-01T11:47:23.433Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T11:47:23.523Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T11:48:49.322Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:48:49.342Z] ADBServer:startAsync already running
+[2025-11-01T11:48:49.343Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T11:48:49.498Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T11:48:49.509Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:48:49.512Z] ADBServer:startAsync already running
+[2025-11-01T11:48:49.514Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","D:\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-01T11:49:06.780Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-01T11:49:06.974Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:49:06.976Z] ADBServer:startAsync already running
+[2025-11-01T11:49:06.977Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T11:49:07.367Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T11:49:07.369Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:49:07.369Z] ADBServer:startAsync already running
+[2025-11-01T11:49:07.370Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-11-01T11:49:07.408Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-11-01T11:49:07.757Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:49:07.758Z] ADBServer:startAsync already running
+[2025-11-01T11:49:07.758Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T11:49:08.158Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T11:49:08.159Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:49:08.160Z] ADBServer:startAsync already running
+[2025-11-01T11:49:08.160Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-01T11:49:08.503Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-01T11:49:08.512Z] ADBServer:adbPath C:\Users\tovon\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T11:49:08.513Z] ADBServer:startAsync already running
+[2025-11-01T11:49:08.515Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
+[2025-11-01T11:49:08.858Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}

@@ -1,65 +1,122 @@
-import { StyleSheet, Text, View } from "react-native";
-import React, { FC, useRef } from "react";
-// import { BarCodeReadEvent, RNCamera } from "react-native-camera";
-import { wp } from "@/src/utils/responsive";
-import { GREEN } from "@/src/constants/Colors";
+import {
+  CameraType,
+  useCameraPermissions,
+  BarcodeScanningResult,
+  CameraView,
+} from "expo-camera";
+import React, { FC, useEffect, useState } from "react";
+import {
+  Button,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import LottieView from "lottie-react-native";
+import { AntDesign, Ionicons, MaterialIcons } from "@expo/vector-icons";
 
 interface Props {
-  title: string;
-  error: string;
-  titleBolde: string;
-  subTitle: string;
-  handleBarCodeRead: (scannedCode: string, type?: string) => void;
+  children?: React.ReactNode;
+  onBarCodeReaded: (code: string) => void;
+  setValue: (code: string) => void;
+  showCamera: boolean;
 }
-const ScanCamera: FC<Props> = (props) => {
-  const scannedValue = useRef("");
-  // const codeReaded = (data: BarCodeReadEvent) => {
-  //   if (props.error === "") {
-  //     props.handleBarCodeRead(data.data);
-  //     scannedValue.current = data.data;
-  //   }
-  // };
-  return (
-    <View style={[{ flex: 1 }, wp(1) < 3.5 && { marginTop: 40 }]}>
-      {/* <RNCamera
-        style={{
-          flex: 1,
-          justifyContent: "flex-start",
-          alignItems: "center",
-        }}
-        autoFocus={RNCamera.Constants.AutoFocus.on}
-        flashMode={RNCamera.Constants.FlashMode.on}
-        barCodeTypes={[RNCamera.Constants.BarCodeType.qr]}
-        onBarCodeRead={codeReaded}
-        captureAudio={false}
-      >
-        <View>
-          <Text
-            style={{
-              fontSize: 16,
-              color: GREEN,
-              textAlign: "center",
-            }}
-          >
-            {props.title}{" "}
-            <Text style={{ fontWeight: "bold" }}>{props.titleBolde}</Text>
-          </Text>
+interface CameraSetting {
+  flash: boolean;
+  zoom: number;
+  sound: boolean;
+}
 
-          <Text
-            style={{
-              fontSize: 16,
-              color: "red",
-              textAlign: "center",
-            }}
-          >
-            {props.subTitle}
-          </Text>
-        </View>
-      </RNCamera> */}
+const ScannerCamera: FC<Props> = (props) => {
+  const [facing, setFacing] = useState<CameraType>("back");
+  const [permission, requestPermission] = useCameraPermissions();
+  const [cameraSetting, setCameraSetting] = useState<CameraSetting>({
+    flash: false,
+    zoom: 0,
+    sound: false,
+  });
+
+  if (!permission) {
+    requestPermission();
+  }
+
+  if (!permission || !permission.granted) {
+    // Camera permissions are not granted yet.
+    return <View style={styles.container}></View>;
+  }
+
+  const onBarcodeScanned = (scanningResult: BarcodeScanningResult) => {
+    props.onBarCodeReaded(scanningResult.data);
+  };
+
+  const setZom = (zoom: number) => {
+    if (zoom >= 0 && zoom <= 1)
+      setCameraSetting({ ...cameraSetting, zoom: zoom });
+  };
+
+  const setSound = () => {
+    setCameraSetting({ ...cameraSetting, sound: !cameraSetting.sound });
+  };
+
+  const setFlashOn = () => {
+    setCameraSetting({ ...cameraSetting, flash: !cameraSetting.flash });
+  };
+
+  return (
+    <View style={styles.container}>
+      {props.showCamera && (
+        <CameraView
+          style={styles.camera}
+          facing={facing}
+          barcodeScannerSettings={{
+            barcodeTypes: ["qr"],
+          }}
+          autofocus="on"
+          zoom={cameraSetting.zoom}
+          onBarcodeScanned={onBarcodeScanned}
+          enableTorch={cameraSetting.flash}
+        ></CameraView>
+      )}
     </View>
   );
 };
+export default ScannerCamera;
 
-export default ScanCamera;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    // overflow: 'hidden',
+  },
+  message: {
+    textAlign: "center",
+    paddingBottom: 10,
+  },
+  camera: {
+    flex: 1,
+    minHeight: "80%",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    // overflow: 'hidden',
+    // paddingVertical: '5%'
+  },
 
-const styles = StyleSheet.create({});
+  cameraHeader: {
+    // flexDirection: 'row',
+    height: "15%",
+    width: "100%",
+    backgroundColor: "red",
+    alignItems: "center",
+    // paddingHorizontal:'10%',
+    // columnGap:'10%',
+    justifyContent: "center",
+  },
+  logo: {
+    // width: '10%',  // ou une valeur fixe, par exemple 100
+    // height: '50%', // ou une hauteur fixe
+    flex: 1,
+    maxWidth: "100%",
+    maxHeight: "50%",
+  },
+});

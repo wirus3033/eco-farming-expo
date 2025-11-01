@@ -6,6 +6,7 @@ import DetailData from "@/src/components/ui/modal/DetailData";
 import { DataInterface } from "@/src/Interface/global/database.interface";
 import MessageErrorMain from "@/src/components/ui/modal/MessageErrorMain";
 import ContentCamera from "@/src/components/ui/global/ContentCamera";
+import { t } from "i18next";
 
 const Weigh = () => {
   const router = useRouter();
@@ -25,7 +26,7 @@ const Weigh = () => {
   return (
     <View style={[styles.container]}>
       <TopHeaderRecolte handleReturn={handleRetourn} />
-      <ContentCamera isLoading={isLoading} error={error} />
+      <ContentCamera isLoading={isLoading} error={error}  scan_text={(t('PESEE_RECOLTE:TEXT_EN_ATTENTE'))}/>
       <MessageErrorMain
         errorMessage2={error3}
         handleReturn={() => {}}
@@ -35,7 +36,9 @@ const Weigh = () => {
       />
       <DetailData
         isModalVisible={isVisibleData}
-        closeModal={() => {}}
+        closeModal={() => {
+          setIsVisibleData(false);
+        }}
         data={binInParcel}
         title={"BAC affectées aux paysans"}
       />

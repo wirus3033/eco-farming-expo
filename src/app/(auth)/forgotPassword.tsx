@@ -14,6 +14,7 @@ import { useRouter } from 'expo-router';
 import Loading from '@/src/components/ui/login/Loading';
 import { Fonts } from '@/src/constants/Font';
 import Text from '@/src/components/ui/Text';
+import LoadingToast from '@/src/components/ui/login/LoadingToast';
 
 
 interface NavagationProps {
@@ -64,7 +65,7 @@ const ForgotPassword: FC<NavagationProps> = ({ navigation }) => {
     return (
         <>
             {isLoading ? (
-                <Loading toastVisible={false} isConnectedInternet={true} title="Mot de passe oublié" />
+                <LoadingToast toastVisible={false} isConnectedInternet={true} title="Mot de passe oublié" />
             ) : (
                 <ScrollView
                     showsHorizontalScrollIndicator={false}
@@ -96,7 +97,7 @@ const ForgotPassword: FC<NavagationProps> = ({ navigation }) => {
                                         resizeMode="contain"
                                         style={{
                                             width: wp(18),
-                                            marginTop: heightScreen > 3.5 ? -hp(8) : -hp(15),
+                                            marginTop: heightScreen > 3.5 ? -hp(12) : -hp(15),
                                         }}
                                     />
                                     <View
@@ -107,7 +108,7 @@ const ForgotPassword: FC<NavagationProps> = ({ navigation }) => {
                                         <Text
                                             style={{
                                                 color: GREEN,
-                                                fontSize: 21,
+                                                fontSize: wp(6),
                                                 fontFamily: Fonts.thin,
                                             }}>
                                             eco
@@ -115,7 +116,7 @@ const ForgotPassword: FC<NavagationProps> = ({ navigation }) => {
                                         <Text
                                             style={{
                                                 color: TEXT_COLOR,
-                                                fontSize: 21,
+                                                fontSize: wp(6),
                                                 fontFamily: Fonts.thin,
                                             }}>
                                             farming
@@ -124,8 +125,8 @@ const ForgotPassword: FC<NavagationProps> = ({ navigation }) => {
                                 </View>
 
                                 <View style={{ paddingHorizontal: wp(4) }}>
-                                    {/* <Text style={styles.titleText}>{t('LOGING:FORGOT_PASSWORD')}</Text> */}
-                                    <Text style={styles.titleText}>mot de passe oublié</Text>
+                                    <Text style={styles.titleText}>{t('LOGING:FORGOT_PASSWORD')}</Text>
+                                    {/* <Text style={styles.titleText}>mot de passe oublié</Text> */}
                                 </View>
 
                                 <View style={{ gap: wp(5), paddingHorizontal: wp(4) }}>

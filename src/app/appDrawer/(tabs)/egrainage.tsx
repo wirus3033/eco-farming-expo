@@ -17,10 +17,7 @@ const Egrainage = () => {
   const router = useRouter();
   return (
     <View style={styles.container}>
-      <TopHeaderNav
-        title={t("MENU_RECOLTE:TITLE")}
-        subtitle={t("MENU_RECOLTE:SUBTITLE")}
-      />
+      <TopHeaderNav title={t('MENU_EGRAINAGE:TITLE_UP')} subtitle={t('MENU_EGRAINAGE:SUBTITLE')} />
       <View style={styles.body}>
         <View
           style={{
@@ -31,18 +28,18 @@ const Egrainage = () => {
           }}
         >
           <Card
-            title={`Picking\nEgrainage`}
+            title={t('MENU_EGRAINAGE:PICKING_EGRAINAGE')}
             icon={Icons.picking}
             texColor="black"
             backgroundColor={GREENN}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 
-              router.push("/Egrainage")
+              router.push("/appDrawer/Egrainage")
             }
           />
           <Card
-            title={`Fin\nd'égreinage`}
+            title={t('MENU_EGRAINAGE:FIN_EGRAINAGE')}
             icon={Icons.sortieEgrainage}
             texColor="white"
             backgroundColor={ROSE}
@@ -50,7 +47,7 @@ const Egrainage = () => {
         </View>
         <View style={{ flex: 1, gap: 12 }}>
           <Card
-            title={`Sotie égrainage`}
+            title={t('MENU_EGRAINAGE:SORTIE_EGRAINAGE')}
             icon={Icons.sortie}
             texColor="white"
             backgroundColor={Colors_Menu.menuSorties}
@@ -58,7 +55,7 @@ const Egrainage = () => {
         </View>
         <View style={{ flex: 1, gap: 12 }}>
           <Card
-            title={`Picking packaging`}
+            title={t('MENU_EGRAINAGE:PICKING_PACKAGING')}
             icon={Icons.liberation}
             texColor="white"
             backgroundColor={Colors_Menu.menuPackaging}

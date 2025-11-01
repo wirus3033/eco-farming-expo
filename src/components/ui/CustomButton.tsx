@@ -47,13 +47,15 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 const stylesBoutton = StyleSheet.create({
   container: {
     borderRadius: 20,
+    justifyContent:"center",
+    alignItems:"center"
   },
   container_PRIMARY: {
     flexDirection: 'row',
     backgroundColor: GREEN,
     justifyContent: 'center',
     marginBottom: 10,
-    paddingBottom: 5,
+    // paddingBottom: 5,
     alignItems: 'center',
     maxHeight:wp(15),
     minHeight: wp(15),
@@ -63,7 +65,7 @@ const stylesBoutton = StyleSheet.create({
     backgroundColor: LIGHT_GRAY_COLOR,
     justifyContent: 'center',
     marginBottom: 10,
-    paddingBottom: 5,
+    // paddingBottom: 5,
     alignItems: 'center',
     maxHeight:wp(15),
     minHeight: wp(15),
@@ -97,7 +99,8 @@ const stylesBoutton = StyleSheet.create({
     color: 'white',
     fontSize: wp(4),
     textAlign: 'center',
-    flex: 1
+    flex: 1,
+    // backgroundColor:"red"
   },
   text_WHITE: {
     color: 'black',

@@ -1,4 +1,4 @@
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, View } from "react-native";
 import React, { FC, useRef, useState } from "react";
 import { hp, wp } from "@/src/utils/responsive";
 import {
@@ -13,6 +13,7 @@ import { TextInput } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTranslation } from "react-i18next";
 import Loading from "../ui/login/Loading";
+import Text from "../ui/Text";
 
 interface Props {
   iconReturn?: string;
@@ -160,12 +161,16 @@ const TopHeaderRecolte: FC<Props> = ({
             }}
           >
             <Text style={[styles.title, !subTitle && { marginBottom: hp(3) }]}>
-              {title} <Text style={styles.bold}>{titleBold}</Text>
+              {title}ccccccccccc <Text style={styles.bold}>
+                {titleBold}
+                ccccccccccc
+                </Text>
             </Text>
-            {subTitle && (
+            {!subTitle && (
               <View>
                 <Text style={styles.instruction}>
                   {subTitle}{" "}
+                  dddddddddddddddddd
                   {subTitleBold && (
                     <Text
                       style={[
@@ -175,6 +180,7 @@ const TopHeaderRecolte: FC<Props> = ({
                       ]}
                     >
                       {subTitleBold}
+                      cccccccccccccccccccc
                     </Text>
                   )}
                 </Text>
@@ -210,7 +216,7 @@ const TopHeaderRecolte: FC<Props> = ({
               style={{ padding: 5, fontFamily: "Roboto-Regular", flex: 1 }}
               returnKeyType="search"
             />
-            {!searchText && (
+            {searchText && (
               <Pressable
                 onPress={() => {}}
                 style={{
@@ -219,7 +225,10 @@ const TopHeaderRecolte: FC<Props> = ({
                   zIndex: -1,
                 }}
               >
-                <Text style={{ color: "#888" }}>{placeholder}</Text>
+                <Text style={{ color: "#888" }}>
+                  {placeholder}
+                  cccccccccccccccccccc
+                </Text>
               </Pressable>
             )}
             <Pressable
@@ -239,6 +248,7 @@ const TopHeaderRecolte: FC<Props> = ({
                 style={[styles.subTytle, { fontWeight: "bold", marginLeft: 3 }]}
               >
                 {t("AFFECTATION_BIN_PARCELLE:TEXT_RESULT")}:{" "}
+                dddddddddddddddd
                 <Text style={styles.subTytle}>{countResult}</Text>
               </Text>
             </View>
@@ -246,8 +256,11 @@ const TopHeaderRecolte: FC<Props> = ({
         </View>
       )}
 
-      <Loading title={t('MODAL:LOADING_TITLE')} subTitle={t('MODAL:LOADING_SUBTITLE')} visible={isLoading} />
-
+      <Loading
+        title={t("MODAL:LOADING_TITLE")}
+        subTitle={t("MODAL:LOADING_SUBTITLE")}
+        visible={isLoading}
+      />
     </View>
   );
 };

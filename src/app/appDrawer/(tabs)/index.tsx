@@ -22,8 +22,11 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
   const router = useRouter();
   return (
     <View style={[styles.container]}>
-      {/* <TopHeaderNav title={t('MENU_EGRAINAGE:TITLE_UP')} subtitle={t('MENU_EGRAINAGE:SUBTITLE')} /> */}
-      <TopHeaderNav title={"dddddd"} subtitle={"eeee"} />
+       <TopHeaderNav
+        title={t("MENU_RECOLTE:TITLE")}
+        subtitle={t("MENU_RECOLTE:SUBTITLE")}
+      />
+      {/* <TopHeaderNav title={"dddddd"} subtitle={"eeee"} /> */}
       <View style={styles.body}>
         <View
           style={{
@@ -35,31 +38,31 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
           }}
         >
           <Card
-            title={`Affectation\nBIN / Parcelle`}
+            title={t('MENU_RECOLTE:AFFECTATION_BIN_PARCELLE')}
             icon={Icons.attribution}
             texColor="black"
             backgroundColor={Colors_Menu.menuAffectations}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 
-              router.push("/Recolte")
+              router.push("/appDrawer/Recolte")
             }
           />
           <Card
-            title={`Envoyer\nBIN à l'usine`}
+            title={t('MENU_RECOLTE:ENVOI_BIN_USINE')}
             icon={Icons.sortie}
             texColor="white"
             backgroundColor={ROSE}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 
-              router.push("/Recolte/sendUsine")
+              router.push("/appDrawer/Recolte/sendUsine")
             }
           />
         </View>
         <View style={{ flex: 1, gap: 12 }}>
           <Card
-            title={`Pesées récolte`}
+            title={t('MENU_RECOLTE:PESEE_RECOLTE')}
             icon={Icons.enregistrement}
             texColor="white"
             backgroundColor={FOND_BlUE}
@@ -67,20 +70,20 @@ const Index: FC<RecoltProps> = ({ navigation }) => {
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 
-              router.push("/Recolte/weigh")
+              router.push("/appDrawer/Recolte/weigh")
             }
           />
         </View>
         <View style={{ flex: 1, gap: 12 }}>
           <Card
-            title={`Réception usine`}
+            title={t('MENU_RECOLTE:RECEPTION_USINE')}
             icon={Icons.stock}
             texColor="black"
             backgroundColor={GREENN}
             onPressItem={() =>
               // console.log("eeeeeeeeeeeeee")
 
-              router.push("/Recolte/reception")
+              router.push("/appDrawer/Recolte/reception")
             }
           />
         </View>

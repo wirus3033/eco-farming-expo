@@ -1,12 +1,18 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import { useColorScheme } from 'react-native';
-import 'react-native-reanimated';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import {
+  DarkTheme,
+  DefaultTheme,
+  ThemeProvider,
+} from "@react-navigation/native";
+import { useFonts } from "expo-font";
+import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
+import { useEffect } from "react";
+import { I18nextProvider } from "react-i18next";
+import { useColorScheme } from "react-native";
+import "react-native-reanimated";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import i18n from "../i18n";
 
 // ✅ Ajout de l’import du provider clavier
 // import { KeyboardProvider } from 'react-native-keyboard-controller';
@@ -17,8 +23,8 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-    thin: require('../assets/fonts/Roboto-Thin.ttf'),
+    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
+    thin: require("../assets/fonts/Roboto-Thin.ttf"),
   });
 
   useEffect(() => {
@@ -29,26 +35,31 @@ export default function RootLayout() {
 
   if (!loaded) return null;
 
-  const theme = colorScheme === 'dark' ? DarkTheme : DefaultTheme;
-  const barStyle = colorScheme === 'dark' ? 'light' : 'dark';
+  const theme = colorScheme === "dark" ? DarkTheme : DefaultTheme;
+  const barStyle = colorScheme === "dark" ? "light" : "dark";
 
   return (
-    <SafeAreaProvider style={{ flex: 1, paddingHorizontal: 0, marginHorizontal: 0 }}>
+    <SafeAreaProvider
+      style={{ flex: 1, paddingHorizontal: 0, marginHorizontal: 0 }}
+    >
       <SafeAreaView
-        edges={['top', 'bottom', 'left', 'right']}
+        edges={["top", "bottom", "left", "right"]}
         style={{ flex: 1, paddingHorizontal: 0, marginHorizontal: 0 }}
       >
         {/* <KeyboardProvider> */}
-          <ThemeProvider value={theme}>
+        <ThemeProvider value={theme}>
+          <I18nextProvider i18n={i18n}>
             <Stack>
               <Stack.Screen name="(auth)" options={{ headerShown: false }} />
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
               <Stack.Screen name="Recolte" options={{ headerShown: false }} />
               <Stack.Screen name="Lavage" options={{ headerShown: false }} />
               <Stack.Screen name="Egrainage" options={{ headerShown: false }} />
+              <Stack.Screen name="appDrawer" options={{ headerShown: false }} />
             </Stack>
-            <StatusBar style={barStyle} />
-          </ThemeProvider>
+          </I18nextProvider>
+          <StatusBar style={barStyle} />
+        </ThemeProvider>
         {/* </KeyboardProvider> */}
       </SafeAreaView>
     </SafeAreaProvider>
