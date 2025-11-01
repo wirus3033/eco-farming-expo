@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "~14.0.4",
-    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-async-storage/async-storage": "^1.23.1",
     "@react-native-community/netinfo": "11.4.1",
     "@react-native-masked-view/masked-view": "0.3.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
@@ -29,6 +29,7 @@
     "dayjs": "^1.11.18",
     "expo": "~52.0.47",
     "expo-blur": "~14.0.3",
+    "expo-camera": "~16.0.18",
     "expo-checkbox": "~4.0.1",
     "expo-constants": "~17.0.8",
     "expo-font": "~13.0.4",
@@ -45,7 +46,7 @@
     "moment": "^2.30.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-i18next": "^16.2.1",
+    "react-i18next": "^16.2.3",
     "react-native": "0.76.9",
     "react-native-device-info": "^14.1.1",
     "react-native-drawer": "^2.5.1",
@@ -53,7 +54,7 @@
     "react-native-keep-awake": "^4.0.0",
     "react-native-link": "^4.1.0",
     "react-native-loading-spinner-overlay": "^3.0.1",
-    "react-native-localize": "^3.5.4",
+    "react-native-localize": "^3.6.0",
     "react-native-mmkv": "^4.0.0",
     "react-native-modal": "^14.0.0-rc.1",
     "react-native-nitro-modules": "^0.31.2",
@@ -65,7 +66,8 @@
     "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "react-redux": "^9.2.0"
+    "react-redux": "^9.2.0",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

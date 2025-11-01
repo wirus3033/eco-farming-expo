@@ -43,8 +43,9 @@ const styles = StyleSheet.create({
     checkbox: {
         borderRadius: 2,
         borderWidth: 1,
-        width: wp(6),
-        height: hp(3.5),
+        // width: wp(5),
+        // aspectRatio:1
+        // height: hp(3.5),
     },
     checkboxLabel: {
         marginLeft: 8,

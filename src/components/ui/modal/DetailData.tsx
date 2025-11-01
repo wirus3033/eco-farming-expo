@@ -1,10 +1,11 @@
-import {View, Text, StyleSheet, TouchableOpacity, FlatList} from 'react-native';
+import {View, StyleSheet, TouchableOpacity, FlatList} from 'react-native';
 import React, {FC} from 'react';
 import Modal from 'react-native-modal';
 import CustomButton from '../CustomButton';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {count} from 'console';
 import { DataInterface } from '@/src/Interface/global/database.interface';
+import Text from '../Text';
 
 interface Props {
   isModalVisible?: boolean;

@@ -3,6 +3,8 @@ import React, {FC, useState} from 'react';
 import { hp, wp } from '@/src/utils/responsive';
 import { Images } from '@/src/constants/Images';
 import Text from './Text';
+import { DrawerActions } from '@react-navigation/native';
+import { useNavigation } from 'expo-router';
 
 
 interface Props {
@@ -12,10 +14,8 @@ interface Props {
 
 const TopHeaderNav: FC<Props> = ({title, subtitle}) => {
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
-
-  const toggleDrawer = () => {
-    setIsDrawerVisible(!isDrawerVisible);
-  };
+const navigation = useNavigation();
+  const toggleDrawer = () => navigation.dispatch(DrawerActions.toggleDrawer());
   
   return (
     <View

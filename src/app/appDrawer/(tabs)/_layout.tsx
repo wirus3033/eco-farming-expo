@@ -1,5 +1,6 @@
 import { wp } from '@/src/utils/responsive';
 import { Tabs } from 'expo-router';
+import { t } from 'i18next';
 import React from 'react';
 import { Image, Platform, Pressable, View } from 'react-native';
 
@@ -51,7 +52,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Récolte',
+          title: t('MENU_RECOLTE:TITLE'),
           tabBarIcon: ({ color }) => (
             <Image {...iconProps} source={recolteIcon} style={{ width: 24, height: 24, tintColor: color }} />
           ),
@@ -60,7 +61,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="lavage"
         options={{
-          title: 'Lavage',
+          title: t('MENU_LAVAGE:TITLE'),
           tabBarIcon: ({ color }) => (
             <Image {...iconProps} source={lavageIcon} style={{ width: 28, height: 28, tintColor: color }} />
           ),
@@ -69,7 +70,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="egrainage"
         options={{
-          title: 'Égrainage',
+          title: t('MENU_EGRAINAGE:TITLE'),
           tabBarIcon: ({ color }) => (
             <Image {...iconProps} source={egrainageIcon} style={{ width: 24, height: 24, tintColor: color }} />
           ),

@@ -15,6 +15,7 @@ import { useRouter } from 'expo-router';
 import CustomCheckbox from '@/src/components/ui/CustomCheckBox';
 import { Fonts } from '@/src/constants/Font';
 import Text from '@/src/components/ui/Text';
+import LoadingToast from '@/src/components/ui/login/LoadingToast';
 
 type Errors = {
     email?: string;
@@ -57,7 +58,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
         <>
             <StatusBar hidden={true} />
             {isLoading ? (
-                <Loading
+                <LoadingToast
                     toastVisible={toastVisible}
                     isConnectedInternet={isConnectedInternet}
                     title={t('LOGING:CONNECTION_IN_PROGRESS')}
@@ -96,7 +97,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                         resizeMode="contain"
                                         style={{
                                             width: wp(18),
-                                            marginTop: heightScreen > 3.5 ? -hp(8) : -hp(15),
+                                            marginTop: heightScreen > 3.5 ? -hp(12) : -hp(15),
                                         }}
                                     />
                                     <View
@@ -108,7 +109,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                         <Text
                                             style={{
                                                 color: GREEN,
-                                                fontSize: 21,
+                                                fontSize: wp(6),
                                                 fontFamily: Fonts.thin,
                                             }}>
                                             eco
@@ -116,7 +117,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                         <Text
                                             style={{
                                                 color: TEXT_COLOR,
-                                                fontSize: 21,
+                                                fontSize: wp(6),
                                                 fontFamily: Fonts.thin,
                                             }}>
                                             farming
@@ -125,8 +126,8 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                 </View>
 
                                 <View style={{ paddingHorizontal: wp(4) }}>
-                                    {/* <Text style={styles.titleText}>{t('LOGING:LOGIN')}</Text> */}
-                                    <Text style={styles.titleText}>LOGIN</Text>
+                                    <Text style={styles.titleText}>{t('LOGING:LOGIN')}</Text>
+                                    {/* <Text style={styles.titleText}>LOGIN</Text> */}
                                 </View>
 
                                 <View style={{ gap: wp(5), paddingHorizontal: wp(4) }}>
@@ -200,7 +201,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                     style={{
                                         paddingHorizontal: wp(4),
                                     }}>
-                                    <CustomButton onPress={() => router.navigate("/(tabs)")} text={t('LOGING:CONNECT')} />
+                                    <CustomButton onPress={() => router.navigate("/appDrawer/(tabs)")} text={t('LOGING:CONNECT')} />
                                     <CustomButton
                                         type="SECONDARY"
                                         onPress={() => router.navigate("/(auth)/forgotPassword")}
