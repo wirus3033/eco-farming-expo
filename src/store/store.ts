@@ -6,10 +6,14 @@ import {
   persistStore,
   FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER,
 } from 'redux-persist';
+import appSetting from './slices/appSetting.slice';
+import globalInfo from './slices/globalInfo.slice';
 
 
 
 const rootReducer = combineReducers({
+  AppSettingRedux: appSetting,
+  globalInfo: globalInfo,
 });
 
 const persistConfig = {

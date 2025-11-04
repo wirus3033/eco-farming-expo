@@ -1,4 +1,4 @@
-import { Dimensions, Image, StyleSheet, Text, View } from 'react-native'
+import { Dimensions, Image, StyleSheet, View } from 'react-native'
 import React, { FC } from 'react'
 import { GRAY, GREEN, TEXT_COLOR } from '@/src/constants/Colors'
 import { hp, wp } from '@/src/utils/responsive'
@@ -7,6 +7,7 @@ import CustomLogo from '../CustomLogo';
 import { useTranslation } from 'react-i18next';
 import CustomButton from '../CustomButton';
 import { Fonts } from '@/src/constants/Font';
+import Text from '../Text';
 
 
 interface Props {
@@ -31,7 +32,7 @@ const ErrorLogin: FC<Props> = ({ isLoading, isConnetected, returnLogin, login, t
         <View style={[styles.borderShadow, { height: heightScreen > 3.5 ? hp(91) : hp(91) }]}>
             <View
                 style={{
-                    gap: heightScreen > 3.5 ? hp(11) : hp(10),
+                    gap: heightScreen > 3.5 ? hp(10) : hp(8),
                 }}>
                 <View
                     style={{
@@ -49,8 +50,8 @@ const ErrorLogin: FC<Props> = ({ isLoading, isConnetected, returnLogin, login, t
                     }}>
                     <View
                         style={{
-                            width: wp(24),
-                            height: wp(24),
+                            width: wp(18),
+                            height: wp(18),
                             backgroundColor: GREEN,
                             padding: 20,
                             borderRadius: 50,
@@ -62,17 +63,41 @@ const ErrorLogin: FC<Props> = ({ isLoading, isConnetected, returnLogin, login, t
                             source={Icons.attention}
                             resizeMode="contain"
                             style={{
-                                width: wp(18),
-                                height: wp(18),
-                                marginBottom: 15,
+                                width: wp(10),
+                                // height: wp(15),
+                                marginBottom: wp(2),
+                                // justifyContent: 'center',
+                                // alignItems: 'center',
                             }}
                         />
                     </View>
                     <View
                         style={{
-                            marginTop: heightScreen > 3.5 ? 40 : wp(6.5),
+                            marginTop: heightScreen > 3.5 ? 40 : wp(10),
                         }}>
-                        <CustomLogo />
+                        <View
+                            style={{
+                                flexDirection: 'row',
+                                marginTop: -hp(5),
+                                // marginBottom: -hp(6),
+                            }}>
+                            <Text
+                                style={{
+                                    color: GREEN,
+                                    fontSize: wp(6),
+                                    fontFamily: Fonts.thin,
+                                }}>
+                                eco
+                            </Text>
+                            <Text
+                                style={{
+                                    color: TEXT_COLOR,
+                                    fontSize: wp(6),
+                                    fontFamily: Fonts.thin,
+                                }}>
+                                farming
+                            </Text>
+                        </View>
                     </View>
                 </View>
 
@@ -80,20 +105,20 @@ const ErrorLogin: FC<Props> = ({ isLoading, isConnetected, returnLogin, login, t
                     <Text
                         style={{
                             color: TEXT_COLOR,
-                            fontSize: 21,
+                            fontSize: wp(6),
                             textAlign: 'center',
                             fontFamily: Fonts.thin,
                         }}>
                         {title}
                     </Text>
-                    <View style={{ borderBottomWidth: 1, borderBottomColor: GRAY }} />
+                    <View style={{ borderBottomWidth: wp(0.2), borderBottomColor: GRAY }} />
                 </View>
                 <View style={{ paddingHorizontal: wp(4) }}>
                     <Text
                         style={[
                             {
                                 color: GRAY,
-                                fontSize: 18,
+                                fontSize: wp(4.5),
                                 textAlign: 'center',
                                 fontFamily: Fonts.thin,
                                 marginTop: 8,

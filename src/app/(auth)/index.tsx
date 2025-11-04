@@ -1,4 +1,4 @@
-import { ScrollView, StatusBar, StyleSheet,  View, Image } from 'react-native'
+import { ScrollView, StatusBar, StyleSheet, View, Image } from 'react-native'
 import React, { FC, useRef, useState } from 'react'
 import Loading from '@/src/components/ui/login/Loading'
 import { useTranslation } from 'react-i18next';
@@ -16,6 +16,12 @@ import CustomCheckbox from '@/src/components/ui/CustomCheckBox';
 import { Fonts } from '@/src/constants/Font';
 import Text from '@/src/components/ui/Text';
 import LoadingToast from '@/src/components/ui/login/LoadingToast';
+import { validateEmail, validatePassword } from '@/src/helpers/validate.helpers';
+import { getData, removeData, storeData } from '@/src/helpers/AsyncStorage';
+import { AxiosRequestResponse, login } from '@/src/api/agentApi';
+import { CurrentUserInfo } from '@/src/Interface/global/database.interface';
+import { BDD_Local } from '@/src/constants/BaseLocal';
+import { initializeData } from '@/src/service/initializeData';
 
 type Errors = {
     email?: string;
@@ -40,6 +46,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
     const [password, setPassword] = useState<string>('');
     const [errors, setErrors] = useState<Errors>({});
     const [eyePassword, setEyePassword] = useState(true);
+    const emailRef = useRef<any>(null);
     const passwordRef = useRef<any>(null);
     const [messageError, setMessageError] = useState('');
     const [isVisible, setIsVisible] = useState(false);
@@ -53,6 +60,104 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
     const clearText = () => {
         setEmail('');
     };
+
+    const validateForm = () => {
+        const emailValidation = validateEmail(email);
+        if (!emailValidation.isValid) {
+            setErrors(errors => ({ ...errors, email: emailValidation.error }));
+            setIsVisible(true);
+            emailRef.current?.focus();
+            return false;
+        }
+
+        const passwordValidation = validatePassword(password);
+        if (!passwordValidation.isValid) {
+            setErrors(errors => ({ ...errors, password: passwordValidation.error }));
+            setIsVisible(true);
+            passwordRef.current?.focus();
+            return false;
+        }
+
+        return true;
+    };
+
+
+    const loginHandlePress = async (type: boolean) => {
+        if (validateForm()) {
+            setIsLoading(true);
+            const currentUser = await getData('currentUser');
+            const isConnexion: boolean | null = await testConnexion();
+            if (isConnexion) {
+                const response = (await login(email, password, isConnexion)) as AxiosRequestResponse;
+                console.log("response", response);
+                switch (response.status_code) {
+                    case 200:
+                        if (rememberMe) {
+                            await storeData('rememberedEmail', email);
+                            await storeData('rememberedPassword', password);
+                        } else {
+                            await removeData('rememberedEmail');
+                            await removeData('rememberedPassword');
+                        }
+                        //  initializeData()
+                        router.replace('/appDrawer/(tabs)');
+                        setIsLoading(false);
+                        setIsLoginValid(false);
+                        return;
+
+
+                    //     .then(async value => {
+                    //         console.log('reponde tunnellle oooooooooooooooooooooooooooo');
+
+
+                    //         storeData('isConnected', JSON.stringify(true));
+                    //         const currentUser = response.data as CurrentUserInfo;
+                    //         storeData(BDD_Local.currentUserInfo, await JSON.stringify(currentUser));
+                    //         storeData(BDD_Local.currentUser, await JSON.stringify(currentUser));
+
+                    //         setIsLoading(false);
+                    //         navigation.replace('main');
+                    //         setPassword('');
+                    //     })
+                    //     .catch(error => {
+                    //         setIsLoading(false);
+                    //         setIsVisible(true);
+                    //         setErrorMessage(t('LOGING:CONNECTION_ERROR'));
+                    //     });
+                    // break;
+                    // case 902:
+                    //     setIsLoginValid(false);
+                    //     setIsLoading(false);
+                    //     setMessageError(response.messages);
+                    //     break;
+                    case 902:
+                        setIsLoginValid(false);
+                        setIsLoading(false);
+                        setMessageError(response.messages);
+                        break;
+                    case 905:
+                        setIsLoginValid(false);
+                        setIsLoading(false);
+                        setBtnVisible(true);
+                        setMessageError(response.messages);
+                        break;
+                    default:
+                        setIsLoginValid(false);
+                        setIsLoading(false);
+                        setBtnVisible(true);
+                        setMessageError(response.messages);
+                        break;
+                }
+                setIsLoading(false);
+                return;
+            }
+            setIsLoading(false);
+            setIsContectedInternet(true);
+            setToastVisible(true);
+        }
+    };
+
+
 
     return (
         <>
@@ -70,7 +175,10 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                     showsVerticalScrollIndicator={false}
                     style={[styles.container, { height: heightScreen > 3.5 ? hp(80) : hp(100) }]}>
                     {isLoginValid ? (
-                        <View style={[styles.borderShadow, { height: heightScreen > 3.5 ? hp(91) : hp(91) }]}>
+                        <View style={[styles.borderShadow,
+                        {
+                            height: heightScreen > 3.5 ? hp(91) : hp(91)
+                        }]}>
                             <View
                                 style={{
                                     gap: heightScreen > 3.5 ? hp(9) : hp(6),
@@ -132,6 +240,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
 
                                 <View style={{ gap: wp(5), paddingHorizontal: wp(4) }}>
                                     <CustomTextInput
+                                        ref={emailRef}
                                         icon={Icons.email}
                                         placeholder="Email"
                                         value={email}
@@ -201,7 +310,7 @@ const Index: FC<NavagationProps> = ({ navigation }) => {
                                     style={{
                                         paddingHorizontal: wp(4),
                                     }}>
-                                    <CustomButton onPress={() => router.navigate("/appDrawer/(tabs)")} text={t('LOGING:CONNECT')} />
+                                    <CustomButton onPress={() => loginHandlePress(true)} text={t('LOGING:CONNECT')} />
                                     <CustomButton
                                         type="SECONDARY"
                                         onPress={() => router.navigate("/(auth)/forgotPassword")}
