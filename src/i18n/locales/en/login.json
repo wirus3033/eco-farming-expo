@@ -2,6 +2,7 @@
   "LOGING": {
     "EMAIL_REQUIRED": "Please enter your email address",
     "PASSWORD_REQUIRED": "Please enter your password",
+    "SYNTAX_ERROR_EMAIL": "The address is syntactically incorrect",
     "CONNECTION_ERROR": "An error occurred during login. Please try again",
     "FIRST_USE_EMAIL": "Is this your first use? \n\nPlease enable your internet connection before launching the application.",
     "CONNECTION_IN_PROGRESS": "Connecting",

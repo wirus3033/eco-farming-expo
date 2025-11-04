@@ -1394,3 +1394,1102 @@
 [2025-11-01T11:49:08.513Z] ADBServer:startAsync already running
 [2025-11-01T11:49:08.515Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\tovon\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.28%3A8081"]}
 [2025-11-01T11:49:08.858Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.28:8081 }\r\n","stderr_tail":""}
+[2025-11-01T12:01:17.278Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:01:17.282Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:01:17.284Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-01T12:01:22.615Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-11-01T12:01:22.618Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T12:01:22.664Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T12:01:22.779Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:01:22.780Z] ADBServer:startAsync already running
+[2025-11-01T12:01:22.781Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T12:01:22.812Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T12:01:22.827Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:01:22.828Z] ADBServer:startAsync already running
+[2025-11-01T12:01:22.828Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T12:01:22.977Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T12:07:35.350Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:07:35.357Z] ADBServer:startAsync already running
+[2025-11-01T12:07:35.363Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T12:07:35.561Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T12:07:35.566Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:07:35.567Z] ADBServer:startAsync already running
+[2025-11-01T12:07:35.572Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-01T12:07:49.504Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-01T12:07:49.513Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:07:49.513Z] ADBServer:startAsync already running
+[2025-11-01T12:07:49.515Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T12:07:51.209Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T12:07:51.211Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:07:51.212Z] ADBServer:startAsync already running
+[2025-11-01T12:07:51.213Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-11-01T12:07:53.166Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-11-01T12:07:53.684Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:07:53.685Z] ADBServer:startAsync already running
+[2025-11-01T12:07:53.685Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T12:07:55.960Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T12:07:55.962Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:07:55.963Z] ADBServer:startAsync already running
+[2025-11-01T12:07:55.964Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-01T12:07:57.729Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-01T12:07:57.733Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T12:07:57.734Z] ADBServer:startAsync already running
+[2025-11-01T12:07:57.738Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8081"]}
+[2025-11-01T12:07:59.453Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8081 }\r\n","stderr_tail":""}
+[2025-11-01T13:38:17.722Z] ADBServer:stopAsync requested
+[2025-11-01T13:38:17.725Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:38:17.727Z] ADBServer:startAsync already running
+[2025-11-01T13:38:17.729Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["kill-server"]}
+[2025-11-01T13:38:17.915Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-01T13:38:17.916Z] ADBServer:stopAsync stopped
+[2025-11-01T13:38:46.513Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:38:46.518Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:38:46.519Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-01T13:38:51.778Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-11-01T13:38:51.780Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T13:38:51.820Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T13:38:51.936Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:38:51.937Z] ADBServer:startAsync already running
+[2025-11-01T13:38:51.938Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T13:38:51.967Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T13:38:51.979Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:38:51.979Z] ADBServer:startAsync already running
+[2025-11-01T13:38:51.980Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T13:38:52.058Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T13:39:48.697Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:39:48.698Z] ADBServer:startAsync already running
+[2025-11-01T13:39:48.699Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-01T13:39:48.814Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-01T13:39:48.820Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:39:48.821Z] ADBServer:startAsync already running
+[2025-11-01T13:39:48.823Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-01T13:39:58.756Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-01T13:39:58.765Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:39:58.766Z] ADBServer:startAsync already running
+[2025-11-01T13:39:58.768Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T13:40:01.433Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T13:40:01.435Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:40:01.435Z] ADBServer:startAsync already running
+[2025-11-01T13:40:01.436Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-11-01T13:40:03.240Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-11-01T13:40:03.656Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:40:03.657Z] ADBServer:startAsync already running
+[2025-11-01T13:40:03.657Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-01T13:40:04.996Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-01T13:40:04.998Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:40:04.999Z] ADBServer:startAsync already running
+[2025-11-01T13:40:05.000Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-01T13:40:06.591Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-01T13:40:06.595Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-01T13:40:06.596Z] ADBServer:startAsync already running
+[2025-11-01T13:40:06.597Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8081"]}
+[2025-11-01T13:40:08.327Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8081 }\r\n","stderr_tail":""}
+[2025-11-02T13:20:44.980Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:20:44.994Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:20:44.995Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T13:20:50.937Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":"* daemon not running; starting now at tcp:5037\r\n* daemon started successfully\r\n"}
+[2025-11-02T13:20:50.952Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T13:20:51.058Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T13:20:51.600Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:20:51.626Z] ADBServer:startAsync already running
+[2025-11-02T13:20:51.631Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T13:20:51.781Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T13:20:52.130Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:20:52.369Z] ADBServer:startAsync already running
+[2025-11-02T13:20:52.441Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-02T13:20:52.599Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-02T13:26:40.105Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:26:40.110Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:26:40.111Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T13:26:40.214Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T13:26:40.215Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T13:26:40.251Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T13:26:40.353Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:26:40.355Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:26:40.355Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T13:26:40.385Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T13:26:40.386Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T13:26:40.420Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T13:26:40.450Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:26:40.463Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T13:26:40.505Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T13:26:40.591Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T13:26:40.592Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-02T13:26:40.678Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-02T14:02:00.874Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T14:02:00.880Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T14:02:00.882Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T14:02:01.006Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T14:02:01.007Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T14:02:01.036Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T14:02:01.155Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T14:02:01.156Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T14:02:01.157Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T14:02:01.195Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T14:02:01.196Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T14:02:01.228Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T14:02:01.246Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T14:02:01.248Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T14:02:01.249Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T14:02:01.288Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T14:02:01.289Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-02T14:02:01.369Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-02T15:44:01.759Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:44:01.765Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:44:01.767Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T15:44:01.906Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T15:44:01.907Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T15:44:01.941Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T15:44:02.123Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:44:02.126Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:44:02.129Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T15:44:02.187Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T15:44:02.188Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T15:44:02.217Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T15:44:02.239Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:44:02.241Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:44:02.241Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T15:44:02.280Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T15:44:02.281Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-02T15:44:02.387Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-02T15:50:45.224Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:50:45.234Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:50:45.237Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T15:50:45.464Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T15:50:45.465Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T15:50:45.510Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T15:50:45.656Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:50:45.658Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:50:45.660Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T15:50:45.707Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T15:50:45.708Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T15:50:45.755Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T15:50:45.781Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:50:45.786Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T15:50:45.788Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T15:50:45.841Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T15:50:45.845Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-02T15:50:45.934Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-02T16:01:20.963Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:01:20.970Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:01:20.971Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:01:21.132Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:01:21.134Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T16:01:21.191Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T16:01:21.315Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:01:21.317Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:01:21.318Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:01:21.356Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:01:21.357Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T16:01:21.401Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T16:01:21.429Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:01:21.431Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:01:21.433Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:01:21.489Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:01:21.491Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-02T16:01:21.585Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-02T16:03:14.764Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:14.765Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:14.768Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:03:14.876Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:03:14.877Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-02T16:03:15.003Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-02T16:03:15.010Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:15.012Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:15.013Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:03:15.091Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:03:15.092Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-02T16:03:25.765Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-02T16:03:25.780Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:25.782Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:25.783Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:03:28.047Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:03:28.049Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T16:03:29.533Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T16:03:29.535Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:29.536Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:29.537Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:03:31.167Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:03:31.169Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8081","tcp:8081"]}
+[2025-11-02T16:03:33.491Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8081\r\n","stderr_tail":""}
+[2025-11-02T16:03:33.959Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:33.961Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:33.962Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:03:35.644Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:03:35.645Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-02T16:03:37.236Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-02T16:03:37.238Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:37.239Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:37.240Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:03:38.587Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:03:38.588Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-02T16:03:38.846Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-02T16:03:38.851Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:38.852Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-02T16:03:38.854Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-02T16:03:38.995Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-02T16:03:38.996Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8081"]}
+[2025-11-02T16:03:39.278Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8081 }\r\n","stderr_tail":""}
+[2025-11-03T05:14:19.500Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T05:14:19.516Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T05:14:19.517Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:04:47.174Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:04:47.183Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:04:47.189Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:04:47.415Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:04:47.416Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:04:47.473Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:04:47.734Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:04:47.782Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:04:47.989Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:04:48.220Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:04:48.245Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:04:48.595Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:05:12.998Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:05:12.999Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:05:13.002Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:05:13.043Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:05:13.044Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:05:13.168Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T07:07:58.580Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:07:58.582Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:07:58.587Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:07:58.718Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:07:58.719Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:07:58.832Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T07:07:58.841Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:07:58.845Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:07:58.847Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:07:58.956Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:07:58.960Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T07:08:09.683Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T07:08:09.692Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:09.693Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:09.694Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:08:12.141Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:08:12.169Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:08:14.500Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:08:14.501Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:14.502Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:14.503Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:08:15.906Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:08:15.907Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T07:08:17.551Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-11-03T07:08:17.996Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:17.997Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:17.998Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:08:20.053Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:08:20.054Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:08:21.855Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:08:21.861Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:21.863Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:21.864Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:08:23.515Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:08:23.516Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T07:08:24.506Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T07:08:24.511Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:24.512Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:08:24.513Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:08:24.672Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:08:24.673Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T07:08:24.967Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T07:19:28.014Z] ADBServer:stopAsync requested
+[2025-11-03T07:19:28.017Z] ADBServer:stopAsync not running
+[2025-11-03T07:19:35.385Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:19:35.391Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:19:35.393Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:19:57.580Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:19:57.585Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:19:57.739Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:19:57.860Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:19:57.861Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:19:57.862Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:19:57.896Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:19:57.897Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:19:57.930Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:19:59.751Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:19:59.753Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:19:59.754Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:19:59.796Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:19:59.797Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:19:59.881Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T07:20:43.133Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:43.135Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:43.137Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:20:43.223Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:20:43.227Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:20:43.364Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T07:20:43.372Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:43.374Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:43.378Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:20:43.433Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:20:43.436Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T07:20:52.847Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T07:20:52.856Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:52.857Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:52.858Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:20:54.920Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:20:54.921Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:20:56.897Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:20:56.899Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:56.900Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:20:56.901Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:20:58.386Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:20:58.387Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T07:20:59.934Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:21:00.888Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:21:00.889Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:21:00.890Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:21:03.354Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:21:03.355Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:21:04.943Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:21:04.944Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:21:04.945Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:21:04.947Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:21:06.690Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:21:06.691Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T07:21:07.677Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T07:21:07.682Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:21:07.683Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:21:07.684Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:21:07.846Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:21:07.847Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T07:21:08.055Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T07:38:58.146Z] ADBServer:stopAsync requested
+[2025-11-03T07:38:58.150Z] ADBServer:stopAsync not running
+[2025-11-03T07:39:14.059Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:14.063Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:14.065Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:39:18.348Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:39:18.359Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:39:18.417Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:39:18.555Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:18.558Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:18.560Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:39:18.605Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:39:18.607Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:39:18.647Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:39:20.367Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:20.371Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:20.374Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:39:20.459Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:39:20.462Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:39:20.551Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T07:39:48.781Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:48.796Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:48.801Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:39:49.143Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:39:49.185Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:39:49.336Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:39:49.584Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:49.588Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:49.589Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:39:49.644Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:39:49.647Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:39:49.720Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:39:49.868Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:49.871Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:39:49.879Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:39:49.944Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:39:49.947Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:39:50.041Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T07:42:38.364Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:42:38.397Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:42:38.414Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:42:38.846Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:42:39.026Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:42:39.382Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T07:42:39.396Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:42:39.414Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:42:39.436Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:42:39.629Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:42:39.631Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T07:42:57.101Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T07:42:57.115Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:42:57.117Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:42:57.118Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:43:03.129Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:43:03.130Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:43:06.602Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:43:06.604Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:06.606Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:06.607Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:43:08.465Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:43:08.467Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T07:43:10.219Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:43:10.863Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:10.864Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:10.865Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:43:12.485Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:43:12.487Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:43:14.459Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:43:14.461Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:14.462Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:14.463Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:43:16.209Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:43:16.210Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T07:43:17.871Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T07:43:17.876Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:17.878Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:43:17.879Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:43:18.846Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:43:18.847Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T07:43:19.227Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T07:52:22.415Z] ADBServer:stopAsync requested
+[2025-11-03T07:52:22.746Z] ADBServer:stopAsync not running
+[2025-11-03T07:52:45.939Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:52:45.944Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:52:45.945Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:52:50.812Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:52:50.816Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:53:05.761Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:53:05.983Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:53:05.985Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:53:05.986Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:53:20.125Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:53:20.134Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T07:54:21.427Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T07:55:24.093Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:55:24.096Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T07:55:24.098Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T07:58:33.174Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T07:58:33.178Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T07:58:33.369Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:00:06.442Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:06.789Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:06.846Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:00:07.556Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:07.636Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:00:07.939Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:00:07.946Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:07.948Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:07.949Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:00:08.071Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:08.079Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T08:00:22.309Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T08:00:22.329Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:22.330Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:22.332Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:00:26.217Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:26.218Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:00:28.571Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:00:28.573Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:28.574Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:28.575Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:00:30.548Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:30.549Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T08:00:32.334Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:32.939Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:32.940Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:32.941Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:00:34.700Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:34.701Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:00:36.919Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:00:36.921Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:36.922Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:36.923Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:00:38.651Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:38.653Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T08:00:41.238Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T08:00:41.243Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:41.244Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:00:41.245Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:00:42.513Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:00:42.514Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T08:00:42.910Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T08:04:13.036Z] ADBServer:stopAsync requested
+[2025-11-03T08:04:13.039Z] ADBServer:stopAsync not running
+[2025-11-03T08:04:33.153Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:04:33.159Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:04:33.162Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:04:49.168Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:04:49.175Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:04:57.364Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:04:57.488Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:04:57.489Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:04:57.491Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:04:59.475Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:04:59.496Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:05:03.575Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:05:05.595Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:05:05.596Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:05:05.597Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:05:05.649Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:05:05.650Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:05:05.730Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:06:28.593Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:28.679Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:29.082Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:06:29.524Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:06:29.542Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:06:29.690Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:06:29.758Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:29.786Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:29.788Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:06:30.093Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:06:30.116Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T08:06:41.669Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T08:06:41.697Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:41.699Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:41.701Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:06:44.055Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:06:44.057Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:06:46.184Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:06:46.186Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:46.187Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:46.188Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:06:48.330Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:06:48.331Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T08:06:50.018Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:06:50.438Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:50.439Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:50.440Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:06:52.212Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:06:52.213Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:06:54.645Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:06:54.646Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:54.648Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:54.648Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:06:56.625Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:06:56.627Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T08:06:58.325Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T08:06:58.330Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:58.332Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:06:58.333Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:07:00.304Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:07:00.305Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T08:07:00.638Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T08:15:12.678Z] ADBServer:stopAsync requested
+[2025-11-03T08:15:12.681Z] ADBServer:stopAsync not running
+[2025-11-03T08:15:32.304Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:15:32.310Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:15:32.312Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:16:24.127Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:16:24.142Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:16:40.542Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:16:40.757Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:16:40.758Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:16:40.759Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:17:05.048Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:17:05.050Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:17:05.084Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:17:36.333Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:17:36.335Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:17:36.337Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:17:41.961Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:17:41.962Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:18:02.407Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:19:14.552Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:14.574Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:14.593Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:19:14.831Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:14.863Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:19:15.283Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:19:15.292Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:15.301Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:15.320Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:19:15.826Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:15.829Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T08:19:29.056Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T08:19:29.064Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:29.066Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:29.067Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:19:31.709Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:31.710Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:19:33.904Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:19:33.906Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:33.907Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:33.908Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:19:35.834Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:35.835Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T08:19:37.376Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:37.800Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:37.802Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:37.802Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:19:39.485Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:39.486Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:19:41.854Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:19:41.855Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:41.857Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:41.858Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:19:43.426Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:43.427Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T08:19:45.020Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T08:19:45.024Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:45.025Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:19:45.026Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:19:46.061Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:19:46.064Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T08:19:46.465Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T08:24:21.004Z] ADBServer:stopAsync requested
+[2025-11-03T08:24:21.007Z] ADBServer:stopAsync not running
+[2025-11-03T08:24:43.269Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:24:43.277Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:24:43.279Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:25:11.643Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:25:11.645Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:26:33.563Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:26:33.689Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:26:33.691Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:26:33.692Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:27:32.912Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:27:32.915Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:27:37.016Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:28:11.161Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:28:11.163Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:28:11.165Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:29:15.293Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:29:15.294Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:30:37.154Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:31:27.650Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:27.659Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:27.743Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:31:28.079Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:28.129Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:31:28.409Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:31:28.416Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:28.418Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:28.420Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:31:28.690Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:28.725Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T08:31:40.628Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T08:31:40.636Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:40.637Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:40.638Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:31:43.241Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:43.242Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:31:45.296Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:31:45.297Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:45.298Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:45.300Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:31:46.033Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:46.034Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T08:31:47.747Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:48.358Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:48.365Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:48.402Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:31:50.393Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:50.394Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:31:52.740Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:31:52.741Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:52.742Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:52.743Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:31:54.772Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:54.773Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T08:31:56.483Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T08:31:56.487Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:56.488Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:31:56.490Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:31:57.942Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:31:57.943Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T08:31:58.323Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T08:40:52.941Z] ADBServer:stopAsync requested
+[2025-11-03T08:40:52.943Z] ADBServer:stopAsync not running
+[2025-11-03T08:41:29.925Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:41:29.933Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:41:29.935Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:41:35.029Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:41:35.031Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:41:41.187Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:41:41.330Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:41:41.332Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:41:41.346Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:41:49.390Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:41:49.394Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:42:01.727Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:42:10.968Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:42:10.969Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:42:10.970Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:42:44.633Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:42:44.636Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:46:46.207Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:47:34.795Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:35.204Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:35.422Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:47:36.105Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:47:36.126Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T08:47:36.314Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T08:47:36.326Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:36.327Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:36.341Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:47:36.575Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:47:36.584Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T08:47:50.046Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T08:47:50.076Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:50.105Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:50.106Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:47:53.680Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:47:53.681Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:47:55.982Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:47:55.984Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:55.985Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:55.986Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:47:57.355Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:47:57.356Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T08:47:59.199Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:47:59.615Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:59.616Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:47:59.617Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:48:01.044Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:48:01.045Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T08:48:02.579Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T08:48:02.582Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:48:02.583Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:48:02.584Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:48:04.606Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:48:04.607Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T08:48:06.178Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T08:48:06.182Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:48:06.183Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T08:48:06.184Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T08:48:07.778Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T08:48:07.779Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T08:48:08.865Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T12:24:19.179Z] ADBServer:stopAsync requested
+[2025-11-03T12:24:19.183Z] ADBServer:stopAsync not running
+[2025-11-03T12:26:01.456Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:26:01.655Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:26:01.799Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:26:12.978Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:26:12.981Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T12:26:17.160Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T12:26:17.290Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:26:17.297Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:26:17.298Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:26:21.284Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:26:21.291Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T12:26:23.334Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T12:26:28.090Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:26:28.091Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:26:28.094Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:26:31.559Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:26:31.560Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T12:26:35.711Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T12:32:25.948Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:32:25.977Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:32:26.039Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:32:26.780Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:32:26.887Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T12:32:27.061Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T12:32:27.083Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:32:27.084Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:32:27.087Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:32:27.234Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:32:27.236Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T12:32:54.606Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T12:32:55.895Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:32:56.544Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:32:56.957Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:33:15.453Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:33:15.455Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T12:33:25.052Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T12:33:25.055Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:33:25.057Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:33:25.061Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:33:38.657Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:33:38.936Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T12:33:50.565Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:33:52.462Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:33:52.465Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:33:52.467Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:33:59.746Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:33:59.748Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T12:34:07.969Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T12:34:07.973Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:34:07.994Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:34:08.007Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:34:18.226Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:34:18.275Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T12:34:29.035Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T12:34:29.050Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:34:29.053Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T12:34:29.055Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T12:34:50.947Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T12:34:51.570Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T12:34:59.131Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T14:16:12.065Z] ADBServer:stopAsync requested
+[2025-11-03T14:16:12.068Z] ADBServer:stopAsync not running
+[2025-11-03T14:16:21.684Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:16:21.699Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:16:21.727Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:16:23.236Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:16:23.248Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:16:30.146Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:16:30.294Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:16:30.295Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:16:30.297Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:16:36.278Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:16:36.283Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:16:40.386Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:16:42.776Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:16:42.780Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:16:42.783Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:17:04.927Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:17:04.930Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T14:17:45.819Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T14:19:43.530Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:19:43.541Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:19:43.543Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:19:43.784Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:19:43.793Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T14:19:43.920Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T14:19:43.926Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:19:43.929Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:19:43.936Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:19:44.060Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:19:44.065Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T14:20:03.333Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T14:20:03.412Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:03.502Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:03.506Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:20:09.107Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:20:09.139Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:20:15.219Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:20:15.221Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:15.224Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:15.226Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:20:17.859Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:20:17.862Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T14:20:19.521Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:20:19.978Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:19.979Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:19.980Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:20:21.749Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:20:21.752Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:20:24.322Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:20:24.324Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:24.325Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:24.326Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:20:26.016Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:20:26.017Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T14:20:27.872Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T14:20:27.879Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:27.880Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:20:27.881Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:20:29.208Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:20:29.209Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T14:20:29.502Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T14:23:02.147Z] ADBServer:stopAsync requested
+[2025-11-03T14:23:02.150Z] ADBServer:stopAsync not running
+[2025-11-03T14:23:08.568Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:23:08.572Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:23:08.574Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:23:09.109Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:23:09.111Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:23:13.174Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:23:13.314Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:23:13.316Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:23:13.317Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:23:17.265Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:23:17.268Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:23:23.397Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:23:25.836Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:23:25.841Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:23:25.846Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:23:29.531Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:23:29.535Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T14:23:41.783Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T14:24:58.158Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:24:58.393Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:24:58.443Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:24:58.795Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:24:58.905Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T14:24:59.213Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T14:24:59.261Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:24:59.265Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:24:59.295Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:24:59.588Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:24:59.608Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T14:25:16.174Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T14:25:16.202Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:16.204Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:16.208Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:25:20.030Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:25:20.031Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:25:22.216Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:25:22.218Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:22.219Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:22.220Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:25:24.545Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:25:24.546Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T14:25:26.197Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:25:26.640Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:26.641Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:26.642Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:25:29.235Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:25:29.236Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:25:31.406Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:25:31.408Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:31.410Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:31.411Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:25:33.112Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:25:33.113Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T14:25:34.935Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T14:25:34.939Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:34.940Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:25:34.941Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:25:36.247Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:25:36.248Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T14:25:36.652Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-03T14:40:37.356Z] ADBServer:stopAsync requested
+[2025-11-03T14:40:37.359Z] ADBServer:stopAsync not running
+[2025-11-03T14:40:43.480Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:40:43.485Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:40:43.487Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:40:52.243Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:40:52.245Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:41:00.442Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:41:00.574Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:41:00.576Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:41:00.577Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:41:16.827Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:41:16.830Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:41:24.991Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:41:59.628Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:41:59.631Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:41:59.635Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:42:16.181Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:42:16.188Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T14:43:01.126Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T14:44:08.131Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:08.166Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:08.174Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:44:08.361Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:08.407Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-03T14:44:08.670Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-03T14:44:08.808Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:08.811Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:08.843Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:44:09.374Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:09.513Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-03T14:44:23.815Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-03T14:44:23.825Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:23.826Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:23.828Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:44:26.442Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:26.443Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:44:28.607Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:44:28.609Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:28.610Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:28.611Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:44:30.531Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:30.533Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-03T14:44:32.472Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:33.211Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:33.212Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:33.213Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:44:35.489Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:35.490Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-03T14:44:37.940Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:1\r\n\r\n","stderr_tail":""}
+[2025-11-03T14:44:37.942Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:37.943Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:37.944Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:44:40.192Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:40.193Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-03T14:44:43.311Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-03T14:44:43.332Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:43.334Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-03T14:44:43.336Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-03T14:44:44.691Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-03T14:44:44.692Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-03T14:44:45.010Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}
+[2025-11-04T04:50:45.440Z] ADBServer:stopAsync requested
+[2025-11-04T04:50:45.446Z] ADBServer:stopAsync not running
+[2025-11-04T04:50:53.948Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:50:53.957Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:50:53.959Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:50:54.139Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:50:54.140Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-04T04:50:54.191Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:3\r\n\r\n","stderr_tail":""}
+[2025-11-04T04:50:54.412Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:50:54.415Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:50:54.416Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:50:54.464Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:50:54.466Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-04T04:50:54.523Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:3\r\n\r\n","stderr_tail":""}
+[2025-11-04T04:50:58.745Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:50:58.746Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:50:58.748Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:50:58.802Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:50:58.803Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-04T04:50:58.895Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-04T04:53:41.039Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:53:41.171Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:53:41.515Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:53:42.132Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:53:42.139Z] ADBServer:getFileOutput:execFileSync {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","getprop","ro.product.cpu.abilist"]}
+[2025-11-04T04:53:42.593Z] ADBServer:getFileOutput:result armeabi-v7a,armeabi
+
+[2025-11-04T04:53:42.632Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:53:42.647Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:53:42.662Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:53:42.981Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:53:43.119Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","install","-r","-d","--user","0","C:\\mig\\eco-farming-expo\\android\\app\\build\\outputs\\apk\\debug\\app-debug.apk"]}
+[2025-11-04T04:53:58.784Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Performing Streamed Install\r\nSuccess\r\n","stderr_tail":""}
+[2025-11-04T04:53:58.872Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:53:58.931Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:53:58.942Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:54:04.335Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:54:04.337Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-04T04:54:09.901Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:3\r\n\r\n","stderr_tail":""}
+[2025-11-04T04:54:09.904Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:09.906Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:09.907Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:54:13.401Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:54:13.404Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","reverse","tcp:8082","tcp:8082"]}
+[2025-11-04T04:54:16.245Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"8082\r\n","stderr_tail":""}
+[2025-11-04T04:54:16.995Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:16.996Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:16.998Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:54:19.467Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:54:19.468Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["devices","-l"]}
+[2025-11-04T04:54:23.076Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"List of devices attached\r\n552123092230           device product:N60 model:PDA device:N60 transport_id:3\r\n\r\n","stderr_tail":""}
+[2025-11-04T04:54:23.078Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:23.079Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:23.080Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:54:25.305Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:54:25.307Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","pm","list","packages","--user","0","com.wirus30.ecofarming"]}
+[2025-11-04T04:54:27.422Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"package:com.wirus30.ecofarming\r\n","stderr_tail":""}
+[2025-11-04T04:54:27.426Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:27.428Z] ADBServer:adbPath C:\Users\DSPro\AppData\Local\Android\Sdk/platform-tools/adb
+[2025-11-04T04:54:27.428Z] ADBServer:startAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["start-server"]}
+[2025-11-04T04:54:28.513Z] ADBServer:startAsync:result {"code":0,"stdout_tail":"","stderr_tail":""}
+[2025-11-04T04:54:28.514Z] ADBServer:runAsync:spawn {"adb":"C:\\Users\\DSPro\\AppData\\Local\\Android\\Sdk/platform-tools/adb","args":["-s","552123092230","shell","am","start","-a","android.intent.action.VIEW","-d","com.wirus30.ecofarming://expo-development-client/?url=http%3A%2F%2F192.168.88.5%3A8082"]}
+[2025-11-04T04:54:28.771Z] ADBServer:runAsync:exit {"code":0,"stdout_tail":"Starting: Intent { act=android.intent.action.VIEW dat=com.wirus30.ecofarming://expo-development-client/?url=http://192.168.88.5:8082 }\r\n","stderr_tail":""}

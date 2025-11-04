@@ -1,0 +1,14 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml:1:1-2:12
+INJECTED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml:1:1-2:12
+	package
+		INJECTED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml
+uses-sdk
+INJECTED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml
+INJECTED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\mig\eco-farming-expo\modules\ScanManager\android\src\main\AndroidManifest.xml
