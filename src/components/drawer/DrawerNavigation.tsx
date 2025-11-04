@@ -10,10 +10,12 @@ import MessageErrorMain from "../ui/modal/MessageErrorMain";
 import { Icons } from "@/src/constants/Images";
 import IconContent from "../ui/IconContent";
 import { CurrentUserInfo } from "@/src/Interface/global/database.interface";
-import { useRouter } from "expo-router";
+import { Link, usePathname, useRouter } from "expo-router";
 
 const DrawerNavigation = () => {
   const router = useRouter();
+  const pathname = usePathname();
+  // console.log("[DrawerNavigation] pathname=", pathname);
   const [isLogouts, setIsLogout] = useState(false);
   const [cureentUser, setCurrentUser] = useState<CurrentUserInfo | null>(null);
   const recolteIcon = require("@/src/assets/images/icons/Recolte32_Noir@dpi1_5x.png");
@@ -25,29 +27,16 @@ const DrawerNavigation = () => {
     setIsLogout(true);
   };
 
-  const drawerItems = [
-    {
-      id: 1,
-      text: t("DRAWER_NAVIGATION:RECOLTE_ITEM"),
-    },
-    {
-      id: 2,
-      text: t("DRAWER_NAVIGATION:LAVAGE_ITEM"),
-    },
-    {
-      id: 3,
-      text: t("DRAWER_NAVIGATION:EGRAINAGE_ITEM"),
-    },
-    {
-      id: 5,
-      text: t("DRAWER_NAVIGATION:OTHERS_ITEM"),
-    },
+  const activeColor = "#7DDA58";
 
-    {
-      id: 6,
-      text: "Sync",
-    },
+  const drawerItems = [
+    { id: 1, text: t("DRAWER_NAVIGATION:RECOLTE_ITEM"), route: "/appDrawer" },                // index tab
+    { id: 2, text: t("DRAWER_NAVIGATION:LAVAGE_ITEM"), route: "/appDrawer/lavage" },
+    { id: 3, text: t("DRAWER_NAVIGATION:EGRAINAGE_ITEM"), route: "/appDrawer/egrainage" },
+    { id: 5, text: t("DRAWER_NAVIGATION:OTHERS_ITEM"), route: "/appDrawer/setting" },
+    { id: 6, text: "Sync", onPress: () => { } },
   ];
+
   return (
     <View style={{ flex: 1 }}>
       <View
@@ -66,19 +55,19 @@ const DrawerNavigation = () => {
         >
           <IconContent />
           {cureentUser && (
-          <Text
-            style={{
-              paddingLeft: 15,
-              marginLeft: 10,
-              color: "white",
-              fontSize: 14,
-              marginTop: 3,
-            }}
-          >
-           {cureentUser.username}
-           {/* ccccccccccccccccc */}
-          </Text>
-           )} 
+            <Text
+              style={{
+                paddingLeft: 15,
+                marginLeft: 10,
+                color: "white",
+                fontSize: 14,
+                marginTop: 3,
+              }}
+            >
+              {cureentUser.username}
+              {/* ccccccccccccccccc */}
+            </Text>
+          )}
         </View>
         {/* {typeMode === "offline" && ( */}
         <View
@@ -93,7 +82,7 @@ const DrawerNavigation = () => {
         {/* )} */}
       </View>
       <View style={{ flex: 1 }}>
-        <View style={{  flex: 1,padding: 15, }}>
+        <View style={{ flex: 1, padding: 15, }}>
           <FlatList
             data={drawerItems}
             keyExtractor={(item) => item.id.toString()}
@@ -107,8 +96,23 @@ const DrawerNavigation = () => {
                 if (item.id === 6) return Icons.icon_sync;
                 return null;
               };
+              const isActive = (() => {
+                const pRaw = pathname || "";
+                const p = pRaw.toLowerCase().replace(/\/$/, "");
+                if (item.id === 1) return p === "/appdrawer" || p === "/appdrawer/index";
+                if (item.id === 2) return p.startsWith("/appdrawer/lavage");
+                if (item.id === 3) return p.startsWith("/appdrawer/egrainage");
+                if (item.id === 5) return p.startsWith("/appdrawer/setting");
+                return false;
+              })();
+
+
               return (
                 <TouchableOpacity
+                  onPress={() => {
+                    if (item.onPress) return item.onPress();
+                    if (item.route) router.push(item.route as any);
+                  }}
                   style={{
                     margin: 10,
                   }}
@@ -123,7 +127,7 @@ const DrawerNavigation = () => {
                       style={{
                         flexDirection: "row",
                         justifyContent: "flex-start",
-                        alignItems:"center"
+                        alignItems: "center",
                       }}
                     >
                       <Image
@@ -131,7 +135,7 @@ const DrawerNavigation = () => {
                         style={{
                           width: wp(7),
                           height: hp(5),
-                          // tintColor: activeTabName === item.text ? GREEN : DARK,
+                          tintColor: isActive ? activeColor : undefined,
                         }}
                         resizeMode="contain"
                       />
@@ -139,7 +143,8 @@ const DrawerNavigation = () => {
                         style={{
                           marginLeft: 15,
                           fontSize: wp(4),
-                          // color: activeTabName === item.text ? GREEN : DARK,
+                          color: isActive ? activeColor : undefined,
+                          fontWeight: isActive ? "700" : "400",
                         }}
                       >
                         {item.text}
@@ -230,7 +235,7 @@ const DrawerNavigation = () => {
         textButton={t("DRAWER_NAVIGATION:LOGOUT")}
         closeModal={() => setIsLogout(false)}
         errorMessage2={t("DRAWER_NAVIGATION:LOGOUT_CONFIRM_MESSAGE")}
-        handleReturn={() => {}}
+        handleReturn={() => { }}
         title={t("DRAWER_NAVIGATION:LOGOUT_CONFIRM_TITLE")}
         errorMessage={""}
       />
